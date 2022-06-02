@@ -30,13 +30,13 @@ let cardSmArr=document.querySelectorAll(".card-sm-row");
     
      <div class="d-flex justify-content-center col-div-2 mt-2">
        
-    <h1 class="mb-0 fw-bold">8284-<span style="color:#bf68e6 ;">095-909</span></h1>
+    <h1 class="mb-0 fw-bold">8284-<span style="color:#9e48cd ;">095-909</span></h1>
     
        
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span class="mx-1"> R2P</span> | <a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
+    Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
@@ -62,30 +62,33 @@ cardSm.map(item =>{
     let dov=document.createElement("div");
     dov.classList.add("col-6","col-md-6","col-18","pull-up")
     dov.innerHTML= 
-    `  <div style="border-radius: 10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #9e48cd;box-shadow:0 0 10px grey;">
-    <div class="d-flex justify-content-between align-items-center col-div px-2 my-1">
-        <i class="fa-solid fa-crown"> </i> 
-        <h4 class="mb-0">₹3500/-</h4>
+    `  <div style="border-top-left-radius:5px;border-top-right-radius:5px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
+    <div class="d-flex justify-content-between align-items-center col-div px-2 ">
+    <div class="d-inline-flex"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+    <button class="btn-card-heart"><i class="fa-solid fa-heart"></i></button>
+  </div>
       </div>
 <div class="d-flex flex-column bg-cont">
  
 <div class="d-flex flex-column align-items-center col-div-2 mt-1">
    
 <h1 class="mb-0 fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
-<a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
-Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+Total -<strong class="mx-1">37</strong> | Sum - <strong class="mx-1">8</strong> | <span class="mx-1">RTP</span> |
+<a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
 </div>
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
 
-<button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
-<button class="me-1"><i class="fa-solid fa-heart"></i> 0</button>
-<button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
-<button >Buy</button>
-
+<h6 class="mb-0 fw-bold">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+   
+    <div class="vl mx-1"></div>
+    <button class="py-2"><i class="fa-solid fa-clipboard-check d-block"></i></button>
+     <div class="vl mx-1"></div>
+    <button>Buy</button> 
+    
 </div>
 </div>
 </div>
@@ -151,81 +154,52 @@ const toggleMenu =()=>{
 menuButton.addEventListener("click", toggleMenu);
 
 
-const select=document.querySelector(".vip-select");
-const pills=document.querySelector("#select-pills");
+// const select=document.querySelector(".vip-select");
+// const pills=document.querySelector("#select-pills");
 
-let filterArr=[];
+// let filterArr=[];
 
-select.addEventListener("change",function(event){
-  const val=event.target.value;
-  if(!filterArr.includes(val) )
-  {filterArr.push(val);
-  pillsDisplay();
-}
-})
+// select.addEventListener("change",function(event){
+//   const val=event.target.value;
+//   if(!filterArr.includes(val) )
+//   {filterArr.push(val);
+//   pillsDisplay();
+// }
+// })
 
-const clearCategory=()=>{
-  filterArr.splice(0,filterArr.length);
-  pills.innerHTML="";
+// const clearCategory=()=>{
+//   filterArr.splice(0,filterArr.length);
+//   pills.innerHTML="";
   
-}
+// }
 
-const pillsDisplay =()=>{
-  pills.innerHTML="";
-filterArr.forEach((item,index)=>{
+// const pillsDisplay =()=>{
+//   pills.innerHTML="";
+// filterArr.forEach((item,index)=>{
 
-  const pillDiv=document.createElement("div");
-pillDiv.className="pill-div";
+//   const pillDiv=document.createElement("div");
+// pillDiv.className="pill-div";
 
-  const p=document.createElement("p");
-  p.innerText=item;
-  p.className="pills-content";
-  const btn=document.createElement("button")
-  btn.innerText="X";
-  btn.classList.add("pill-btn",`${index}`); 
-  btn.addEventListener('click', function(e){
-    let rmv = e.target.classList[1];
-    if (rmv > -1) {
-      filterArr.splice(rmv, 1);}
-      pillsDisplay();
-  }
-  );
-  pillDiv.append(p);
-  pillDiv.append(btn);
-  pills.append(pillDiv);
+//   const p=document.createElement("p");
+//   p.innerText=item;
+//   p.className="pills-content";
+//   const btn=document.createElement("button")
+//   btn.innerText="X";
+//   btn.classList.add("pill-btn",`${index}`); 
+//   btn.addEventListener('click', function(e){
+//     let rmv = e.target.classList[1];
+//     if (rmv > -1) {
+//       filterArr.splice(rmv, 1);}
+//       pillsDisplay();
+//   }
+//   );
+//   pillDiv.append(p);
+//   pillDiv.append(btn);
+//   pills.append(pillDiv);
   
-})
-}
+// })
+// }
 
-const eng=document.getElementById("eng-btn");
-const hin=document.getElementById("hin-btn");
-const eng1 =document.querySelector(".eng-text");
-const hin1 =document.querySelector(".hin-text");
-const headToggle=document.querySelector(".step-toggle-heading")
-
-
-
-
-const toggleEng =()=>{
- 
-  if(eng.classList.length<1){
-  eng.classList.add("active");
-  eng1.style.display="block";
-  hin1.style.display="none"
-  hin.classList.remove("active")
-  headToggle.innerText="EASY STEPS TO BUY YOUR VIP NUMBER ?"
-}
-
-
-}
-
-const toggleHin =()=>{
-  if(hin.classList.length<1){ hin.classList.add("active"); hin1.style.display="block";eng.classList.remove("active"); hin.style.border
-  eng1.style.display="none";
-  headToggle.innerText="अपना वीआईपी नंबर खरीदने के लिए आसान कदम?"
-}
-  
-}
 
 //------Card Vip ----------------------------//
 let cardArr2=document.querySelectorAll(".card-vip-row")
@@ -460,51 +434,51 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
   })
 })
 
-let min=document.querySelector(".min")
-let max=document.querySelector(".max")
-let range_min=document.querySelector(".range_min")
-let range_max=document.querySelector(".range_max")
+// let min=document.querySelector(".min")
+// let max=document.querySelector(".max")
+// let range_min=document.querySelector(".range_min")
+// let range_max=document.querySelector(".range_max")
 
 
 
 
-min.addEventListener("change",function(e){
-let val=e.target.value;
-range_min.innerText=val
+// min.addEventListener("change",function(e){
+// let val=e.target.value;
+// range_min.innerText=val
 
-})
-max.addEventListener("change",function(e){
-  let val=e.target.value;
-range_max.innerText=val
-  })
+// })
+// max.addEventListener("change",function(e){
+//   let val=e.target.value;
+// range_max.innerText=val
+//   })
 
 
-  const hardBtn=document.querySelector("#hard-btn");
-  const colNone=document.querySelectorAll(".collapse-none");
-  const cont=document.querySelector(".collapse-icon-cont");
-  const mark=document.querySelector(".x-none-mark");
+//   const hardBtn=document.querySelector("#hard-btn");
+//   const colNone=document.querySelectorAll(".collapse-none");
+//   const cont=document.querySelector(".collapse-icon-cont");
+//   const mark=document.querySelector(".x-none-mark");
 
-  const colNoneArr=[...colNone];
+//   const colNoneArr=[...colNone];
  
-  let bool=false;
-  hardBtn.addEventListener("click",function(){
+//   let bool=false;
+//   hardBtn.addEventListener("click",function(){
    
-    if(!bool){
-    colNoneArr.forEach(item=>item.style.display="none");
-    cont.classList.remove("justify-content-around");
-    cont.classList.add("ps-2");
-    mark.style.display="inline-block"
+//     if(!bool){
+//     colNoneArr.forEach(item=>item.style.display="none");
+//     cont.classList.remove("justify-content-around");
+//     cont.classList.add("ps-2");
+//     mark.style.display="inline-block"
 
-    bool=true;
-  }
-  else{
-    colNoneArr.forEach(item=>item.style.display="block");
-    cont.classList.add("justify-content-around");
-    cont.classList.remove("ps-2");
-    mark.style.display="none"
-    bool=false;
-  }
-  })
+//     bool=true;
+//   }
+//   else{
+//     colNoneArr.forEach(item=>item.style.display="block");
+//     cont.classList.add("justify-content-around");
+//     cont.classList.remove("ps-2");
+//     mark.style.display="none"
+//     bool=false;
+//   }
+//   })
   let btnHeartArr=document.querySelectorAll(".btn-card-heart");
   let bool1=false;
 
