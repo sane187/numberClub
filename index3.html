@@ -68,7 +68,7 @@
   <header>
     <nav class="navbar navbar-expand-lg d-none d-lg-block py-0" id="navbar-top" style="background: white;" > 
          <div class="container-fluid px-2" data-aos="fade-right">
-           <a class="navbar-brand ms-3" href="./index3.html"><div><img src="Assets/orangeLogo.png" ></div></a>
+           <a class="navbar-brand ms-3" href="./index3.html"><div><img src="Assets/logo2.jpg" ></div></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon fa-solid fa-bars"></span>
            </button>
@@ -85,11 +85,11 @@
                 
 
                <input class="form-control mr-sm-2 " type="search" placeholder="Search number" aria-label="Search">
-               <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+               <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #bf68e6 !important;"></i></button>
              </form>
              <ul class="navbar-nav me-3" data-aos="fade-right">
               <li class="nav-item d-flex flex-column align-items-center">
-                <a class="nav-link"  href="./index3.html"><span class="fa-solid fa-house me-1"></span>Home</a>
+                <a class="nav-link"  href="./index3.html"><i class="fa-solid fa-house me-1"></i>Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./vipNumber.html"><i class="fa-solid fa-store me-1"></i>Vip Numbers</a>
@@ -115,7 +115,115 @@
          </div>
        </nav>
      </header>
-
+     <div class="d-none d-lg-block ">
+      <button class="chatButton">
+        <i class="fa-solid fa-message fa-2x"></i>
+      </button>
+      <div class="box d-none p-3">
+        <div class="d-flex justify-content-end">
+          <i class="fa-solid fa-xmark closeDesktop"></i>
+        </div>
+        <div class="d-flex flex-column">
+          <button class="btn btn-primary mt-2">
+           Chat with us <i class="fa-solid fa-comment"></i>
+          </button>
+          <button class="btn btn-primary mt-2">
+            Contact us <i class="fa-solid fa-phone-flip"></i>
+          </button>
+          <button class="btn btn-primary mt-2 faq">
+            FAQ <i class="fa-solid fa-circle-question"></i>
+          </button>
+        </div>
+      </div>
+      <div class="faqSection d-none p-3">
+        <div class="d-flex justify-content-start">
+          <i class="fa-solid fa-left-long closeFaq"></i>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                What is a VIP number ?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                MNP stands for Mobile Number Portability, it is basically the
+                process to switch your current mobile number to another network
+                service provider without having to buy a new number. It allows
+                you to keep the same number even after changing the number’s
+                service provider.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Can I choose my mobile number?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Yes, that is what we offer, a choice for all. You can suggest a
+                number of your wish or you can even select one from our
+                collection. As always, the choice is yours.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                How to book a number/service?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Select a number then book it. This gives your details to our
+                sales team who will coordinate with you within the next 24
+                working hrs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 <main>
   <div class="carousel-cont">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">  
@@ -127,10 +235,10 @@
           <section class="mt-4" >
             <div class="container-fluid">
               <div class="row pb-2">
-<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center "
+<div class="col-xl-6 col-lg-6 col-6 d-flex justify-content-center align-items-center "
                   data-aos="fade-right" style="padding-left:2%">
                   <div class="col1 mt-4 pt-4 ">
-                    <h2 class="banner-title" style="color:white">Vip number store</h2>
+                    <h2 class="banner-title" style="color:white">Vip number club</h2>
                     <hr />
                     <p class="banner-para">Get your vip number at one click.</p>
                     <p class="banner-subpara">
@@ -139,7 +247,7 @@
                     <button class="btn btn-primary" data-text="Go To Store">Go To Store</button>
                   </div>
                 </div>
-                <div class="col-xl-6 col-lg-12 col-md-12 ">
+                <div class="col-xl-6 col-lg-6 col-6">
                   <div class="mt-4 carousel-img-cont">
                     <img
                       src="./Assets/bannerImage.svg"
@@ -175,172 +283,97 @@
 </div>
 
       
-   <section style="padding: 1.5rem 0;background: rgba(255, 168, 0,0.2);">
-    <div style="padding: 0px 1rem;">
-      <div class="row py-1">
-        <div class="col col-xl-6 col-lg-12 col-md-12 col-12">
-          <div class="col3 mt-4 pt-4 d-flex flex-column align-items-center">
-            <h2 class="discover-title text-center" data-aos="fade-left" style="color: #2f3043;">Trending</h2>
-            <hr class="w-100 my-1"/>
-            <p class="discover-para text-center mb-0" data-aos="fade-right" data-aos-duration="1200">
-              Categories
-            </p>
-            <button class="btn d-flex justify-content-center mb-xl-0 mb-lg-3">Discover Categories</button>
+   <section class="py-5">
+     <h1 class="text-center" style="color:rgb(21,30,82);" data-aos="fade-right">CATEGORIES</h1>
+   <div class="container-fluid px-4">
+    <div id="carouselExampleControlsCat" class="carousel slide mt-4" data-bs-ride="carousel" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+         <div class="row">
+           <div class="col-3 col-xl-3 col-lg-3 gx-1 ">
+             <div class="p-2 car-col">
+              <img src="./Assets/bann.jpg" >
+            </div>
+           </div>
+           <div class="col-3 col-xl-3 col-lg-3 gx-1">
+             <div class="p-2 car-col">
+            <img src="./Assets/bann.jpg">
+          </div></div>
+           <div class="col-3 col-xl-3 col-lg-3 gx-1">
+             <div class="p-2 car-col">
+            <img src="./Assets/bann.jpg" >
+            
           </div>
         </div>
-        <div class="col col-xl-6 col-lg-12 col-md-12 col-12">
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="col4 d-flex justify-content-center flex-row ">
-              
-                <div class="detail-card pull-up">
-                 
-                 <img src="./Assets/carGif.gif" class="card-img-top" />
-                    <div class="card-body p-0">
-                      <h1 class="launch-number text-center">Unique Number</h1>
-                    </div>
-                  </div>               
-                
-                  <div class="detail-card pull-up ms-2">
-                 
-                    <img src="./Assets/carGif.gif" class="card-img-top" />
-                      <div class="card-body p-0">
-                        <h1 class="launch-number text-center">Unique Number</h1>
-                      </div>
-                    </div>
-              </div>     
-              <div class="col4 d-flex justify-content-center flex-row mt-2 pb-1">
-              
-                <div class="detail-card pull-up">
-                 
-                  <img src="./Assets/carGif.gif" class="card-img-top" />
-                    <div class="card-body p-0">
-                      <h1 class="launch-number text-center ">Unique Number</h1>
-                    </div>
-                  </div>               
-                
-                  <div class="detail-card pull-up ms-2">
-                 
-                    <img src="./Assets/carGif.gif" class="card-img-top" />
-                      <div class="card-body p-0">
-                        <h1 class="launch-number text-center">Unique Number</h1>
-                      </div>
-                    </div>
-              </div>      
-                </div>
-
-                <div class="carousel-item ">
-                  <div class="col4 d-flex justify-content-center flex-row ">
-                  
-                    <div class="detail-card pull-up">
-                     
-                      <img src="./Assets/carGif.gif" class="card-img-top" />
-                        <div class="card-body p-0">
-                          <h1 class="launch-number text-center mt-1 mb-0">Unique Number</h1>
-                        </div>
-                      </div>               
-                    
-                      <div class="detail-card pull-up ms-2">
-                     
-                        <img src="./Assets/carGif.gif" class="card-img-top" />
-                          <div class="card-body p-0">
-                            <h1 class="launch-number text-center ">Unique Number</h1>
-                          </div>
-                        </div>
-                  </div>     
-                  <div class="col4 d-flex justify-content-center flex-row mt-2 pb-1">
-                  
-                    <div class="detail-card pull-up">
-                     
-                      <img src="./Assets/carGif.gif" class="card-img-top" />
-                        <div class="card-body p-0">
-                          <h1 class="launch-number text-center ">Unique Number</h1>
-                        </div>
-                      </div>               
-                    
-                      <div class="detail-card pull-up ms-2">
-                     
-                        <img src="./Assets/carGif.gif" class="card-img-top" />
-                          <div class="card-body p-0">
-                            <h1 class="launch-number text-center ">Unique Number</h1>
-                          </div>
-                        </div>
-                  </div>      
-                    </div>
-                    
-                <div class="carousel-item ">
-                  <div class="col4 d-flex justify-content-center flex-row ">
-                  
-                    <div class="detail-card pull-up">
-                     
-                      <img src="./Assets/carGif.gif" class="card-img-top" />
-                        <div class="card-body p-0">
-                          <h1 class="launch-number text-center ">Unique Number</h1>
-                        </div>
-                      </div>               
-                    
-                      <div class="detail-card pull-up ms-2">
-                     
-                        <img src="./Assets/carGif.gif" class="card-img-top" />
-                          <div class="card-body p-0">
-                            <h1 class="launch-number text-center ">Unique Number</h1>
-                          </div>
-                        </div>
-                  </div>     
-                  <div class="col4 d-flex justify-content-center flex-row mt-2 pb-1">
-                  
-                    <div class="detail-card pull-up">
-                     
-                      <img src="./Assets/carGif.gif" class="card-img-top" />
-                        <div class="card-body p-0">
-                          <h1 class="launch-number text-center ">Unique Number</h1>
-                        </div>
-                      </div>               
-                    
-                      <div class="detail-card pull-up ms-2">
-                     
-                        <img src="./Assets/carGif.gif" class="card-img-top" />
-                          <div class="card-body p-0">
-                            <h1 class="launch-number text-center">Unique Number</h1>
-                          </div>
-                        </div>
-                  </div>      
-                    </div>
-          </div>
-            <button
-              class="carousel-control-prev discovery-btn"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev" 
-            >
-              <span
-                class="fa-solid fa-angle-left"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next discovery-btn"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="fa-solid fa-angle-right"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        <div class="col-3 col-xl-3 col-lg-3 gx-1">
+          <div class="p-2 car-col">
+         <img src="./Assets/bann.jpg">
+         
+       </div>
+     </div>
+         </div>
         </div>
-        
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-3 col-xl-3 col-lg-3 gx-1 ">
+              <div class="p-2 car-col">
+               <img src="./Assets/bann.jpg" >
+             </div>
+            </div>
+            <div class="col-3 col-xl-3 col-lg-3 gx-1">
+              <div class="p-2 car-col">
+             <img src="./Assets/bann.jpg">
+           </div></div>
+            <div class="col-3 col-xl-3 col-lg-3 gx-1">
+              <div class="p-2 car-col">
+             <img src="./Assets/bann.jpg" >
+             
+           </div>
+         </div>
+         <div class="col-3 col-xl-3 col-lg-3 gx-1">
+           <div class="p-2 car-col">
+          <img src="./Assets/bann.jpg">
+          
+        </div>
       </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-3 col-xl-3 col-lg-3 gx-1 ">
+              <div class="p-2 car-col">
+               <img src="./Assets/bann.jpg" >
+             </div>
+            </div>
+            <div class="col-3 col-xl-3 col-lg-3 gx-1">
+              <div class="p-2 car-col">
+             <img src="./Assets/bann.jpg">
+           </div></div>
+            <div class="col-3 col-xl-3 col-lg-3 gx-1">
+              <div class="p-2 car-col">
+             <img src="./Assets/bann.jpg" >
+             
+           </div>
+         </div>
+         <div class="col-3 col-xl-3 col-lg-3 gx-1">
+           <div class="p-2 car-col">
+          <img src="./Assets/bann.jpg">
+          
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev cat-car-left" type="button" data-bs-target="#carouselExampleControlsCat" data-bs-slide="prev" style="left:1.5% ;">
+        <span class="fa-solid fa-chevron-left" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next cat-car-right" type="button" data-bs-target="#carouselExampleControlsCat" data-bs-slide="next" style="right:1.5% ;">
+        <span class="fa-solid fa-chevron-right" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+   </div>
   </section> 
 
 
@@ -365,50 +398,147 @@
 
 </section>
 
-
-<section >
-  <div class="container-fluid d-flex flex-column align-items-center py-3">
-    <h2 class="mb-2 fw-bold" style="color:#2f3043;">FOLLOW THESE STEPS</span>
-    </h2>
-   
- 
-  <div class="row mt-3">
-<div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-20">
-  <div class="d-flex flex-column align-items-center">
-  <h5 class="fw-bold mb-4">EASY STEPS TO BUY
-    YOUR VIP NUMBER ?</h5>
-  <div class="col-video-cont">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5oraOVGvrqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 12px;"loading="eager" class="vid-vid"></iframe>
-  </div>
-<div class="mt-4 step-icon-cont">
-<p><i class="fa-solid fa-handshake"></i></span>&nbsp; Select your favourable mobile number. The one you like and which suits your personality.</p>
-<p><i class="fa-solid fa-money-bill-1-wave"></i>&nbsp; Once your chosen mobile number is finalised, proceed to checkout and make the payment.</p>
-<p><i class="fa-solid fa-barcode"></i>&nbsp; You will receive a Unique Porting Code (UPC) along with invoice within 24 hour on your Registered Mobile Number.</p>
-<p><i class="fa-solid fa-sim-card"></i>&nbsp; Visit any Telecom Gallery or Mobile Shop and port the number. You can get your number ported to any network, on your Name.</p>
-</div>
-
-
-  </div>
-</div>
-<div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-20 mt-lg-0">
-<div class="d-flex flex-column align-items-center">
-  <h5 class="fw-bold mb-4">अपना वीआईपी नंबर खरीदने के लिए कदम ?</h5>
-  <div class="col-video-cont">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 12px;"loading="eager" class="vid-vid"></iframe>
-  </div>
-  <div class="mt-4 step-icon-cont">
-  <p><i class="fa-solid fa-handshake"></i></span>&nbsp; अपना अनुकूल मोबाइल नंबर चुनें। जिसे आप पसंद करते हैं और जो आपकी पर्सनैलिटी पर सूट करता है।</p>
-  <p><i class="fa-solid fa-money-bill-1-wave"></i>&nbsp; एक बार आपका चुना हुआ मोबाइल नंबर फाइनल हो जाने के बाद, चेकआउट के लिए आगे बढ़ें और भुगतान करें।</p>
-  <p><i class="fa-solid fa-barcode"></i>&nbsp; आपको अपने पंजीकृत मोबाइल नंबर पर 24 घंटे के भीतर चालान के साथ एक विशिष्ट पोर्टिंग कोड (यूपीसी) प्राप्त होगा।</p>
-  <p><i class="fa-solid fa-sim-card"></i>&nbsp; किसी भी टेलीकॉम गैलरी या मोबाइल शॉप पर जाएं और नंबर पोर्ट करें। आप अपने नाम पर किसी भी नेटवर्क पर अपना नंबर पोर्ट करवा सकते हैं।</p>
-  
-  </div>
-  
- 
+<section>
+  <h1 class="text-center my-3" style="color:rgb(21,30,82);font-family: 'Montserrat';">Follow These 4 <span style="color:#9e48cd;">Easy Steps</span></h1>
+  <div class="d-flex justify-content-center">
+    <!--step1-->
+    <div class="step1box m-3">
+      <div class="d-flex flex-row">
+        <div class="topLeft d-flex justify-content-center align-items-center">
+          <div class="stepNumBox">
+            <h2 class="StepNumber">01</h2>
+          </div>
+        </div>
+        <div
+          class="topRight d-flex justify-content-center align-items-center"
+        >
+          <div class="step-icon">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+        </div>
+      </div>
+      <div class="steppara p-3">
+        <i class="fa-solid fa-circle-plus"></i>
+        <div class="d-flex justify-content-start flex-column px-3">
+          <h2 class="stepName">Choose your desired number</h2>
+          <p>Choose your most liked Number from Our Website</p>
+        </div>
+      </div>
     </div>
+    <!--step1-->
+    <!--step2-->
+    <div class="step2box m-3">
+      <div class="d-flex flex-row">
+        <div
+          class="topRight d-flex justify-content-center align-items-center"
+          style="border-bottom-left-radius: 0"
+        >
+          <div class="step-icon">
+            <i class="fa-solid fa-credit-card"></i>
+          </div>
+        </div>
+        <div class="topLeft d-flex justify-content-center align-items-center">
+          <div class="stepNumBox">
+            <h2 class="StepNumber">02</h2>
+          </div>
+        </div>
+      </div>
+      <div
+        class="steppara p-3"
+        style="border-top-left-radius: 0; border-top-right-radius: 10px"
+      >
+        <i class="fa-solid fa-circle-plus"></i>
+        <div class="d-flex justify-content-start flex-column px-3">
+          <h2 class="stepName">Make Payment</h2>
+          <p>
+            Make payment For the Number which you will chose from website with
+            debit card/credit card paytm/UPI OR any other option.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--step2-->
   </div>
-
-</div>
+  <div class="d-flex justify-content-center">
+    <!--step3-->
+    <div class="step3box m-3">
+      <div
+        class="steppara p-3"
+        style="border-top-right-radius: 10px; border-bottom-right-radius: 0px"
+      >
+        <i class="fa-solid fa-circle-plus"></i>
+        <div class="d-flex justify-content-start flex-column px-3">
+          <h2 class="stepName">Get your Sim</h2>
+          <p>
+            Visit any retail shop or any care along with your Address proof,
+            they will port your Number into any network on your name.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-row">
+        <div
+          class="topLeft d-flex justify-content-center align-items-center"
+          style="margin-top: 15px; margin-bottom: 0px"
+        >
+          <div class="stepNumBox">
+            <h2 class="StepNumber">04</h2>
+          </div>
+        </div>
+        <div
+          class="topRight d-flex justify-content-center align-items-center"
+          style="
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          "
+        >
+          <div class="step-icon">
+            <i class="fa-solid fa-address-card"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--step3-->
+    <!--step4-->
+    <div class="step4box m-3">
+      <div
+        class="steppara p-3"
+        style="border-top-right-radius: 10px; border-bottom-left-radius: 0"
+      >
+        <i class="fa-solid fa-circle-plus"></i>
+        <div class="d-flex justify-content-start flex-column px-3">
+          <h2 class="stepName">Get your Unique code</h2>
+          <p>
+            We will provide You a UNIQUE PORTING CODE (UPC) in 4 to 5 hours
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-row">
+        <div
+          class="topRight d-flex justify-content-center align-items-center"
+          style="
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          "
+        >
+          <div class="step-icon">
+            <i class="fa-solid fa-qrcode"></i>
+          </div>
+        </div>
+        <div
+          class="topLeft d-flex justify-content-center align-items-center"
+          style="margin-top: 15px; margin-bottom: 0px"
+        >
+          <div class="stepNumBox">
+            <h2 class="StepNumber">03</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--step4-->
   </div>
 </section>
 
@@ -432,287 +562,361 @@
   
   </section>
 
-  <section class="Trust" style="padding: 1.5rem 0;">
-    <h2 class="trust-title">
-      Have Any Trust Issue <span class="fa-solid fa-circle-question"></span>
-    </h2>
-    <div class="container-fluid mt-4">
+  <section class="py-3">
+    <div class="container-fluid" style="position: relative">
+      <h1 class="testimonial-title">
+        testimonial <i class="fa-solid fa-message" style="color:#9e48cd ;"></i>
+      </h1>
       <div class="row align-items-center">
-        <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 gx-0 ps-3">
-          <!--Para English-->
-          <p class="trust-english">
-            VIP NUMBER STORE is known across India as a company that provides
-            valuable and high quality services since 2010. For eight years we
-            have successfully sold over 10,000+ numbers to our customers in
-            India and have never stopped our self from serving efficiently.
-            <br />
-            Our success and achievements could be determined by the long-term
-            relations that we have with numerous VIP's in India, who have
-            happily taken fancy, extraordinary looking numbers from us.
-          </p>
-        </div>
-        <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 gx-0">
-          <div class="trust-image">
-            <img src="./Assets/trust.png" alt="trust-image"/>
-          </div>
-        </div>
-        <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-          <!--Para Hindi-->
-          <p class="trust-hindi">
-            VIP NUMBER STORE पूरे भारत में एक ऐसी कंपनी के रूप में जानी जाती
-            है जो प्रदान करती है 2010 से मूल्यवान और उच्च गुणवत्ता वाली
-            सेवाएं। आठ वर्षों के लिए हम में हमारे ग्राहकों को 10,000+ से अधिक
-            नंबर सफलतापूर्वक बेचे हैं भारत और कभी भी अपने आप को कुशलता से सेवा
-            करने से नहीं रोका।
-            <br />
-            हमारी सफलता और उपलब्धियों को दीर्घावधि द्वारा निर्धारित किया जा
-            सकता है भारत में कई वीआईपी के साथ हमारे संबंध हैं, जिनके पास है
-            हमसे खुशी-खुशी फैंसी, असाधारण दिखने वाली संख्याएँ ली गईं।
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="testimonial mt-4">
-    <h2 class="testimonial-title">
-      testimonial's <span class="fa-solid fa-comment"></span>
-    </h2>
-    <div class="container-fluid mt-5">
-      <div class="row">
-        <div class="col col-xl-4">
+        <div class="col-xl-2 col-lg-2 col-2">
           <div class="testimonial-image">
-            <img src="./Assets/testimonial.svg" alt="testimonial-image" />
+            <img src="./Assets/testimonial.svg.jpg" />
           </div>
         </div>
-        <div class="col col-xl-8">
-          <div class="row">
-            <div class="col-12 m-auto">
-              <div class="owl-carousel owl-theme">
-                <div class="item mb-4">
-                  <div class="back p-3">
-                    <div class="ReviewByUser px-2">
-                      <div class="user-image">
-                        <img src="./Assets/user.png" />
-                      </div>
-                      <div
-                        class="d-flex justify-content-start flex-column user mx-3"
-                      >
-                        <h1 class="userName">Sonia</h1>
-                        <div class="stars">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+        <div class="col-xl-10 col-lg-10 col-lg-2">
+          <div
+            id="carouselExampleControls-Desktop"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
                         </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
                       </div>
                     </div>
-                    <p class="user-review px-2 mt-2">
-                      I have purchased numbers from NUMBERSpoint and have been
-                      satisfied by the quick response.
-                    </p>
-                    <div class="d-flex justify-content-start">
-                      <button class="btn btn-primary">view</button>
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="item">
-                  <div class="back p-3">
-                    <div class="ReviewByUser px-2">
-                      <div class="user-image">
-                        <img src="./Assets/user.png" />
-                      </div>
-                      <div
-                        class="d-flex justify-content-start flex-column user mx-3"
-                      >
-                        <h1 class="userName">Sonia</h1>
-                        <div class="stars">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
                         </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
                       </div>
                     </div>
-                    <p class="user-review px-2 mt-2">
-                      I have purchased numbers from NUMBERSpoint and have been
-                      satisfied by the quick response.
-                    </p>
-                    <div class="d-flex justify-content-start">
-                      <button class="btn btn-primary">view</button>
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="item">
-                  <div class="back p-3">
-                    <div class="ReviewByUser px-2">
-                      <div class="user-image">
-                        <img src="./Assets/user.png" />
-                      </div>
-                      <div
-                        class="d-flex justify-content-start flex-column user mx-3"
-                      >
-                        <h1 class="userName">Sonia</h1>
-                        <div class="stars">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
                         </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
                       </div>
                     </div>
-                    <p class="user-review px-2 mt-2">
-                      I have purchased numbers from NUMBERSpoint and have been
-                      satisfied by the quick response.
-                    </p>
-                    <div class="d-flex justify-content-start">
-                      <button class="btn btn-primary">view</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="back p-3">
-                    <div class="ReviewByUser px-2">
-                      <div class="user-image">
-                        <img src="./Assets/user.png" />
-                      </div>
-                      <div
-                        class="d-flex justify-content-start flex-column user mx-3"
-                      >
-                        <h1 class="userName">Sonia</h1>
-                        <div class="stars">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
                         </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
                       </div>
                     </div>
-                    <p class="user-review px-2 mt-2">
-                      I have purchased numbers from NUMBERSpoint and have been
-                      satisfied by the quick response.
-                    </p>
-                    <div class="d-flex justify-content-start">
-                      <button class="btn btn-primary">view</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="back p-3">
-                    <div class="ReviewByUser px-2">
-                      <div class="user-image">
-                        <img src="./Assets/user.png" />
-                      </div>
-                      <div
-                        class="d-flex justify-content-start flex-column user mx-3"
-                      >
-                        <h1 class="userName">Sonia</h1>
-                        <div class="stars">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
                         </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
                       </div>
                     </div>
-                    <p class="user-review px-2 mt-2">
-                      I have purchased numbers from NUMBERSpoint and have been
-                      satisfied by the quick response.
-                    </p>
-                    <div class="d-flex justify-content-start">
-                      <button class="btn btn-primary">view</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="back p-3">
-                    <div class="ReviewByUser px-2">
-                      <div class="user-image">
-                        <img src="./Assets/user.png" />
-                      </div>
-                      <div
-                        class="d-flex justify-content-start flex-column user mx-3"
-                      >
-                        <h1 class="userName">Sonia</h1>
-                        <div class="stars">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+                    <div class="col-xl-3 col-lg-3 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
                         </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on
+                          the follow up side. Keep it up and going!
+                        </p>
                       </div>
-                    </div>
-                    <p class="user-review px-2 mt-2">
-                      I have purchased numbers from NUMBERSpoint and have been
-                      satisfied by the quick response.
-                    </p>
-                    <div class="d-flex justify-content-start">
-                      <button class="btn btn-primary">view</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls-Desktop"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls-Desktop"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section style="padding:2rem 0">
-    <div class="container">
-      <div class="row ">
-        <div class="col-4 col-xl-4 col-lg-4 col-trust">  
-          <div class="card" >
-            <div class="card-body">
-              <h4 class="card-title text-center">How We Deliver <i class="fa-solid fa-truck ms-1" style="color: rgba(242,56,0,1);"></i></h4>
-              
-              <p class="card-text mt-4">Each order is processed asap
-                payment
-                is done by the customer. The customer support team will be in touch with you
-                until you receive your number successfully.</p>
-              <a href="#" class="card-link">Read More</a>
-            </div>
-          </div>  
-        </div>
-        <div class="col-4 col-xl-4 col-lg-4 col-trust">    
-          <div class="card" >
-            <div class="card-body w-100">
-              <h4 class="card-title text-center">Why Trust Us <i class="fa-solid fa-handshake-simple ms-1" style="color: rgba(242,56,0,1);"></i></h4>             
-              <p class="card-text mt-4">We are the only #1 Oldest, Trusted
-                And
-                Reputed VIP Number Seller Across India With 13 Years Proven Track Record Of
-                Providing Top-Notch VIP Number services. </p>
-              <a href="#" class="card-link mx-auto">Read More</a>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-4 col-xl-4 col-lg-4 col-trust">    
-          <div class="card" >
-            <div class="card-body">
-              <h4 class="card-title text-center">Secure Payment <i class="fa-solid fa-money-check-dollar ms-1" style="color: rgba(242,56,0,1);"></i></h4>
-              <p  class="card-text mt-4">We work with safe and secure
-                payment
-                options, online banking, credit/debit card, UPI, and even COD. Your money is
-                safe at every stage, thanks to our robust and secure payment system.</p>
-              <a href="#" class="card-link">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="container-fluid" style="padding: 1rem 2rem; background: linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
-
-    <section style="width: 100%;margin: 0 auto;" class="px-2">
-      <img src="./Assets/GIF-banner.gif" style="width: 100%;border-radius:25px;">
-    </section>
-    </div>
+   
 </main>
 
 <footer class="footer-07">
@@ -823,25 +1027,26 @@
     <div class="container-fluid p-0" style="background:white">
       <div id="myNav" class="overlay"> 
       
-    <div class="d-flex align-items-center justify-content-between px-4 pt-2">
-      <a href="./index3.html"><div class="mob-logo-cont pb-2" ><img src="Assets/orangeLogo.png" style="width: 100%;height:100%"></div></a>
-<div class="d-flex justify-content-center">
-   
+    <div class="d-flex align-items-center justify-content-between px-3 pt-2">
+      <button class="border-0 d-flex flex-column align-items-center nav-mob-toggler ms-2 bg-white">
+        <span class="fa-solid fa-bars " id="nav-mob-icon" ></span> Menu
+      </button>
+      <a href="./index3.html"><div class="mob-logo-cont pb-2" ><img src="Assets/logo2.jpg" style="width: 100%;height:100%"></div></a>
+<div class="d-flex ">
+   <button class="border-0 d-flex flex-column align-items-center bg-white text-dark me-2"><i class="fa fa-heart" style="font-size:1.4rem; color: red;"></i>Wishlist</button>
   <button class="border-0 d-flex flex-column align-items-center bg-white text-dark">
-    <img src="./Assets/cart.png" style="width:1.4rem" alt="cart-img">
+    <img src="./Assets/bag.jpg" style="width:1.4rem" alt="cart-img">
     My Cart
   </button>
   <span class="cart-count">0</span>
-      <button class="border-0 d-flex flex-column align-items-center nav-mob-toggler ms-2 bg-white">
-        <span class="fa-solid fa-ellipsis-vertical " id="nav-mob-icon" ></span> Menu
-      </button>
+      
     </div>
 
 
 
     </div>
     <div class="px-2" id="sm-nav-input" style="background-color:#fff;">
-    <form class="form-inline mx-auto d-flex mx-auto px-1" style="border:2px solid #F23900; border-radius: 20px;width: 100%;">
+    <form class="form-inline mx-auto d-flex mx-auto px-1" style="border:2px solid #bf68e6; border-radius: 20px;width: 100%;">
       <select class="custom-select border-0 text-dark" style="border-radius:15px;background-color: #fff;outline: none;" id="inputGroupSelect01">
         <option selected="">Anywhere</option>
         <option>Sum Total</option>
@@ -851,7 +1056,7 @@
         <option value="2">Not Contains</option>
       </select>
       <input class="form-control border-0" style="border-radius: 20px;"type="text" placeholder="Search Number" aria-label="Search">
-      <a class="btn border-0" type="submit" style="background:#fff !important;color: #dc3545 !important;padding: 4.5px 8px;border-radius: 15px;margin-top: 2px;"><i class="fa-solid fa-magnifying-glass"></i></a >
+      <a class="btn border-0" type="submit" style="background:#fff !important;color: #9e48cd !important;padding: 4.5px 8px;border-radius: 15px;margin-top: 2px;"><i class="fa-solid fa-magnifying-glass"></i></a >
     </form> </div>
    
         <div class="overlay-content d-flex">
@@ -952,7 +1157,114 @@
       </div>
          
      </section>
-  
+     <div class="d-block d-lg-none">
+      <button class="chatButtonMobile">
+        <i class="fa-solid fa-message fa-2x"></i>
+      </button>
+       <div class="boxMobile d-none p-3">
+        <div class="d-flex justify-content-end">
+          <i class="fa-solid fa-xmark closeMobile"></i>
+        </div>
+        <div class="d-flex flex-column">
+          <button class="btn btn-primary mt-2">
+            Chat with us <i class="fa-solid fa-comment"></i>
+          </button>
+          <button class="btn btn-primary mt-2">
+            Contact us <i class="fa-solid fa-phone-flip"></i>
+          </button>
+          <button class="btn btn-primary mt-2 faqMobile">
+            FAQ <i class="fa-solid fa-circle-question"></i>
+          </button>
+        </div>
+      </div>
+      <div class="faqSectionMobile d-none p-3">
+        <div class="d-flex justify-content-start">
+          <i class="fa-solid fa-left-long closeFaqMobile"></i>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample-sm">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOneMobile">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOneMobile"
+                aria-expanded="false"
+                aria-controls="flush-collapseOneMobile"
+              >
+                What is a VIP number ?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOneMobile"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOneMobile"
+              data-bs-parent="#accordionFlushExample-sm"
+            >
+              <div class="accordion-body">
+                MNP stands for Mobile Number Portability, it is basically the
+                process to switch your current mobile number to another network
+                service provider without having to buy a new number. It allows
+                you to keep the same number even after changing the number’s
+                service provider.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwoMobile">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwoMobile"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwoMobile"
+              >
+                Can I choose my mobile number?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwoMobile"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample-sm"
+            >
+              <div class="accordion-body">
+                Yes, that is what we offer, a choice for all. You can suggest a
+                number of your wish or you can even select one from our
+                collection. As always, the choice is yours.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThreeMobile">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThreeMobile"
+                aria-expanded="false"
+                aria-controls="flush-collapseThreeMobile"
+              >
+                How to book a number/service?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThreeMobile"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThreeMobile"
+              data-bs-parent="#accordionFlushExample-sm"
+            >
+              <div class="accordion-body">
+                Select a number then book it. This gives your details to our
+                sales team who will coordinate with you within the next 24
+                working hrs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
   <main>
   <div class="carousel-cont mt-2">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
@@ -1012,170 +1324,29 @@
   </div>
   
   
-  <section style="padding: 1.5rem 0;background: rgba(255, 168, 0,0.2);">
-    <div>
-      <div class="row">
-        <div class="col col-xl-4 col-lg-12 col-md-12 col-12">
-          <div class="col3 d-flex flex-column align-items-center">
-            <h1 class="discover-title text-center" data-aos="fade-left" style="color: #2f3043;">Trending</h1>
-            <hr class="w-100 my-0 "/>
-            <p class="discover-para text-center mb-0" data-aos="fade-right" data-aos-duration="1200">
-              Categories
-            </p>
-            <button class="btn d-flex justify-content-center mt-0 mb-3">Discover Categories</button>
-          </div>
-        </div>
-        <div class="col-md-12 col-12">
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="col4 d-flex justify-content-center flex-row">
-                
-                  <div class="detail-card pull-up">
-                   
-                    <img src="./Assets/carGif.gif" class="card-img-top" />
-                      <div class="card-body p-0">
-                        <h1 class="launch-number text-center">Unique Number</h1>
-                      </div>
-                    </div>               
-                  
-                    <div class="detail-card pull-up ms-2">
-                   
-                      <img src="./Assets/carGif.gif" class="card-img-top" />
-                      <div class="card-body p-0">
-                        <h1 class="launch-number text-center">Unique Number</h1>
-                      </div>
-                    </div>  
-                </div>  
-                <div class="col4 d-flex justify-content-center flex-row mt-2 pb-1">
-                
-                  <div class="detail-card pull-up">
-                   
-                    <img src="./Assets/carGif.gif" class="card-img-top" />
-                      <div class="card-body p-0">
-                        <h1 class="launch-number text-center">Unique Number</h1>
-                      </div>
-                    </div>               
-                  
-                    <div class="detail-card pull-up ms-2">
-                   
-                      <img src="./Assets/carGif.gif" class="card-img-top" />
-                      <div class="card-body p-0">
-                        <h1 class="launch-number text-center ">Unique Number</h1>
-                      </div>
-                    </div>  
-                </div>      
-                  </div>
+  <section style="padding: 1.5rem 4%;">
+   <h2 class="text-center text-uppercase">Categories</h2>
 
-                  <div class="carousel-item ">
-                    <div class="col4 d-flex justify-content-center flex-row">
-                
-                      <div class="detail-card pull-up">
-                       
-                        <img src="./Assets/carGif.gif" class="card-img-top" />
-                          <div class="card-body p-0">
-                            <h1 class="launch-number text-center ">Unique Number</h1>
-                          </div>
-                        </div>               
-                      
-                        <div class="detail-card pull-up ms-2">
-                       
-                          <img src="./Assets/carGif.gif" class="card-img-top" />
-                          <div class="card-body p-0">
-                            <h1 class="launch-number text-center">Unique Number</h1>
-                          </div>
-                        </div>  
-                    </div>  
-                    <div class="col4 d-flex justify-content-center flex-row mt-2 pb-1">
-                    
-                      <div class="detail-card pull-up">
-                       
-                        <img src="./Assets/carGif.gif" class="card-img-top" />
-                          <div class="card-body p-0">
-                            <h1 class="launch-number text-center">Unique Number</h1>
-                          </div>
-                        </div>               
-                      
-                        <div class="detail-card pull-up ms-2">
-                       
-                          <img src="./Assets/carGif.gif" class="card-img-top" />
-                          <div class="card-body p-0">
-                            <h1 class="launch-number text-center">Unique Number</h1>
-                          </div>
-                        </div>  
-                    </div>       
-                      </div>
-                      <div class="carousel-item ">
-                        <div class="col4 d-flex justify-content-center flex-row">
-                
-                          <div class="detail-card pull-up">
-                           
-                            <img src="./Assets/carGif.gif" class="card-img-top" />
-                              <div class="card-body p-0">
-                                <h1 class="launch-number text-center">Unique Number</h1>
-                              </div>
-                            </div>               
-                          
-                            <div class="detail-card pull-up ms-2">
-                           
-                              <img src="./Assets/carGif.gif" class="card-img-top" />
-                              <div class="card-body p-0">
-                                <h1 class="launch-number text-center">Unique Number</h1>
-                              </div>
-                            </div>  
-                        </div>  
-                        <div class="col4 d-flex justify-content-center flex-row mt-2 pb-1">
-                        
-                          <div class="detail-card pull-up">
-                           
-                            <img src="./Assets/carGif.gif" class="card-img-top" />
-                              <div class="card-body p-0">
-                                <h1 class="launch-number text-center">Unique Number</h1>
-                              </div>
-                            </div>               
-                          
-                            <div class="detail-card pull-up ms-2">
-                           
-                              <img src="./Assets/carGif.gif" class="card-img-top" />
-                              <div class="card-body p-0">
-                                <h1 class="launch-number text-center">Unique Number</h1>
-                              </div>
-                            </div>  
-                        </div>        
-                          </div>
-            </div>
-            <button
-              class="carousel-control-prev discovery-btn d-none d-md-block"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev" 
-            >
-              <span
-                class="fa-solid fa-angle-left"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next discovery-btn d-none d-md-block"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="fa-solid fa-angle-right"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    <div id="carouselExampleControlsCatSm" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Assets/bann.jpg" class="d-block w-100" alt="...">
         </div>
-        
+        <div class="carousel-item">
+          <img src="./Assets/bann.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Assets/bann.jpg" class="d-block w-100" alt="...">
+        </div>
       </div>
+      <button class="carousel-control-prev cat-car-left" style="left:1.5% ;" type="button" data-bs-target="#carouselExampleControlsCatSm" data-bs-slide="prev">
+        <span class="fa-solid fa-chevron-left" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next cat-car-right" style="right:1.5% ;" type="button" data-bs-target="#carouselExampleControlsCatSm" data-bs-slide="next">
+        <span class="fa-solid fa-chevron-right" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </section>       
     
@@ -1201,58 +1372,10 @@
     </section>
   
   
-  <section class="px-2">
-    <div class="container-lg d-flex flex-column align-items-center py-2">
-      <h6 class="fw-bold my-2 step-toggle-heading" style="color:#2f3043;">EASY STEPS TO BUY
-        YOUR VIP NUMBER ?</h6>
-        <ul class="nav nav-tabs mt-2">
-          <li class="nav-item">
-            <a class="active" aria-current="page" id="eng-btn" onclick="toggleEng()">English</a>
-          </li>
-          <li class="nav-item ms-3">
-            <a id="hin-btn" onclick="toggleHin()">हिन्दी</a>
-          </li>
-         
-        </ul>
-   
-    <div class="row mt-2">
-  <div class="col-12 col-lg-6 col-md-12 col-20 eng-text">
-    <div class="d-flex flex-column align-items-center">
-    
-    <div class="col-video-cont">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5oraOVGvrqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 12px;"loading="eager" class="vid-vid"></iframe>
-    </div>
-  <div class="mt-2 step-icon-cont mt-1">
-  <p><i class="fa-solid fa-handshake"></i></span>&nbsp; Select your favourable mobile number. The one you like and which suits your personality.</p>
-  <p><i class="fa-solid fa-money-bill-1-wave"></i>&nbsp; Once your chosen mobile number is finalised, proceed to checkout and make the payment.</p>
-  <p><i class="fa-solid fa-barcode"></i>&nbsp; You will receive a Unique Porting Code (UPC) along with invoice within 24 hour on your Registered Mobile Number.</p>
-  <p><i class="fa-solid fa-sim-card"></i>&nbsp; Visit any Telecom Gallery or Mobile Shop and port the number. You can get your number ported to any network, on your Name.</p>
-  </div>
   
-  
-    </div>
-  </div>
-  <div class="col-12 col-lg-6 col-md-12 col-20 hin-text">
-  <div class="d-flex flex-column align-items-center">
-   
-    <div class="col-video-cont">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 12px;"loading="eager" class="vid-vid"></iframe>
-    </div>
-    <div class="mt-1 step-icon-cont">
-    <p><i class="fa-solid fa-handshake"></i></span>&nbsp; अपना अनुकूल मोबाइल नंबर चुनें। जिसे आप पसंद करते हैं और जो आपकी पर्सनैलिटी पर सूट करता है।</p>
-    <p><i class="fa-solid fa-money-bill-1-wave"></i>&nbsp; एक बार आपका चुना हुआ मोबाइल नंबर फाइनल हो जाने के बाद, चेकआउट के लिए आगे बढ़ें और भुगतान करें।</p>
-    <p><i class="fa-solid fa-barcode"></i>&nbsp; आपको अपने पंजीकृत मोबाइल नंबर पर 24 घंटे के भीतर चालान के साथ एक विशिष्ट पोर्टिंग कोड (यूपीसी) प्राप्त होगा।</p>
-    <p><i class="fa-solid fa-sim-card"></i>&nbsp; किसी भी टेलीकॉम गैलरी या मोबाइल शॉप पर जाएं और नंबर पोर्ट करें। आप अपने नाम पर किसी भी नेटवर्क पर अपना नंबर पोर्ट करवा सकते हैं।</p>
-    
-    </div>
-    
-   
-      </div>
-    </div>
-  
-  </div>
-    </div>
-  </section>
+
+
+
   
   <section  style="padding: 1.5rem 0;">
    
@@ -1273,289 +1396,215 @@
     
     </div>
     </section>
-    <section style="padding:1rem 0">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-4 col-trust">  
-            <div class="card" >
-              <div class="card-body">
-                <h6 class="card-title text-center">How We Deliver <i class="fa-solid fa-truck ms-1" style="color:rgba(242,56,0,1) ;"></i></h6>
-                
-                <p class="card-text mt-3">Each order is processed asap
-                  payment
-                  is done by the customer. The customer support team will be in touch with you
-                  until you receive your number successfully.</p>
-                <a href="#" class="card-link">Read More</a>
-              </div>
-            </div>  
-          </div>
-          <div class="col-12 col-md-4 col-trust mt-2 mt-md-0">    
-            <div class="card" >
-              <div class="card-body w-100">
-                <h6 class="card-title text-center">Why Trust Us <i class="fa-solid fa-handshake-simple ms-1" style="color:rgba(242,56,0,1)"></i></h6>             
-                <p class="card-text mt-3">We are the only #1 Oldest, Trusted
-                  And
-                  Reputed VIP Number Seller Across India With 13 Years Proven Track Record Of
-                  Providing Top-Notch VIP Number services. </p>
-                <a href="#" class="card-link mx-auto">Read More</a>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-trust mt-2 mt-md-0">    
-            <div class="card" >
-              <div class="card-body">
-                <h6 class="card-title text-center">Secure Payment <i class="fa-solid fa-money-check-dollar ms-1"
-                  style="color:rgba(242,56,0,1)"></i></h6>
-                <p  class="card-text mt-3">We work with safe and secure
-                  payment
-                  options, online banking, credit/debit card, UPI, and even COD. Your money is
-                  safe at every stage, thanks to our robust and secure payment system.</p>
-                <a href="#" class="card-link">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="Trust py-3" >
-      <h2 class="trust-title">
-        Have Any Trust Issue <span class="fa-solid fa-circle-question"></span>
-      </h2>
-      <div class="container-fluid mt-4">
-        <div class="row align-items-center">
-          <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-            <!--Para English-->
-            <p class="trust-english">
-              VIP NUMBER STORE is known across India as a company that provides
-              valuable and high quality services since 2010. For eight years we
-              have successfully sold over 10,000+ numbers to our customers in
-              India and have never stopped our self from serving efficiently.
-              <br />
-              Our success and achievements could be determined by the long-term
-              relations that we have with numerous VIP's in India, who have
-              happily taken fancy, extraordinary looking numbers from us.
-            </p>
-          </div>
-          <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-            <div class="trust-image">
-              <img src="./Assets/trust.png" alt="trust-image" />
-            </div>
-          </div>
-          <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-            <!--Para Hindi-->
-            <p class="trust-hindi">
-              VIP NUMBER STORE पूरे भारत में एक ऐसी कंपनी के रूप में जानी जाती
-              है जो प्रदान करती है 2010 से मूल्यवान और उच्च गुणवत्ता वाली
-              सेवाएं। आठ वर्षों के लिए हम में हमारे ग्राहकों को 10,000+ से अधिक
-              नंबर सफलतापूर्वक बेचे हैं भारत और कभी भी अपने आप को कुशलता से सेवा
-              करने से नहीं रोका।
-              <br />
-              हमारी सफलता और उपलब्धियों को दीर्घावधि द्वारा निर्धारित किया जा
-              सकता है भारत में कई वीआईपी के साथ हमारे संबंध हैं, जिनके पास है
-              हमसे खुशी-खुशी फैंसी, असाधारण दिखने वाली संख्याएँ ली गईं।
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  
+   
 
-    <section class="testimonial mt-4">
-      <h2 class="testimonial-title">
-        testimonial's <span class="fa-solid fa-comment"></span>
-      </h2>
-      <div class="container-fluid mt-4">
-        <div class="row">
-          <div class="col col-xl-4">
-            <div class="testimonial-image">
-              <img src="./Assets/testimonial.svg" alt="testimonial-image" />
-            </div>
-          </div>
-          <div class="col col-xl-8">
-            <div class="row">
-              <div class="col-12 m-auto">
-                <div class="owl-carousel owl-theme">
-                  <div class="item mb-4">
-                    <div class="back p-3">
-                      <div class="ReviewByUser px-2">
-                        <div class="user-image">
-                          <img src="./Assets/user.png" />
-                        </div>
-                        <div
-                          class="d-flex justify-content-start flex-column user mx-3"
-                        >
-                          <h1 class="userName">Sonia</h1>
-                          <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+   
+    <section>
+      <div class="container-fluid" style="position: relative">
+        <h1 class="testimonial-title">
+          testimonial <i class="fa-solid fa-message"></i>
+        </h1>
+        <div class="container-fluid gx-0">
+          <div
+            id="carouselExampleControls-Mobile"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner p-3">
+              <div class="carousel-item active">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-12 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
                           </div>
                         </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on the
+                          follow up side. Keep it up and going!
+                        </p>
                       </div>
-                      <p class="user-review px-2 mt-2">
-                        I have purchased numbers from NUMBERSpoint and have been
-                        satisfied by the quick response.
-                      </p>
-                      <div class="d-flex justify-content-start">
-                        <button class="btn btn-primary">view</button>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on the
+                          follow up side. Keep it up and going!
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div class="item">
-                    <div class="back p-3">
-                      <div class="ReviewByUser px-2">
-                        <div class="user-image">
-                          <img src="./Assets/user.png" />
-                        </div>
-                        <div
-                          class="d-flex justify-content-start flex-column user mx-3"
-                        >
-                          <h1 class="userName">Sonia</h1>
-                          <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-12 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
                           </div>
                         </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on the
+                          follow up side. Keep it up and going!
+                        </p>
                       </div>
-                      <p class="user-review px-2 mt-2">
-                        I have purchased numbers from NUMBERSpoint and have been
-                        satisfied by the quick response.
-                      </p>
-                      <div class="d-flex justify-content-start">
-                        <button class="btn btn-primary">view</button>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on the
+                          follow up side. Keep it up and going!
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div class="item">
-                    <div class="back p-3">
-                      <div class="ReviewByUser px-2">
-                        <div class="user-image">
-                          <img src="./Assets/user.png" />
-                        </div>
-                        <div
-                          class="d-flex justify-content-start flex-column user mx-3"
-                        >
-                          <h1 class="userName">Sonia</h1>
-                          <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-12 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <p class="user-review px-2 mt-2">
-                        I have purchased numbers from NUMBERSpoint and have been
-                        satisfied by the quick response.
-                      </p>
-                      <div class="d-flex justify-content-start">
-                        <button class="btn btn-primary">view</button>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on the
+                          follow up side. Keep it up and going!
+                        </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="item">
-                    <div class="back p-3">
-                      <div class="ReviewByUser px-2">
-                        <div class="user-image">
-                          <img src="./Assets/user.png" />
-                        </div>
-                        <div
-                          class="d-flex justify-content-start flex-column user mx-3"
-                        >
-                          <h1 class="userName">Sonia</h1>
-                          <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                    <div class="col-md-6 col-sm-6 col-12 gx-1">
+                      <div class="back p-2">
+                        <div class="ReviewByUser px-2">
+                          <div class="user-image">
+                            <img src="./Assets/user.png" />
+                          </div>
+                          <div
+                            class="d-flex justify-content-start flex-column user mx-3"
+                          >
+                            <h1 class="userName">Abhishek</h1>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <p class="user-review px-2 mt-2">
-                        I have purchased numbers from NUMBERSpoint and have been
-                        satisfied by the quick response.
-                      </p>
-                      <div class="d-flex justify-content-start">
-                        <button class="btn btn-primary">view</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="back p-3">
-                      <div class="ReviewByUser px-2">
-                        <div class="user-image">
-                          <img src="./Assets/user.png" />
-                        </div>
-                        <div
-                          class="d-flex justify-content-start flex-column user mx-3"
-                        >
-                          <h1 class="userName">Sonia</h1>
-                          <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <p class="user-review px-2 mt-2">
-                        I have purchased numbers from NUMBERSpoint and have been
-                        satisfied by the quick response.
-                      </p>
-                      <div class="d-flex justify-content-start">
-                        <button class="btn btn-primary">view</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="back p-3">
-                      <div class="ReviewByUser px-2">
-                        <div class="user-image">
-                          <img src="./Assets/user.png" />
-                        </div>
-                        <div
-                          class="d-flex justify-content-start flex-column user mx-3"
-                        >
-                          <h1 class="userName">Sonia</h1>
-                          <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <p class="user-review px-2 mt-2">
-                        I have purchased numbers from NUMBERSpoint and have been
-                        satisfied by the quick response.
-                      </p>
-                      <div class="d-flex justify-content-start">
-                        <button class="btn btn-primary">view</button>
+                        <p class="user-review px-2 mt-2">
+                          Excellent service and auto bot service is good on the
+                          follow up side. Keep it up and going!
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls-Mobile"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls-Mobile"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-  <div class="container-fluid" style="padding: 0rem 1rem; background: linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% )">
-    <section style="width: 100%;margin: 0 auto;" class="px-2">
-      <img src="./Assets/GIF-banner.gif" style="width: 100%;border-radius:25px;">
-    </section>
-    </div>
+  
   <section>
     <div class="container">
       <div class="row">
@@ -1619,30 +1668,57 @@
          duration:1000}
       );
     </script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     <script
-       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-       crossorigin="anonymous"
-     ></script>
-     <script>
-       $(".owl-carousel").owlCarousel({
-         loop: true,
-         margin: 15,
-         nav: true,
-         responsive: {
-           0: {
-             items: 1,
-           },
-           600: {
-             items: 2,
-           },
-           1000: {
-             items: 3,
-           },
-         },
-       });
-     </script>
+  
+    
+   
+       <!--script for desktop-->
+    <script>
+      let btn = document.querySelector(".chatButton");
+      let chatBox = document.querySelector(".box");
+      let faq = document.querySelector(".faq");
+      let closeDesktop = document.querySelector(".closeDesktop");
+      let closeFaq = document.querySelector(".closeFaq");
+      let faqSection = document.querySelector(".faqSection");
+      btn.addEventListener("click", ShowChatBox);
+      closeDesktop.addEventListener("click", CloseChatBox);
+      function ShowChatBox() {
+        chatBox.classList.remove("d-none");
+      }
+      function CloseChatBox() {
+        chatBox.classList.add("d-none");
+      }
+      faq.addEventListener("click", function () {
+        faqSection.classList.remove("d-none");
+        chatBox.removeProperty("box-shadow");
+      });
+      closeFaq.addEventListener("click", function () {
+        faqSection.classList.add("d-none");
+      });
+    </script>
+    <!--script for desktop end-->
+   <script>
+      let btnMobile = document.querySelector(".chatButtonMobile");
+      let chatBoxMobile = document.querySelector(".boxMobile");
+      let faqMobile = document.querySelector(".faqMobile");
+      let closeMobile = document.querySelector(".closeMobile");
+      let closeFaqMobile = document.querySelector(".closeFaqMobile");
+      let faqSectionMobile = document.querySelector(".faqSectionMobile");
+      btnMobile.addEventListener("click", ShowChatBoxMobile);
+      closeMobile.addEventListener("click", CloseChatBoxMobile);
+      function ShowChatBoxMobile() {
+        chatBoxMobile.classList.remove("d-none");
+      }
+      function CloseChatBoxMobile() {
+        chatBoxMobile.classList.add("d-none");
+      }
+      faqMobile.addEventListener("click", function () {
+        faqSectionMobile.classList.remove("d-none");
+        chatBoxMobile.removeProperty(" box-shadow");
+      });
+      closeFaqMobile.addEventListener("click", function () {
+        faqSectionMobile.classList.add("d-none");
+      });
+    </script>
 
 </body>
 
