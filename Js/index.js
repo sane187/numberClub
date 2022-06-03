@@ -1,24 +1,20 @@
-let menuButton=document.querySelector(".nav-mob-toggler");
-let overlayDiv=document.querySelector(".overlay-content");
-let cardArr=document.querySelectorAll(".card-row")
-let cardSmArr=document.querySelectorAll(".card-sm-row");
+let cardArr = document.querySelectorAll(".card-row");
+let cardSmArr = document.querySelectorAll(".card-sm-row");
 
- const card=[...cardArr];
- const cardSm=[...cardSmArr];
- 
- const Arr=[1,2,3,4,5,6,7,8,9,10,11,12];
- const Arr2=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
- const Arr3=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+const card = [...cardArr];
+const cardSm = [...cardSmArr];
 
- 
+const Arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+const Arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+const Arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
 //------------------------------------------------------------------//
 
- card.map(item =>{ 
-  Arr.forEach(val=>{
-    let dov=document.createElement("div");
-    dov.classList.add("col-xl-3","col-lg-3","col-md-3","col-18","pull-up")
-    dov.innerHTML= 
-    `<div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;">
+card.map((item) => {
+  Arr.forEach((val) => {
+    let dov = document.createElement("div");
+    dov.classList.add("col-xl-3", "col-lg-3", "col-md-3", "col-18", "pull-up");
+    dov.innerHTML = `<div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;">
          <div class="d-flex justify-content-between align-items-center col-div px-2 py-1 ">
             
              <div class="d-inline-flex"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -52,17 +48,15 @@ let cardSmArr=document.querySelectorAll(".card-sm-row");
     </div>
     </div>
     `;
-  item.appendChild(dov);
-  })
+    item.appendChild(dov);
+  });
+});
 
- });
-
-cardSm.map(item =>{
-  Arr.forEach(val=>{
-    let dov=document.createElement("div");
-    dov.classList.add("col-6","col-md-6","col-18","pull-up")
-    dov.innerHTML= 
-    `  <div style="border-top-left-radius:5px;border-top-right-radius:5px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
+cardSm.map((item) => {
+  Arr.forEach((val) => {
+    let dov = document.createElement("div");
+    dov.classList.add("col-6", "col-md-6", "col-18", "pull-up");
+    dov.innerHTML = `  <div style="border-top-left-radius:5px;border-top-right-radius:5px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
     <div class="d-flex justify-content-between align-items-center col-div px-2 ">
     <div class="d-inline-flex"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
     <button class="btn-card-heart"><i class="fa-solid fa-heart"></i></button>
@@ -93,66 +87,11 @@ Total -<strong class="mx-1">37</strong> | Sum - <strong class="mx-1">8</strong> 
 </div>
 </div>
     `;
-  item.appendChild(dov);
-  })
-})
+    item.appendChild(dov);
+  });
+});
 
 //------------------------------------------------------------------------------------------------------//
-let showMenu = false;
-window.addEventListener("scroll",function(){
-    let nav=document.getElementById("navbar-top");
-    if(window.pageYOffset==0){
-      nav.classList.remove("fixed-top");
-      nav.style.boxShadow="none"
-    }
-    if(window.pageYOffset>0){  
-      nav.classList.add("fixed-top");
-      nav.style.boxShadow="0 8px 6px -6px black"
-     }
-  })
-  window.addEventListener("scroll",function(){
-    if (window.matchMedia("(max-width: 992px)").matches) {
-    
-    
-    let smallnav=document.querySelector("#sm-nav-input");
-   
-     if(window.pageYOffset==0 || window.pageYOffset<50){
-      smallnav.classList.remove("fixed-top","py-2");
-      smallnav.style.boxShadow="none"
-
-    }
-    if(window.pageYOffset>50){  
-      smallnav.classList.add("fixed-top","py-2");
-      smallnav.style.boxShadow="0 8px 6px -6px black"
-     }
-    }
-  })
-
-
-const toggleMenu =()=>{
-    let menuBtn=document.getElementById("nav-mob-icon");
-
-    if(showMenu==false){
-    
-        menuBtn.classList.remove("fa-bars");
-        menuBtn.classList.add("fa-xmark");
-        overlayDiv.style.width="100vw";
-        overlayDiv.style.height="100%";
-       showMenu =true;
-    }
-   else{
-    
-    menuBtn.classList.add("fa-bars");
-    menuBtn.classList.remove("fa-xmark");
-    overlayDiv.style.width=0;
-    overlayDiv.style.height="0";
-   showMenu =false;
-   }
-  
-}
-
-menuButton.addEventListener("click", toggleMenu);
-
 
 // const select=document.querySelector(".vip-select");
 // const pills=document.querySelector("#select-pills");
@@ -170,7 +109,7 @@ menuButton.addEventListener("click", toggleMenu);
 // const clearCategory=()=>{
 //   filterArr.splice(0,filterArr.length);
 //   pills.innerHTML="";
-  
+
 // }
 
 // const pillsDisplay =()=>{
@@ -185,7 +124,7 @@ menuButton.addEventListener("click", toggleMenu);
 //   p.className="pills-content";
 //   const btn=document.createElement("button")
 //   btn.innerText="X";
-//   btn.classList.add("pill-btn",`${index}`); 
+//   btn.classList.add("pill-btn",`${index}`);
 //   btn.addEventListener('click', function(e){
 //     let rmv = e.target.classList[1];
 //     if (rmv > -1) {
@@ -196,24 +135,19 @@ menuButton.addEventListener("click", toggleMenu);
 //   pillDiv.append(p);
 //   pillDiv.append(btn);
 //   pills.append(pillDiv);
-  
+
 // })
 // }
 
-
 //------Card Vip ----------------------------//
-let cardArr2=document.querySelectorAll(".card-vip-row")
- const card2=[...cardArr2];
+let cardArr2 = document.querySelectorAll(".card-vip-row");
+const card2 = [...cardArr2];
 
-
- card2.map(item =>{ 
-   
-  
-  Arr3.forEach(val=>{
-    let dov=document.createElement("div");
-    dov.classList.add("col-xl-4","col-lg-4","col-md-4","col-18","pull-up")
-dov.innerHTML= 
-`
+card2.map((item) => {
+  Arr3.forEach((val) => {
+    let dov = document.createElement("div");
+    dov.classList.add("col-xl-4", "col-lg-4", "col-md-4", "col-18", "pull-up");
+    dov.innerHTML = `
 <div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;">
     <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
         <i class="fa-solid fa-crown"> </i>
@@ -246,24 +180,21 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
 </div>
 </div>
 `;
-  item.appendChild(dov);
-  })
-
- });
+    item.appendChild(dov);
+  });
+});
 
 //--------------------------------------------------//
 
-
 // CArd SOLD-------------------------//
- let cardSold=document.querySelectorAll(".card-sold-row")
- const card3=[...cardSold];
- card3.map(item=>{
- Arr2.forEach(val=>{
-  let dov=document.createElement("div");
-  
-  dov.classList.add("col-xl-3","col-lg-3","col-md-3","col-18","pull-up")
-dov.innerHTML= 
-`
+let cardSold = document.querySelectorAll(".card-sold-row");
+const card3 = [...cardSold];
+card3.map((item) => {
+  Arr2.forEach((val) => {
+    let dov = document.createElement("div");
+
+    dov.classList.add("col-xl-3", "col-lg-3", "col-md-3", "col-18", "pull-up");
+    dov.innerHTML = `
 <div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1px solid #e6e6e6;box-shadow:0 0 10px grey;position: relative;">
 <figure>
   <img src="./Assets/soldout.png" />
@@ -291,22 +222,19 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
 </div>
 </div>
 `;
-item.appendChild(dov);
-})
+    item.appendChild(dov);
+  });
+});
 
-})
+let cardSmSold = document.querySelectorAll(".card-sold-sm-row");
+const card4 = [...cardSmSold];
 
-let cardSmSold=document.querySelectorAll(".card-sold-sm-row")
- const card4=[...cardSmSold];
+card4.map((item) => {
+  Arr2.forEach((val) => {
+    let dov = document.createElement("div");
 
-
- card4.map(item=>{
-  Arr2.forEach(val=>{
-   let dov=document.createElement("div");
-   
-   dov.classList.add("col-6","col-md-6","col-18","pull-up")
- dov.innerHTML= 
- `
+    dov.classList.add("col-6", "col-md-6", "col-18", "pull-up");
+    dov.innerHTML = `
  <div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1px solid #e6e6e6;box-shadow:0 0 10px grey;position: relative;">
  <figure>
    <img src="./Assets/soldout.png" />
@@ -334,26 +262,21 @@ let cardSmSold=document.querySelectorAll(".card-sold-sm-row")
  </div>
  </div>
  `;
- item.appendChild(dov);
- })
- 
- })
- //-----------------------------------------------//
-
-
+    item.appendChild(dov);
+  });
+});
+//-----------------------------------------------//
 
 //  Offer card //
 
-let cardOffer=document.querySelectorAll(".card-offer-row")
-const card5=[...cardOffer];
+let cardOffer = document.querySelectorAll(".card-offer-row");
+const card5 = [...cardOffer];
 
-
-card5.map(item =>{ 
-  Arr.forEach(val=>{
-    let dov=document.createElement("div");
-    dov.classList.add("col-xl-3","col-lg-3","col-md-3","col-18","pull-up")
-    dov.innerHTML= 
-    `<div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
+card5.map((item) => {
+  Arr.forEach((val) => {
+    let dov = document.createElement("div");
+    dov.classList.add("col-xl-3", "col-lg-3", "col-md-3", "col-18", "pull-up");
+    dov.innerHTML = `<div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
     <div class="badge-bg-cont">
    <p class="mb-0 blink_me">20% <br />Off</p>
   </div>
@@ -385,19 +308,17 @@ card5.map(item =>{
     </div>
     </div>
     `;
-  item.appendChild(dov);
-  })
+    item.appendChild(dov);
+  });
+});
 
- });
-
- let cardSmOffer=document.querySelectorAll(".card-offer-sm-row")
-const card6=[...cardSmOffer];
-card6.map(item =>{
-  Arr.forEach(val=>{
-    let dov=document.createElement("div");
-    dov.classList.add("col-6","col-md-6","col-18","pull-up")
-    dov.innerHTML= 
-    `  <div style="border-radius: 10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
+let cardSmOffer = document.querySelectorAll(".card-offer-sm-row");
+const card6 = [...cardSmOffer];
+card6.map((item) => {
+  Arr.forEach((val) => {
+    let dov = document.createElement("div");
+    dov.classList.add("col-6", "col-md-6", "col-18", "pull-up");
+    dov.innerHTML = `  <div style="border-radius: 10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
     
     <div class="d-flex justify-content-around align-items-center col-div my-1 px-1">
         <i class="fa-solid fa-crown"> </i> 
@@ -430,17 +351,14 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
 </div>
 </div>
     `;
-  item.appendChild(dov);
-  })
-})
+    item.appendChild(dov);
+  });
+});
 
 // let min=document.querySelector(".min")
 // let max=document.querySelector(".max")
 // let range_min=document.querySelector(".range_min")
 // let range_max=document.querySelector(".range_max")
-
-
-
 
 // min.addEventListener("change",function(e){
 // let val=e.target.value;
@@ -452,17 +370,16 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
 // range_max.innerText=val
 //   })
 
-
 //   const hardBtn=document.querySelector("#hard-btn");
 //   const colNone=document.querySelectorAll(".collapse-none");
 //   const cont=document.querySelector(".collapse-icon-cont");
 //   const mark=document.querySelector(".x-none-mark");
 
 //   const colNoneArr=[...colNone];
- 
+
 //   let bool=false;
 //   hardBtn.addEventListener("click",function(){
-   
+
 //     if(!bool){
 //     colNoneArr.forEach(item=>item.style.display="none");
 //     cont.classList.remove("justify-content-around");
@@ -479,29 +396,30 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
 //     bool=false;
 //   }
 //   })
-  let btnHeartArr=document.querySelectorAll(".btn-card-heart");
-  let bool1=false;
+let btnHeartArr = document.querySelectorAll(".btn-card-heart");
+let bool1 = false;
 
-Array.from(btnHeartArr).forEach(link => {
-  link.addEventListener('click', function(event) {
-    if(!bool1) {event.target.style.color="red";
-     bool1=true;}
-   else{ event.target.style.color="white";
-   bool1=false}
-
+Array.from(btnHeartArr).forEach((link) => {
+  link.addEventListener("click", function (event) {
+    if (!bool1) {
+      event.target.style.color = "red";
+      bool1 = true;
+    } else {
+      event.target.style.color = "white";
+      bool1 = false;
+    }
   });
 });
-  
-function format(input){
-  if(input.value < 0) input.value=Math.abs(input.value);
-  if(input.value.length > 2) input.value = input.value.slice(0, 2);
-  $(input).blur(function() {
-     // if(input.value.length == 1) input.value=0+input.value;
-     // if(input.value.length == 0) input.value='01';
-     //* if you want to allow insert only 2 digits *//
+
+function format(input) {
+  if (input.value < 0) input.value = Math.abs(input.value);
+  if (input.value.length > 2) input.value = input.value.slice(0, 2);
+  $(input).blur(function () {
+    // if(input.value.length == 1) input.value=0+input.value;
+    // if(input.value.length == 0) input.value='01';
+    //* if you want to allow insert only 2 digits *//
   });
 }
-
 
 function getVals() {
   // Get slider values
@@ -535,4 +453,3 @@ window.onload = function () {
     }
   }
 };
-
