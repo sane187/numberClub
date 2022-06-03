@@ -1097,12 +1097,15 @@ font-size: 10px;
   #carouselExampleControls-Mobile .carousel-control-prev {
     top: -50px !important;
   }
+  #collapseFilter form div{
+    font-size: 0.75rem;
+  }
   #collapseFilter .collapse-select{
     padding:0.1rem;
     border: 1.2px solid #9e48cd;
     border-radius: 10px;
     background: rgb(191, 104, 230,0.2);
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     font-family: 'Roboto',sans-serif;
     outline: none;
   }
@@ -1111,19 +1114,19 @@ font-size: 10px;
       border: 1.2px solid #9e48cd;
       border-radius: 10px;
       background: rgb(191, 104, 230,0.2);
-      font-size: 0.6rem;
+      font-size: 0.75rem;
       font-family: 'Roboto',sans-serif;
       outline: none;
   }
 
 .sum-input input,.sum-input button{
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   padding:0.3rem;
   border-radius: 4px;
   outline: none;
 }
 #collapseFilter .budget-filter p,.rangeValues{
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 }
