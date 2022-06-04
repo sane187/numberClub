@@ -26,13 +26,13 @@ card.map((item) => {
     
      <div class="d-flex justify-content-center col-div-2 mt-2">
        
-    <h1 class="mb-0 fw-bold">8284-<span style="color:#9e48cd ;">095-909</span></h1>
+    <h1 class="mb-0 fw-bold" style="font-size:2rem">8284-<span style="color:#9e48cd ;">095-909</span></h1>
     
        
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
+    Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:.6rem; margin-top:2px"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">

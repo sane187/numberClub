@@ -34,15 +34,126 @@
           $("#nav-placeholder").load("./Template/Navbar.html");
         });
       </script>
+      <div class="d-none d-lg-block">
+        <button class="chatButton">
+          <i class="fa-solid fa-message" style="font-size: 1.4rem"></i>
+        </button>
+        <div class="box d-none p-3">
+          <div class="d-flex justify-content-end">
+            <i class="fa-solid fa-xmark closeDesktop"></i>
+          </div>
+          <div class="d-flex flex-column">
+            <a href="#" class="btn btn-primary mt-2">
+              Chat with us <i class="fa-solid fa-comment"></i>
+            </a>
+            <a
+              href="whatsapp://send/?phone=+91%2081001%2080000&text=Hi!"
+              class="btn btn-primary mt-2"
+            >
+              Contact us <i class="fa-solid fa-phone-flip"></i>
+            </a>
+            <button class="btn btn-primary mt-2 faq">
+              FAQ <i class="fa-solid fa-circle-question"></i>
+            </button>
+          </div>
+        </div>
+        <div class="faqSection d-none p-3">
+          <div class="d-flex justify-content-start">
+            <i class="fa-solid fa-left-long closeFaq"></i>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  What is a VIP number ?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  MNP stands for Mobile Number Portability, it is basically the
+                  process to switch your current mobile number to another
+                  network service provider without having to buy a new number.
+                  It allows you to keep the same number even after changing the
+                  number’s service provider.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Can I choose my mobile number?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Yes, that is what we offer, a choice for all. You can suggest
+                  a number of your wish or you can even select one from our
+                  collection. As always, the choice is yours.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  How to book a number/service?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Select a number then book it. This gives your details to our
+                  sales team who will coordinate with you within the next 24
+                  working hrs.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section style="margin-bottom: 1rem">
         <div class="text-center offer-banner-head">
           <h1 class="mb-1">
-            Today's <span style="color: rgba(242, 56, 0, 1)">Offers</span>
+            Today's <span style="color: #bf68e6">Offers</span>
           </h1>
           <p class="d-inline-flex align-items-center mb-0">
             Deals made especially for you Limited time offer – Hurry up!<i
               class="fa-solid fa-gift ms-2"
-              style="color: rgba(242, 56, 0, 1)"
+              style="color: #bf68e6"
             ></i>
           </p>
         </div>
@@ -79,7 +190,6 @@
       </script>
       <!--footer end-->
     </div>
-
     <div class="d-block d-lg-none">
       <div
         class="modal fade"
@@ -239,7 +349,6 @@
       </div>
       <!---Mobile footer-->
     </div>
-
     <script src="./Js/js/bootstrap.min.js"></script>
     <script src="./Js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -248,5 +357,30 @@
         duration: 1000,
       });
     </script>
+    <!--script for desktop-->
+    <script>
+      let btn = document.querySelector(".chatButton");
+      let chatBox = document.querySelector(".box");
+      let faq = document.querySelector(".faq");
+      let closeDesktop = document.querySelector(".closeDesktop");
+      let closeFaq = document.querySelector(".closeFaq");
+      let faqSection = document.querySelector(".faqSection");
+      btn.addEventListener("click", ShowChatBox);
+      closeDesktop.addEventListener("click", CloseChatBox);
+      function ShowChatBox() {
+        chatBox.classList.remove("d-none");
+      }
+      function CloseChatBox() {
+        chatBox.classList.add("d-none");
+      }
+      faq.addEventListener("click", function () {
+        faqSection.classList.remove("d-none");
+        chatBox.removeProperty("box-shadow");
+      });
+      closeFaq.addEventListener("click", function () {
+        faqSection.classList.add("d-none");
+      });
+    </script>
+    <!--script for desktop end-->
   </body>
 </html>
