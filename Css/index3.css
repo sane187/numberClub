@@ -162,6 +162,19 @@ nav form button:hover {
 .banner-2-cont h3 span {
   animation: opac linear 2s infinite;
 }
+
+.banner-car-3{
+  background:  url("../Assets/banner3.jpg") no-repeat top ;
+  background-size:cover;
+  height: 61.2vh;
+  width: 100%;
+}
+.banner-car-4{
+  background:  url("../Assets/banner4.jpg") no-repeat center ;
+  background-size:cover;
+  height: 61.2vh;
+  width: 100%;
+}
 @keyframes opac {
   0% {
     opacity: 1;
@@ -304,41 +317,6 @@ footer .menu a:hover {
 
 footer .menu a {
   padding-bottom: 3px;
-}
-
-.hwrap {
-  overflow: hidden;
-  background: linear-gradient(315deg, rgb(191, 187, 187) 0%, #bf68e6 74%);
-}
-
-.hmove {
-  display: flex;
-}
-
-.hitem {
-  flex-shrink: 0;
-  width: 30%;
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
-  color: rgb(38, 47, 98);
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-@keyframes tickerh {
-  0% {
-    transform: translate3d(100%, 0, 0);
-  }
-  100% {
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-.hmove {
-  animation: tickerh linear 20s infinite;
-}
-.hmove:hover {
-  animation-play-state: paused;
 }
 
 .card-cont .card {
