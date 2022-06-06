@@ -38,13 +38,15 @@
             $("#nav-placeholder").load("./Template/Navbar.html");
           });
         </script>
-        <div class="d-none d-lg-block">
+        <section class="d-none d-lg-block">
           <button class="chatButton">
-            <i class="fa-solid fa-message" style="font-size: 1.4rem"></i>
+            <i class="fa-solid fa-message" style="font-size: 1.2rem"></i>
           </button>
           <div class="box d-none p-3">
             <div class="d-flex justify-content-end">
-              <i class="fa-solid fa-xmark closeDesktop"></i>
+              <div class="closeDesktop">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
             </div>
             <div class="d-flex flex-column">
               <a href="./contactUs.html" class="btn btn-primary mt-2">
@@ -56,118 +58,119 @@
               >
                 Contact us <i class="fa-solid fa-phone-flip"></i>
               </a>
-              <button class="btn btn-primary mt-2 faq">
-                FAQ <i class="fa-solid fa-circle-question"></i>
-              </button>
+              <div class="myfaq p-3">
+                <h1
+                  style="
+                    font-size: 1.2rem;
+                    color: #bf68e6;
+                    font-family: 'Poppins', sans-serif;
+                  "
+                >
+                  FAQ <i class="fa-solid fa-circle-question"></i>
+                </h1>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        What is a VIP number ?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        MNP stands for Mobile Number Portability, it is
+                        basically the process to switch your current mobile
+                        number to another network service provider without
+                        having to buy a new number. It allows you to keep the
+                        same number even after changing the number’s service
+                        provider.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Can I choose my mobile number?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Yes, that is what we offer, a choice for all. You can
+                        suggest a number of your wish or you can even select one
+                        from our collection. As always, the choice is yours.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        How to book a number/service?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Select a number then book it. This gives your details to
+                        our sales team who will coordinate with you within the
+                        next 24 working hrs.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="faqSection d-none p-3">
-            <div class="d-flex justify-content-start">
-              <i class="fa-solid fa-left-long closeFaq"></i>
-            </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
-                  >
-                    What is a VIP number ?
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    MNP stands for Mobile Number Portability, it is basically
-                    the process to switch your current mobile number to another
-                    network service provider without having to buy a new number.
-                    It allows you to keep the same number even after changing
-                    the number’s service provider.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
-                  >
-                    Can I choose my mobile number?
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    Yes, that is what we offer, a choice for all. You can
-                    suggest a number of your wish or you can even select one
-                    from our collection. As always, the choice is yours.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseThree"
-                  >
-                    How to book a number/service?
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    Select a number then book it. This gives your details to our
-                    sales team who will coordinate with you within the next 24
-                    working hrs.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section style="background: #fff; margin-top: 1rem">
-          <div class="container-fluid">
-            <div class="row d-flex align-items-center">
-              <div class="col-6 gx-0 d-flex justify-content-center">
-                <figure data-aos="fade-left">
-                  <img src="./Assets/VipBanner.svg" style="height: 20vh" />
-                </figure>
-              </div>
-              <div class="col-6 gx-0">
-                <h5
-                  class="text-center"
-                  data-aos="fade-right"
-                  style="color: #002171; font-size: 4rem"
-                >
-                  Don't
-                  <span style="color: #bf68e6">Delay, </span>Buy
-                  <span style="color: #bf68e6">Today </span>
-                </h5>
-              </div>
+        </section>
+        <section style="background: #fff; margin: 1.2rem 0 0.5rem 0">
+          <div
+            class="container d-flex justify-content-center align-items-center"
+          >
+            <figure data-aos="fade-right">
+              <img src="./Assets/VipBanner.svg" style="width: 14rem" />
+            </figure>
+            <div data-aos="fade-left" class="ms-2">
+              <h1 class="text-center" style="color: #002171; font-size: 3.4rem">
+                Don't
+                <span style="color: #9e48cd">Delay, </span>Buy
+                <span style="color: #9e48cd">Today </span>
+              </h1>
             </div>
           </div>
         </section>
@@ -176,9 +179,24 @@
             <div class="row mb-3">
               <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                 <div
-                  class="d-flex flex-column"
+                  class="d-flex flex-column p-3"
                   style="border: 1.5px solid #f3f1f6"
                 >
+                  <div class="search mb-3">
+                    <label for="search" class="form-label">Search Number</label>
+                    <div class="form-inline d-flex align-items-center">
+                      <input
+                        class="form-control mt-2"
+                        type="number"
+                        placeholder="Search Number"
+                        aria-label="Number"
+                        style="border: 1px solid #9e48cd"
+                      />
+                      <button class="btn btn-outline-danger mt-2" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+                  </div>
                   <div
                     style="
                       background: linear-gradient(
@@ -196,64 +214,104 @@
                   <div class="d-flex flex-column categories-cont"></div>
                 </div>
               </div>
-
               <div class="col-xl-9 col-lg-9 col-md-12 px-0">
                 <div class="d-flex flex-column">
-                  <div class="px-2">
-                    <form class="form-inline my-0 my-lg-2 d-flex">
-                      <input
-                        class="form-control"
-                        type="search"
-                        placeholder="Search Number"
-                        aria-label="Search"
-                      />
-                      <button class="btn btn-outline-danger" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </button>
-                    </form>
-                  </div>
-
-                  <div class="d-flex mt-2 align-items-center mb-3">
-                    <div class="d-flex filter-cont align-items-center">
-                      <button>
-                        Sort By <span class="fa-solid fa-filter ms-1"></span>
-                      </button>
-                      <a href="">Price Low to High</a>
-                      <a href="">Price High to Low</a>
+                  <!--filter section-->
+                  <form class="filter-form">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <label for="search" class="form-label"
+                          >Sum Total Search</label
+                        >
+                        <div class="form-inline d-flex align-items-center">
+                          <input
+                            class="form-control"
+                            min="0"
+                            max="99"
+                            type="number"
+                            placeholder="Sum Total Search"
+                            aria-label="Number"
+                            style="border: 1px solid #9e48cd"
+                            oninput="Sum(this)"
+                          />
+                          <button class="btn btn-outline-danger" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="search" class="form-label">Price </label>
+                        <select class="form-select">
+                          <option selected disabled>Select</option>
+                          <option value="9">0-1500</option>
+                          <option value="8">1501-3000</option>
+                          <option value="7">3001-5000</option>
+                          <option value="6">5001-10000</option>
+                          <option value="6">10001-30000</option>
+                          <option value="6">30001-50000</option>
+                          <option value="6">50001-100000</option>
+                          <option value="6">100000-1000000</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="search" class="form-label"
+                          >Number Start With</label
+                        >
+                        <select class="form-select">
+                          <option disabled selected>All Series</option>
+                          <option value="9">9 series</option>
+                          <option value="8">8 series</option>
+                          <option value="7">7 series</option>
+                          <option value="6">6 series</option>
+                        </select>
+                      </div>
+                      <div
+                        class="col-md-2 d-flex justify-content-end align-items-center"
+                      >
+                        <button
+                          class="btn btn-primary mt-2 clearform"
+                          style="display: none"
+                          type="reset"
+                        >
+                          clear
+                        </button>
+                      </div>
                     </div>
-                    <div class="ms-3 d-flex align-items-center">
-                      <select class="vip-select-2">
-                        <option selected>Anywhere</option>
-                        <option value="Sum total">Sum Total</option>
-                        <option value="Starts with">Starts with</option>
-                        <option value="Ends with">Ends with</option>
-                        <option value="Contains with">Contains with</option>
-                        <option value="Not Contains">Not Contains</option>
-                      </select>
+                    <div class="row mt-2">
+                      <div class="col-md-3">
+                        <label for="search" class="form-label">Sort By</label>
+                        <select class="form-select">
+                          <option selected disabled>Select</option>
+                          <option value="9">Price Low-High</option>
+                          <option value="8">Price High-Low</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="d-flex flex-row mt-1">
+                          <div class="d-flex flex-column">
+                            <label for="search" class="form-label"
+                              >Number Not Contains
+                            </label>
+                            <select class="form-select pills">
+                              <option disabled selected>Select</option>
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="selected-pills d-flex flex-wrap"></div>
+                      </div>
                     </div>
-                    <div class="ms-3">Set Budget</div>
-                    <div class="rangeslider ms-2">
-                      <input
-                        class="min"
-                        name="range_1"
-                        type="range"
-                        min="0"
-                        max="10000000"
-                        value="0"
-                      />
-                      <input
-                        class="max"
-                        name="range_1"
-                        type="range"
-                        min="0"
-                        max="10000000"
-                        value="10000000"
-                      />
-                      <span class="range_min light left">0</span>
-                      <span class="range_max light right">10000000</span>
-                    </div>
-                  </div>
-                  <div id="select-pills" class="d-flex"></div>
+                  </form>
+                  <!--filter section end-->
                   <section
                     style="
                       background: #fff;
@@ -404,6 +462,14 @@
           });
         </script>
         <!--Mobile Nav end-->
+        <!--filter button-->
+        <div id="filter"></div>
+        <script>
+          $(document).ready(function () {
+            $("#filter").load("./Template/Filter.html");
+          });
+        </script>
+        <!--filter start-->
         <div class="d-flex filter-cont align-items-center my-3 ps-3">
           <button>Sort By <span class="fa-solid fa-filter ms-1"></span></button>
           <a href="">Price Low to High</a> <a href="">Price High to Low</a>
@@ -420,7 +486,7 @@
                 <h5
                   class="text-center"
                   data-aos="fade-right"
-                  style="color: #002171; font-size: 2rem"
+                  style="color: #002171; font-size: 1.7rem"
                 >
                   Don't
                   <span style="color: #bf68e6">Delay, </span>Buy
@@ -481,10 +547,7 @@
     <script>
       let btn = document.querySelector(".chatButton");
       let chatBox = document.querySelector(".box");
-      let faq = document.querySelector(".faq");
       let closeDesktop = document.querySelector(".closeDesktop");
-      let closeFaq = document.querySelector(".closeFaq");
-      let faqSection = document.querySelector(".faqSection");
       btn.addEventListener("click", ShowChatBox);
       closeDesktop.addEventListener("click", CloseChatBox);
       function ShowChatBox() {
@@ -493,14 +556,65 @@
       function CloseChatBox() {
         chatBox.classList.add("d-none");
       }
-      faq.addEventListener("click", function () {
-        faqSection.classList.remove("d-none");
-        chatBox.removeProperty("box-shadow");
-      });
-      closeFaq.addEventListener("click", function () {
-        faqSection.classList.add("d-none");
-      });
     </script>
     <!--script for desktop end-->
+    <!--filter script start-->
+    <script>
+      const pills = document.querySelector(".pills");
+      const selectedPills = document.querySelector(".selected-pills");
+      let pillsArray = [];
+      pills.addEventListener("change", function (event) {
+        const value = event.target.value;
+        if (!pillsArray.includes(value)) {
+          pillsArray.push(value);
+          DisplayPills();
+        }
+      });
+      const DisplayPills = () => {
+        selectedPills.innerHTML = "";
+        pillsArray.map((item, index) => {
+          const pillsDiv = document.createElement("div");
+          pillsDiv.className = "pill-div";
+          const p = document.createElement("p");
+          p.innerText = item;
+          p.className = "pills-content";
+          const remove = document.createElement("button");
+          remove.innerText = "X";
+          remove.classList.add("pills-btn", `${index}`);
+          remove.addEventListener("click", function (e) {
+            let removePills = e.target.classList[1];
+            if (removePills > -1) {
+              pillsArray.splice(removePills, 1);
+            }
+            DisplayPills();
+          });
+          pillsDiv.append(p);
+          pillsDiv.append(remove);
+          selectedPills.append(pillsDiv);
+        });
+      };
+      function Sum(input) {
+        if (input.value < 0) {
+          input.value = Math.abs(input.value);
+        }
+        if (input.value > 2) {
+          input.value = input.value.slice(0, 2);
+        }
+      }
+      let form = document.querySelector(".filter-form");
+      let reset = document.querySelector(".clearform");
+      const { display } = window.getComputedStyle(reset, null);
+      reset.addEventListener("click", function () {
+        reset.style.display = "none";
+        pillsArray = [];
+        selectedPills.innerHTML = "";
+      });
+      form.addEventListener("input", function () {
+        if (reset.style.display === "none") {
+          reset.style.display = "block";
+        }
+      });
+    </script>
+    <!--filter script end-->
   </body>
 </html>

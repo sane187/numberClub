@@ -32,7 +32,7 @@ card.map((item) => {
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:.6rem; margin-top:2px"><span>SIMILAR NUMBERS</span></a>
+    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:.6rem; margin-top:2px"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
@@ -90,54 +90,6 @@ Total -<strong class="mx-1">37</strong> | Sum - <strong class="mx-1">8</strong> 
     item.appendChild(dov);
   });
 });
-
-//------------------------------------------------------------------------------------------------------//
-
-// const select=document.querySelector(".vip-select");
-// const pills=document.querySelector("#select-pills");
-
-// let filterArr=[];
-
-// select.addEventListener("change",function(event){
-//   const val=event.target.value;
-//   if(!filterArr.includes(val) )
-//   {filterArr.push(val);
-//   pillsDisplay();
-// }
-// })
-
-// const clearCategory=()=>{
-//   filterArr.splice(0,filterArr.length);
-//   pills.innerHTML="";
-
-// }
-
-// const pillsDisplay =()=>{
-//   pills.innerHTML="";
-// filterArr.forEach((item,index)=>{
-
-//   const pillDiv=document.createElement("div");
-// pillDiv.className="pill-div";
-
-//   const p=document.createElement("p");
-//   p.innerText=item;
-//   p.className="pills-content";
-//   const btn=document.createElement("button")
-//   btn.innerText="X";
-//   btn.classList.add("pill-btn",`${index}`);
-//   btn.addEventListener('click', function(e){
-//     let rmv = e.target.classList[1];
-//     if (rmv > -1) {
-//       filterArr.splice(rmv, 1);}
-//       pillsDisplay();
-//   }
-//   );
-//   pillDiv.append(p);
-//   pillDiv.append(btn);
-//   pills.append(pillDiv);
-
-// })
-// }
 
 //------Card Vip ----------------------------//
 let cardArr2 = document.querySelectorAll(".card-vip-row");
@@ -410,46 +362,3 @@ Array.from(btnHeartArr).forEach((link) => {
     }
   });
 });
-
-function format(input) {
-  if (input.value < 0) input.value = Math.abs(input.value);
-  if (input.value.length > 2) input.value = input.value.slice(0, 2);
-  $(input).blur(function () {
-    // if(input.value.length == 1) input.value=0+input.value;
-    // if(input.value.length == 0) input.value='01';
-    //* if you want to allow insert only 2 digits *//
-  });
-}
-
-function getVals() {
-  // Get slider values
-  var parent = this.parentNode;
-  var slides = parent.getElementsByTagName("input");
-  var slide1 = parseFloat(slides[0].value);
-  var slide2 = parseFloat(slides[1].value);
-
-  // Neither slider will clip the other, so make sure we determine which is larger
-  if (slide1 > slide2) {
-    var tmp = slide2;
-    slide2 = slide1;
-    slide1 = tmp;
-  }
-
-  var displayElement = parent.getElementsByClassName("rangeValues")[0];
-  displayElement.innerHTML = slide1 + " - " + slide2;
-}
-
-window.onload = function () {
-  // Initialize Sliders
-  var sliderSections = document.getElementsByClassName("range-slider");
-  for (var x = 0; x < sliderSections.length; x++) {
-    var sliders = sliderSections[x].getElementsByTagName("input");
-    for (var y = 0; y < sliders.length; y++) {
-      if (sliders[y].type === "range") {
-        sliders[y].oninput = getVals;
-        // Manually trigger event first time to display values
-        sliders[y].oninput();
-      }
-    }
-  }
-};

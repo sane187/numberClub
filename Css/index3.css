@@ -163,15 +163,15 @@ nav form button:hover {
   animation: opac linear 2s infinite;
 }
 
-.banner-car-3{
-  background:  url("../Assets/banner3.jpg") no-repeat top ;
-  background-size:cover;
+.banner-car-3 {
+  background: url("../Assets/banner3.jpg") no-repeat top;
+  background-size: cover;
   height: 61.2vh;
   width: 100%;
 }
-.banner-car-4{
-  background:  url("../Assets/banner4.jpg") no-repeat center ;
-  background-size:cover;
+.banner-car-4 {
+  background: url("../Assets/banner4.jpg") no-repeat center;
+  background-size: cover;
   height: 61.2vh;
   width: 100%;
 }
@@ -726,38 +726,51 @@ footer .menu a {
 }
 .box .btn-primary,
 .boxMobile .btn-primary {
-  background-color: #fff !important;
+  background-color: #bf68e6 !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #9e48cd;
-  border-left: none !important;
-  border-right: none !important;
-  border-top: none !important;
-  border-radius: 0px !important;
+  border: none !important;
+}
+.myfaq {
+  background-color: #fff;
+  width: auto;
+  height: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.closeDesktop,
+.closeMobile {
+  position: relative;
+  bottom: 7vh;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box .btn,
 .boxMobile .btn {
   font-family: "Poppins", sans-serif;
-  color: #9e48cd;
+  color: #fafafa;
 }
-.box .btn-primary:hover,
-.boxMobile .btn-primary:hover {
-  border-bottom: 2px solid #9e48cd;
-}
+
 .box .btn:hover,
 .boxMobile .btn:hover {
-  color: #9e48cd;
+  color: #fafafa;
 }
 .box .btn-primary:focus,
 .boxMobile .btn-primary:focus {
   box-shadow: none !important;
-  color: #9e48cd;
+  color: #fafafa;
 }
 
 .box .btn-primary .fa-solid,
 .boxMobile .btn-primary .fa-solid {
-  color: #9e48cd;
+  color: #fafafa;
 }
 .faqSection,
 .faqSectionMobile {
@@ -840,7 +853,7 @@ footer .menu a {
 .step2box,
 .step3box,
 .step4box {
-  width: 25vw;
+  width: 35vw;
   height: auto;
   border-radius: 10px;
 }
@@ -857,7 +870,7 @@ footer .menu a {
 }
 .topRight,
 .topRightMobile {
-  width: 15vw;
+  width: 20vw;
   height: auto;
   border-radius: 10px;
   border-bottom-left-radius: 0;
@@ -867,7 +880,7 @@ footer .menu a {
 }
 .stepNumBox,
 .stepNumBoxMobile {
-  width: 80%;
+  width: 90%;
   height: 100%;
   background-color: #bf68e6;
   display: flex;
@@ -898,7 +911,7 @@ footer .menu a {
 }
 .steppara,
 .stepparaMobile {
-  width: 25vw;
+  width: 35vw;
   height: auto;
   display: flex;
   background-color: #f5f5f5;
@@ -1120,6 +1133,39 @@ footer .menu a {
   .carousel-inner .col-4:nth-child(3) {
     display: none;
   }
+  #collapseFilter form div {
+    font-size: 0.75rem;
+  }
+  #collapseFilter .collapse-select {
+    padding: 0.1rem;
+    border: 1.2px solid #9e48cd;
+    border-radius: 10px;
+    background: rgb(191, 104, 230, 0.2);
+    font-size: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+  }
+  #collapseFilter .vip-select {
+    padding: 0.1rem;
+    border: 1.2px solid #9e48cd;
+    border-radius: 10px;
+    background: rgb(191, 104, 230, 0.2);
+    font-size: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+  }
+
+  .sum-input input,
+  .sum-input button {
+    font-size: 0.75rem;
+    padding: 0.3rem;
+    border-radius: 4px;
+    outline: none;
+  }
+  #collapseFilter .budget-filter p,
+  .rangeValues {
+    font-size: 0.75rem;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 786px) {
   .testimonial-title {
@@ -1160,6 +1206,39 @@ footer .menu a {
   #carouselExampleControls-Mobile .carousel-control-prev {
     top: -62px !important;
     opacity: 100% !important;
+  }
+  #collapseFilter form div {
+    font-size: 0.75rem;
+  }
+  #collapseFilter .collapse-select {
+    padding: 0.1rem;
+    border: 1.2px solid #9e48cd;
+    border-radius: 10px;
+    background: rgb(191, 104, 230, 0.2);
+    font-size: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+  }
+  #collapseFilter .vip-select {
+    padding: 0.1rem;
+    border: 1.2px solid #9e48cd;
+    border-radius: 10px;
+    background: rgb(191, 104, 230, 0.2);
+    font-size: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+  }
+
+  .sum-input input,
+  .sum-input button {
+    font-size: 0.75rem;
+    padding: 0.3rem;
+    border-radius: 4px;
+    outline: none;
+  }
+  #collapseFilter .budget-filter p,
+  .rangeValues {
+    font-size: 0.75rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1247,7 +1326,7 @@ footer .menu a {
   box-shadow: none !important;
 }
 
-section.range-slider {
+section .range-slider {
   position: relative;
   width: 200px;
   height: 35px;
@@ -1319,4 +1398,111 @@ section.range-slider input[type="range"]::-moz-focus-outer {
   .banner-2-cont h1 {
     font-size: 2.4rem;
   }
+}
+
+/* Vip Number Page */
+.search .form-label {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90%);
+  width: 100%;
+  color: white;
+  padding: 0.6rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.search .form-control {
+  font-family: "Roboto", sans-serif;
+}
+.search .form-control:focus,
+.search .btn-outline-danger:focus,
+.filter-form .form-control:focus,
+.filter-form .form-select:focus,
+.filter-form .btn {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.search .btn-outline-danger,
+.filter-form .btn-outline-danger {
+  border-color: #9e48cd !important;
+}
+.search .btn-outline-danger:hover,
+.filter-form .btn-outline-danger:hover {
+  background-color: #fff !important;
+}
+.search .fa-solid,
+.filter-form .fa-solid {
+  color: #9e48cd !important;
+}
+.category-name:hover {
+  background: linear-gradient(
+    40deg,
+    #bf68e6 20%,
+    #9e48cd 51%,
+    #bf68e6 90%
+  ) !important;
+}
+.filter-form .form-label {
+  color: #9e48cd;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.filter-form .form-select {
+  border-color: #9e48cd;
+}
+/* pills */
+.pills-content {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pill-div {
+  padding: 2px 4px;
+  border-radius: 10px;
+  border: 1.5px solid #053a5f;
+  margin-top: 10px;
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+}
+.pill-div button {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  margin-left: 6px;
+  font-weight: bold;
+}
+.selected-pills {
+  margin-top: 10px;
+}
+.selected-pills .pill-div:nth-child(1) {
+  margin-left: 2px;
+}
+.filter-form .btn-primary {
+  background-color: #9e48cd !important;
+  border: #9e48cd !important;
+}
+.filter-form .btn {
+  text-transform: uppercase;
+  color: #fafafa;
+  font-family: "Roboto", sans-serif;
+}
+/* filter Mobile */
+.filterMobile .btn-primary {
+  background-color: #9e48cd !important;
+  border: #9e48cd !important;
+  width: 20vw;
+  height: auto;
+}
+.filterMobile .btn {
+  color: #fafafa;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.filterMobile .btn-primary:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
