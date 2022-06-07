@@ -1,11 +1,12 @@
 let cardArr = document.querySelectorAll(".card-row");
 let cardSmArr = document.querySelectorAll(".card-sm-row");
+let cardVip = document.querySelectorAll(".card-vipSm-row");
 const card = [...cardArr];
 const cardSm = [...cardSmArr];
+const VipSmCard = [...cardVip];
 const Arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const Arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 const Arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-
 //------------------------------------------------------------------//
 
 card.map((item) => {
@@ -56,7 +57,13 @@ cardSm.map((item) => {
     dov.classList.add("col-12", "col-md-6", "col-18", "pull-up");
     dov.innerHTML = `  <div style="border-top-left-radius:5px;border-top-right-radius:5px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
     <div class="d-flex justify-content-between align-items-center col-div px-2 ">
-    <div class="d-inline-flex"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+    <div class="d-inline-flex">
+    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+    </div>
     <button class="btn-card-heart"><i class="fa-solid fa-heart"></i></button>
   </div>
       </div>
@@ -88,7 +95,50 @@ Total -<strong class="mx-1">37</strong> | Sum - <strong class="mx-1">8</strong> 
     item.appendChild(dov);
   });
 });
+VipSmCard.map((item) => {
+  Arr.forEach((val) => {
+    let dov = document.createElement("div");
+    dov.classList.add("col-6", "col-md-6", "col-18", "pull-up");
+    dov.innerHTML = `  <div style="border-top-left-radius:5px;border-top-right-radius:5px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
+    <div class="d-flex justify-content-between align-items-center col-div px-2 ">
+    <div class="d-inline-flex">
+    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+    <i class="fa-solid fa-star"  style="font-size: 12px;"></i>
+    <i class="fa-solid fa-star"  style="font-size: 12px;"></i>
+    <i class="fa-solid fa-star"  style="font-size: 12px;"></i>
+    <i class="fa-solid fa-star"  style="font-size: 12px;"></i>
+    </div>
+    <button class="btn-card-heart"><i class="fa-solid fa-heart"></i></button>
+  </div>
+      </div>
+<div class="d-flex flex-column bg-cont">
+ 
+<div class="d-flex flex-column align-items-center col-div-2 mt-1">
+   
+<h1 class="mb-0 fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
+</div>
 
+<div class="d-flex justify-content-center col-div-3 py-1">
+Total -<strong class="mx-1">37</strong> | Sum - <strong class="mx-1">8</strong> | <span class="mx-1">RTP</span> |
+<a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
+</div>
+
+<div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
+
+<h6 class="mb-0 fw-bold">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+   
+    <div class="vl mx-1"></div>
+    <button class="py-2"><i class="fa-solid fa-clipboard-check d-block"></i></button>
+     <div class="vl mx-1"></div>
+    <button>Buy</button> 
+    
+</div>
+</div>
+</div>
+    `;
+    item.appendChild(dov);
+  });
+});
 //------Card Vip ----------------------------//
 let cardArr2 = document.querySelectorAll(".card-vip-row");
 const card2 = [...cardArr2];

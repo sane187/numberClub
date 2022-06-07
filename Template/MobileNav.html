@@ -124,7 +124,7 @@
                   ><span class="fa-solid fa-sack-dollar me-4"></span>Offers</a
                 >
                 <a href="./offer.html"
-                  ><span class="fa-solid fa-heart me-4"></span>Whistlist</a
+                  ><span class="fa-solid fa-heart me-4"></span>Wishlist</a
                 >
                 <a href="./contactUs.html"
                   ><span class="fa-solid fa-phone me-4"></span>Contact us</a
@@ -260,20 +260,6 @@
     <script>
       let menuButton = document.querySelector(".nav-mob-toggler");
       let overlayDiv = document.querySelector(".overlay-content");
-      window.addEventListener("scroll", function () {
-        if (window.matchMedia("(max-width: 992px)").matches) {
-          let smallnav = document.querySelector("#sm-nav-input");
-
-          if (window.pageYOffset == 0 || window.pageYOffset < 50) {
-            smallnav.classList.remove("fixed-top", "py-2");
-            smallnav.style.boxShadow = "none";
-          }
-          if (window.pageYOffset > 50) {
-            smallnav.classList.add("fixed-top", "py-2");
-            smallnav.style.boxShadow = "0 8px 6px -6px black";
-          }
-        }
-      });
       let showMenu = false;
       const toggleMenu = () => {
         let menuBtn = document.getElementById("nav-mob-icon");
