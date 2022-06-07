@@ -39,9 +39,13 @@
             <div class="d-flex">
               <button
                 class="border-0 d-flex flex-column align-items-center bg-white text-dark me-2"
+                onclick="sign()"
               >
-                <i class="fa fa-heart" style="font-size: 1.2rem; color: red"></i
-                >Wishlist
+                <i
+                  class="fa-solid fa-circle-user"
+                  style="font-size: 1.2rem; color: #bf68e6"
+                ></i
+                >signup
               </button>
               <button
                 class="border-0 d-flex flex-column align-items-center bg-white text-dark"
@@ -56,7 +60,7 @@
               <span class="cart-count">0</span>
             </div>
           </div>
-          <div class="px-2" id="sm-nav-input" style="background-color: #fff">
+          <div class="px-2" style="background-color: #fff">
             <form
               class="form-inline mx-auto d-flex mx-auto px-1"
               style="
@@ -109,22 +113,21 @@
                 <a href="./index3.html"
                   ><span class="fa-solid fa-house me-4"></span>HOME</a
                 >
-                <a href="./vipNumber.html"
-                  ><span class="fa-solid fa-crown me-4"></span>VIP Numbers</a
-                >
-                <a href="./soldOut.html"
-                  ><span class="fa-solid fa-clipboard-check me-4 ps-2"></span
-                  >Sold Out</a
-                >
                 <a href="./About.html"
-                  ><span class="fa-solid fa-users-line me-4"></span>About Us</a
+                  ><span class="fa-solid fa-id-badge me-4"></span>About Us</a
+                >
+                <a href="./vipNumber.html"
+                  ><span class="fa-solid fa-store me-4"></span>VIP Numbers</a
+                >
+
+                <a href="./offer.html"
+                  ><span class="fa-solid fa-sack-dollar me-4"></span>Offers</a
                 >
                 <a href="./offer.html"
-                  ><span class="fa-solid fa-photo-film me-4"></span>Offers</a
+                  ><span class="fa-solid fa-heart me-4"></span>Whistlist</a
                 >
                 <a href="./contactUs.html"
-                  ><span class="fa-solid fa-square-phone-flip me-4"></span
-                  >Contact us</a
+                  ><span class="fa-solid fa-phone me-4"></span>Contact us</a
                 >
                 <a href="./signup.html"
                   ><span class="fa-solid fa-user me-4"></span>Sign IN</a
@@ -137,7 +140,7 @@
     </section>
     <section class="d-block d-lg-none">
       <button class="chatButtonMobile">
-        <i class="fa-solid fa-message"></i>
+        <img src="./Assets//chat.svg" width="20px" />
       </button>
       <div class="boxMobile d-none p-3">
         <div class="d-flex justify-content-end">
@@ -150,7 +153,7 @@
             Chat with us <i class="fa-solid fa-comment"></i>
           </a>
           <a
-            href="whatsapp://send/?phone=+91%2081001%2080000&text=Hi!"
+            href="whatsapp://send/?phone=+91%2077100%2067100&text=Hi!"
             class="btn btn-primary mt-2"
           >
             Contact us <i class="fa-solid fa-phone-flip"></i>
@@ -304,6 +307,26 @@
       function CloseChatBoxMobile() {
         chatBoxMobile.classList.add("d-none");
       }
+    </script>
+    <script>
+      function sign() {
+        window.location = "./signup.html";
+      }
+    </script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+
+      window.addEventListener("scroll", function () {
+        let mobileNav = document.querySelector(".mobile-navbar");
+        if (window.pageYOffset == 0) {
+          MobileNav.classList.remove("fixed-top");
+        }
+        if (window.pageYOffset > 0) {
+          MobileNav.classList.add("fixed-top");
+        }
+      });
     </script>
   </body>
 </html>

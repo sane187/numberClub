@@ -1,9 +1,7 @@
 let cardArr = document.querySelectorAll(".card-row");
 let cardSmArr = document.querySelectorAll(".card-sm-row");
-
 const card = [...cardArr];
 const cardSm = [...cardSmArr];
-
 const Arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const Arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 const Arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
@@ -55,7 +53,7 @@ card.map((item) => {
 cardSm.map((item) => {
   Arr.forEach((val) => {
     let dov = document.createElement("div");
-    dov.classList.add("col-6", "col-md-6", "col-18", "pull-up");
+    dov.classList.add("col-12", "col-md-6", "col-18", "pull-up");
     dov.innerHTML = `  <div style="border-top-left-radius:5px;border-top-right-radius:5px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
     <div class="d-flex justify-content-between align-items-center col-div px-2 ">
     <div class="d-inline-flex"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>

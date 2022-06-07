@@ -11,12 +11,13 @@
 </head>
 
 <body>
-  <section style="background: linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
+  <div class="DesktopNav">
+  <section style="background: linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );" id="header">
     <div class="container nav-top p-3">
       <div class="d-flex justify-content-between align-items-center w-100" style="color:white">
         <div class="d-flex align-items-center">
           <div class="icon-wrap-cont">
-            <a href="whatsapp://send/?phone=+91%2081001%2080000&text=Hi!" style="color:white">  <i class="fa-solid fa-phone icon"></i>+91 95300 00007
+            <a href="whatsapp://send/?phone=+91%2077100%2067100&text=Hi!" style="color:white">  <i class="fa-solid fa-phone icon"></i>+91 77100 67100
             </a>        
           </div>
         </div>
@@ -25,7 +26,7 @@
             <a class="text-white" href="./cart.html"><span class="fa-solid fa-cart-shopping me-2"></span>Cart</a>
           </div>
            <div class="icon-wrap-cont" style="margin-left: 30px; background-color: white; padding:5px 5px; border-radius: 5px;">
-            <a href="./signup.html" style="font-size:13px; color: #9e48cd;"><span class="fa-solid fa-user me-2"></span>Login / Signup</a>
+            <a href="./signup.html" style="font-size:13px; color: #9e48cd; font-weight: bold;"><span class="fa-solid fa-user me-2"></span>Login / Signup</a>
           </div>
           <div class="d-flex align-items-center ms-4">
             <div>Follow</div>
@@ -40,9 +41,9 @@
   </section>
   <header>
     <nav class="navbar navbar-expand-lg d-none d-lg-block py-0" id="navbar-top" style="background: white;">
-      <div class="container-fluid px-2" data-aos="fade-right" style="margin: 10px 10px">
+      <div class="container-fluid px-2" data-aos="fade-right" style="padding:10px 10px;">
         <a class="navbar-brand ms-3" href="./index3.html">
-          <div><img src="Assets/vipnumlogo.png"></div>
+          <div><img src="Assets/vipnumlogo.png" style="height:50px; width:auto"></div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,13 +93,14 @@
       </div>
     </nav>
   </header>
+  </div>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       duration: 1000
     }
     );
-    window.addEventListener("scroll", function () {
+     window.addEventListener("scroll", function () {
       let nav = document.getElementById("navbar-top");
       if (window.pageYOffset == 0) {
         nav.classList.remove("fixed-top");

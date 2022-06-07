@@ -930,7 +930,6 @@ footer .menu a {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
-  margin-top: 10px;
   margin-bottom: 0 !important;
 }
 .steppara .fa-solid,
@@ -995,7 +994,7 @@ footer .menu a {
     font-size: 1.8rem;
   }
   .stepparaMobile p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1025,7 +1024,7 @@ footer .menu a {
     font-size: 1.3rem;
   }
   .stepparaMobile p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1489,6 +1488,20 @@ section.range-slider input[type="range"]::-moz-focus-outer {
   text-transform: uppercase;
   color: #fafafa;
   font-family: "Roboto", sans-serif;
+}
+.clearform {
+  position: relative;
+}
+.clearform::before {
+  position: absolute;
+  content: "";
+  width: 5vw;
+  height: 2px;
+  background-color: #cfb7dd;
+  display: block;
+  right: 80%;
+  top: 80%;
+  transform: rotate(90deg);
 }
 /* filter Mobile */
 .filterMobile .btn-primary {
