@@ -1099,7 +1099,7 @@ footer .menu a {
   height: 40px !important;
   right: 8%;
 }
-@media screen and (min-width: 992px) and (max-width: 1100px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .ReviewByUser .userName {
     font-size: 0.8rem;
   }
@@ -1109,6 +1109,18 @@ footer .menu a {
   }
   .back .user-review {
     font-size: 0.7rem;
+  }
+  .banner-left h2 {
+    font-size: 1.4rem;
+  }
+  .Banner .btn-primary {
+    width: 20vw !important;
+  }
+  .banner-right img {
+    width: 35vw !important;
+  }
+  .BannerStepBG p {
+    font-size: 0.7rem !important;
   }
 }
 @media screen and (min-width: 786px) and (max-width: 992px) {
@@ -1164,6 +1176,30 @@ footer .menu a {
   #collapseFilter .budget-filter p,
   .rangeValues {
     font-size: 0.75rem;
+  }
+  .Banner {
+    height: 35vw !important;
+  }
+  .banner-right img {
+    width: 35vw !important;
+  }
+  .banner-left h1 {
+    font-size: 1.5rem;
+  }
+  .banner-left h2 {
+    font-size: 1rem;
+  }
+  .banner-left .support {
+    font-size: 0.8rem;
+  }
+  .Banner .btn-primary {
+    width: 20vw !important;
+  }
+  .banner-left p {
+    font-size: 1rem !important;
+  }
+  .banner-left a {
+    font-size: 0.9rem !important;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 786px) {
@@ -1238,6 +1274,30 @@ footer .menu a {
   #collapseFilter .budget-filter p,
   .rangeValues {
     font-size: 0.75rem;
+  }
+  .Banner {
+    height: 45vw !important;
+  }
+  .banner-right img {
+    width: 35vw !important;
+  }
+  .banner-left h1 {
+    font-size: 1.3rem;
+  }
+  .banner-left h2 {
+    font-size: 0.9rem;
+  }
+  .banner-left .support {
+    font-size: 0.8rem;
+  }
+  .Banner .btn-primary {
+    width: 20vw !important;
+  }
+  .banner-left p {
+    font-size: 1rem !important;
+  }
+  .banner-left a {
+    font-size: 1rem !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1314,6 +1374,32 @@ footer .menu a {
   #collapseFilter .budget-filter p,
   .rangeValues {
     font-size: 0.75rem;
+  }
+  /* Banner */
+  .Banner {
+    height: 65vh !important;
+  }
+  .banner-right img {
+    width: 55vw !important;
+    height: auto;
+  }
+  .Banner .col-12:nth-child(2) img {
+    margin-top: 30px;
+  }
+  .Banner .btn-primary {
+    width: 40vw !important;
+  }
+  .banner-left h2 {
+    font-size: 1rem !important;
+  }
+  .banner-left h1 {
+    font-size: 1.3rem !important;
+  }
+  .banner-left a {
+    font-size: 1rem !important;
+  }
+  .banner-left p {
+    font-size: 1rem !important;
   }
 }
 
@@ -1518,4 +1604,75 @@ section.range-slider input[type="range"]::-moz-focus-outer {
 .filterMobile .btn-primary:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+/* banner */
+.Banner {
+  width: auto;
+  height: 60vh;
+  background: linear-gradient(40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-left h1,
+.banner-left h2 {
+  font-family: "Montserrat";
+  color: #fafafa;
+}
+.banner-left h2 {
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.Banner .btn-primary {
+  background-color: #fafafa !important;
+  border-color: #fafafa !important;
+  width: 10vw;
+  margin-top: 20px;
+}
+.Banner .btn {
+  color: #bf68e6;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+.Banner .btn-primary:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.banner-right img {
+  width: 25vw;
+  height: auto;
+}
+.banner-left p {
+  font-family: "Montserrat";
+  color: #fafafa;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+.banner-left a {
+  text-decoration: none;
+  color: #fafafa;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.BannerStepBG {
+  width: auto;
+  height: auto;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+.BannerStepBG h2 {
+  color: #bf68e6;
+  font-size: 1.2rem;
+  font-family: var(---font);
+  font-weight: 900;
+  margin-left: 5px;
+}
+.BannerStepBG p {
+  color: #bf68e6;
+  font-size: 1rem;
+  font-family: var(---font);
+  margin-top: 15px;
+  font-weight: bold;
+  margin-left: 5px;
 }
