@@ -75,9 +75,9 @@ cardSm.map((item) => {
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
-<span style="font-size:.8rem;">Total -<strong class="mx-1">37 | </strong> </span> 
-<span style="font-size:.8rem"> Sum - <strong class="mx-1">8 |</strong>  </span> 
-<span class="mx-1" style="font-size:.8rem">RTP |</span> 
+<span style="font-size:.9rem;">Total -<strong class="mx-1">37 | </strong> </span> 
+<span style="font-size:.9rem"> Sum - <strong class="mx-1">8 |</strong>  </span> 
+<span class="mx-1" style="font-size:.9rem">RTP |</span> 
 <a href="#" class="ms-1"style="font-size:.8rem"><span>SIMILAR NUMBERS</span></a>
 </div>
 

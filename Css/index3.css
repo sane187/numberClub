@@ -389,6 +389,8 @@ footer .menu a {
 .col-div-3 {
   background: #e6e6e6;
   font-size: 12px;
+  height: 40px;
+  align-items: center;
 }
 .col-div-3 a {
   color: black;
