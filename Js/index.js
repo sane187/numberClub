@@ -55,7 +55,7 @@ cardSm.map((item) => {
   Arr.forEach((val) => {
     let dov = document.createElement("div");
     dov.classList.add("col-12", "col-md-6", "col-18", "pull-up");
-    dov.innerHTML = `  <div style="border-top-left-radius:5px;border-top-right-radius:5px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
+    dov.innerHTML = `  <div style="border-top-left-radius:10px;border-top-right-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
     <div class="d-flex justify-content-between align-items-center col-div px-2 ">
     <div class="d-inline-flex">
     <i class="fa-solid fa-star" style="font-size: 14px;"></i>
