@@ -1179,10 +1179,10 @@ footer .menu a {
     font-size: 0.75rem;
   }
   .Banner {
-    height: 35vw !important;
+    height: 45vw !important;
   }
   .banner-right img {
-    width: 35vw !important;
+    width: 30vw !important;
   }
   .banner-left h1 {
     font-size: 1.5rem;
@@ -1378,29 +1378,14 @@ footer .menu a {
   }
   /* Banner */
   .Banner {
-    height: 65vh !important;
+    height: 50vh !important;
   }
-  .banner-right img {
-    width: 55vw !important;
-    height: auto;
-  }
-  .Banner .col-12:nth-child(2) img {
-    margin-top: 30px;
-  }
+
   .Banner .btn-primary {
     width: 40vw !important;
   }
-  .banner-left h2 {
-    font-size: 1rem !important;
-  }
-  .banner-left h1 {
-    font-size: 1.3rem !important;
-  }
-  .banner-left a {
-    font-size: 1rem !important;
-  }
-  .banner-left p {
-    font-size: 1rem !important;
+  .Banner .btn {
+    font-size: 0.8rem;
   }
 }
 
@@ -1655,6 +1640,9 @@ section.range-slider input[type="range"]::-moz-focus-outer {
   font-family: "Montserrat";
   font-size: 1.4rem;
   font-weight: bold;
+}
+.banner-left a:hover {
+  color: #fafafa;
 }
 .BannerStepBG {
   width: auto;
