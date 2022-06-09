@@ -1123,6 +1123,10 @@ footer .menu a {
   .BannerStepBG p {
     font-size: 0.7rem !important;
   }
+  .BannerStepBG {
+    width: 50vw !important;
+    height: 30vh !important;
+  }
 }
 @media screen and (min-width: 786px) and (max-width: 992px) {
   #carouselExampleControls-Mobile .carousel-control-prev {
@@ -1645,23 +1649,41 @@ section.range-slider input[type="range"]::-moz-focus-outer {
   color: #fafafa;
 }
 .BannerStepBG {
-  width: auto;
+  width: 35vh;
   height: 35vh;
   background-color: #fafafa;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .BannerStepBG h2 {
   color: #bf68e6;
   font-size: 1.2rem;
   font-family: var(---font);
   font-weight: 900;
-  margin-left: 5px;
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
 }
 .BannerStepBG p {
   color: rgb(21, 30, 82);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: var(---font);
-  margin-top: 15px;
+  margin-top: 10px !important;
+  text-align: center;
   font-weight: bold;
-  margin-left: 5px;
+}
+.bannerFaq {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #00d280;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannerFaq .fa-solid {
+  font-size: 25px;
+  color: #fafafa;
 }
