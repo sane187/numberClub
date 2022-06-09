@@ -58,11 +58,11 @@ cardSm.map((item) => {
     dov.innerHTML = `  <div style="border-top-left-radius:5px;border-top-right-radius:5px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );">
     <div class="d-flex justify-content-between align-items-center col-div px-2 ">
     <div class="d-inline-flex">
-    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
-    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
-    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
-    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
-    <i class="fa-solid fa-star" style="font-size: 12px;"></i>
+    <i class="fa-solid fa-star" style="font-size: 14px;"></i>
+    <i class="fa-solid fa-star" style="font-size: 14px;"></i>
+    <i class="fa-solid fa-star" style="font-size: 14px;"></i>
+    <i class="fa-solid fa-star" style="font-size: 14px;"></i>
+    <i class="fa-solid fa-star" style="font-size: 14px;"></i>
     </div>
     <button class="btn-card-heart"><i class="fa-solid fa-heart"></i></button>
   </div>
@@ -71,22 +71,25 @@ cardSm.map((item) => {
  
 <div class="d-flex flex-column align-items-center col-div-2 mt-1">
    
-<h1 class="mb-0 fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
+<h1 class="fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
-Total -<strong class="mx-1">37</strong> | Sum - <strong class="mx-1">8</strong> | <span class="mx-1">RTP</span> |
-<a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
+<span style="font-size:.8rem;">Total -<strong class="mx-1">37 | </strong> </span> 
+<span style="font-size:.8rem"> Sum - <strong class="mx-1">8 |</strong>  </span> 
+<span class="mx-1" style="font-size:.8rem">RTP |</span> 
+<a href="#" class="ms-1"style="font-size:.8rem"><span>SIMILAR NUMBERS</span></a>
 </div>
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
 
-<h6 class="mb-0 fw-bold">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
-   
-    <div class="vl mx-1"></div>
-    <button class="py-2"><i class="fa-solid fa-clipboard-check d-block"></i></button>
+<h6 class="mb-0 fw-bold" style="font-size:1.2rem">₹59,999</h6>
+<div class="vl mx-1"></div>
+<button style="width:35px"><i class="fa-solid fa-cart-shopping"></i></button>
      <div class="vl mx-1"></div>
-    <button>Buy</button> 
+    <button class="py-2" style="width:35px"><i class="fa-solid fa-clipboard-check d-block"></i></button>
+     <div class="vl mx-1"></div>
+    <button style="width:50px;">BUY</button> 
     
 </div>
 </div>
