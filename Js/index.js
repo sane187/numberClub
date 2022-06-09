@@ -85,11 +85,11 @@ cardSm.map((item) => {
 
 <h6 class="mb-0 fw-bold" style="font-size:1.2rem">₹59,999</h6>
 <div class="vl mx-1"></div>
-<button style="width:35px"><i class="fa-solid fa-cart-shopping"></i></button>
+<button style="width:30px;height:30px"><i class="fa-solid fa-cart-shopping" style="font-size:.8rem"></i></button>
      <div class="vl mx-1"></div>
-    <button class="py-2" style="width:35px"><i class="fa-solid fa-clipboard-check d-block"></i></button>
+    <button class="py-2" style="width:30px; height:30px;"><i class="fa-solid fa-clipboard-check d-block" style="font-size:1rem"></i></button>
      <div class="vl mx-1"></div>
-    <button style="width:50px;">BUY</button> 
+    <button style="width:60px; height:30px; font-size:.8rem">BUY</button> 
     
 </div>
 </div>
