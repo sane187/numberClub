@@ -199,7 +199,7 @@ nav form button:hover {
 }
 
 #carouselExampleControlsCat .car-col {
-  height: 15rem;
+  height: 16rem;
 }
 #carouselExampleControlsCat .car-col img {
   width: 100%;
@@ -208,7 +208,7 @@ nav form button:hover {
   border-radius: 12px;
 }
 #carouselExampleControlsCatSm .carousel-item img {
-  height: 15rem;
+  height: 16rem;
   border-radius: 12px;
 }
 .carousel-control-div {
