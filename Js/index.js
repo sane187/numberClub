@@ -71,7 +71,7 @@ cardSm.map((item) => {
  
 <div class="d-flex flex-column align-items-center col-div-2 mt-1">
    
-<h1 class="fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
+<h1 class="fw-bold" style="font-size:1rem">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
