@@ -199,7 +199,7 @@ nav form button:hover {
 }
 
 #carouselExampleControlsCat .car-col {
-  height: 12rem;
+  height: 15rem;
 }
 #carouselExampleControlsCat .car-col img {
   width: 100%;
@@ -208,7 +208,7 @@ nav form button:hover {
   border-radius: 12px;
 }
 #carouselExampleControlsCatSm .carousel-item img {
-  height: 10rem;
+  height: 15rem;
   border-radius: 12px;
 }
 .carousel-control-div {
@@ -1657,7 +1657,7 @@ section.range-slider input[type="range"]::-moz-focus-outer {
 }
 .BannerStepBG {
   width: auto;
-  height: auto;
+  height: 35vh;
   background-color: #fafafa;
   border-radius: 5px;
 }
@@ -1669,7 +1669,7 @@ section.range-slider input[type="range"]::-moz-focus-outer {
   margin-left: 5px;
 }
 .BannerStepBG p {
-  color: #bf68e6;
+  color: rgb(21, 30, 82);
   font-size: 1rem;
   font-family: var(---font);
   margin-top: 15px;
