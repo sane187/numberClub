@@ -122,7 +122,7 @@ VipSmCard.map((item) => {
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
-Total -<strong class="mx-1">37</strong> | Sum - <strong class="mx-1">8</strong> | <span class="mx-1">RTP</span> |
+Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> | <span class="mx-1">RTP</span> |
 <a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
 </div>
 
