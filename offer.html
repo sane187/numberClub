@@ -196,112 +196,6 @@
       <!--footer end-->
     </div>
     <div class="d-block d-lg-none">
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Categories</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault1"
-                  id="flexRadioDefault1"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Unique Numbers
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault2"
-                  id="flexRadioDefault2"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  123 123 Numbers
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault3"
-                  id="flexRadioDefault3"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  AB AB Numbers
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault4"
-                  id="flexRadioDefault4"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  786 Numbers
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault5"
-                  id="flexRadioDefault5"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Tetra Numbers
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault6"
-                  id="flexRadioDefault6"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Semi Mirror Numbers
-                </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-dismiss="modal"
-              >
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!--Mobile Nav start-->
       <div id="MobileNav"></div>
       <script>
@@ -311,12 +205,141 @@
       </script>
       <!--Mobile Nav end-->
       <!--filter button-->
-      <div id="filter"></div>
-      <script>
-        $(document).ready(function () {
-          $("#filter").load("./Template/Filter.html");
-        });
-      </script>
+      <section style="position: fixed; top: 50%; z-index: 2; left: 0px">
+        <div class="postion:relative">
+          <a
+            class="btn filter-btn"
+            data-bs-toggle="collapse"
+            href="#collapseFilter"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseFilter"
+            style="writing-mode: vertical-rl; font-family: 'Montserrat'"
+          >
+            Filters
+            <i class="fa-solid fa-filter" style="transform: rotate(90deg)"></i
+          ></a>
+
+          <div
+            class="collapse p-2"
+            id="collapseFilter"
+            style="
+              position: absolute;
+              top: 0;
+              z-index: 3;
+              background-color: #fff;
+              width: 70vw;
+              border: 1.5px solid #9e48cd;
+              border-radius: 5px;
+            "
+          >
+            <div class="d-flex justify-content-between align-items-center px-2">
+              Filters
+              <button
+                class="btn border-0 p-0"
+                data-bs-toggle="collapse"
+                href="#collapseFilter"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseFilter"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <form class="filterMobile mt-3 mx-1 d-flex flex-column">
+              <div>
+                Number Starts With
+                <select class="ms-2 collapse-select mt-2">
+                  <option selected disabled>Select</option>
+                  <option value="9">All Series</option>
+                  `
+                  <option value="9">9 Series</option>
+                  <option value="8">8 Series</option>
+                  <option value="7">7 Series</option>
+                  <option value="6">6 Series</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mt-2">
+                  Number Not Contains
+                  <select class="vip-select ms-2 pillsMobile">
+                    <option disabled selected>Select</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                </div>
+                <div class="pillsSelect d-flex flex-wrap"></div>
+              </div>
+              <div class="mt-2">
+                Categorie's
+                <select class="ms-2 collapse-select">
+                  <option selected disabled>Select</option>
+                  <option value="unique">Unique Number</option>
+                  `
+                  <option value="ab">AB AB Number</option>
+                  <option value="aaa">AAA BBB Number</option>
+                  <option value="mirror">Mirror Number</option>
+                  <option value="digit">Two Digit</option>
+                </select>
+              </div>
+              <div class="form-inline d-flex mt-2 align-items-center sum-input">
+                <input
+                  class="w-100"
+                  min="0"
+                  max="99"
+                  type="number"
+                  placeholder="Sum total search"
+                  aria-label="Number"
+                  style="border: 1px solid #9e48cd !important"
+                  oninput="SumMobile(this)"
+                />
+                <button
+                  class="bg-white"
+                  type="submit"
+                  style="border: 1px solid #9e48cd"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <div class="d-flex flex-column mt-2 pb-1 budget-filter">
+                <p class="mb-0">SET BUDGET</p>
+                <section class="range-slider">
+                  <span class="rangeValues"></span>
+                  <input
+                    value="0"
+                    min="0"
+                    max="10000000"
+                    step="1000"
+                    type="range"
+                  />
+                  <input
+                    value="10000000"
+                    min="0"
+                    max="10000000"
+                    step="1000"
+                    type="range"
+                  />
+                </section>
+              </div>
+              <button
+                class="btn btn-primary clearFilter"
+                style="display: none"
+                type="reset"
+              >
+                Clear
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
       <!--filter start-->
       <section style="margin: 0.75rem 0">
         <div class="text-center offer-banner-head">
@@ -385,5 +408,99 @@
       }
     </script>
     <!--script for desktop end-->
+    <!--- filter mobile-->
+    <script>
+      // sum
+      function SumMobile(input) {
+        if (input.value < 0) {
+          input.value = Math.abs(input.value);
+        }
+        if (input.value > 2) {
+          input.value = input.value.slice(0, 2);
+        }
+      }
+      // pills
+      let pillsMobile = document.querySelector(".pillsMobile");
+      let pillsSelect = document.querySelector(".pillsSelect");
+      SelectedPillsArray = [];
+      pillsMobile.addEventListener("change", function (event) {
+        const value = event.target.value;
+        if (!SelectedPillsArray.includes(value)) {
+          SelectedPillsArray.push(value);
+          DisplaySelectedPills();
+        }
+      });
+      const DisplaySelectedPills = () => {
+        pillsSelect.innerHTML = "";
+        SelectedPillsArray.map((items, index) => {
+          const pillsDivMobile = document.createElement("div");
+          pillsDivMobile.className = "pill-div";
+          const pill = document.createElement("p");
+          pill.innerHTML = items;
+          pill.className = "pills-content";
+          const removePill = document.createElement("button");
+          removePill.innerHTML = "X";
+          removePill.classList.add("pills-btn", `${index}`);
+          removePill.addEventListener("click", function (e) {
+            let rmv = e.target.classList[1];
+            if (rmv > -1) {
+              SelectedPillsArray.splice(rmv, 1);
+            }
+            DisplaySelectedPills();
+          });
+          pillsDivMobile.append(pill);
+          pillsDivMobile.append(removePill);
+          pillsSelect.append(pillsDivMobile);
+        });
+      };
+      // clear from
+      let resetForm = document.querySelector(".clearFilter");
+      let filterMobile = document.querySelector(".filterMobile");
+      let displayMobile = window.getComputedStyle(resetForm, null).display;
+      resetForm.addEventListener("click", function () {
+        resetForm.style.display = "none";
+        SelectedPillsArray = [];
+        pillsSelect.innerHTML = "";
+      });
+      filterMobile.addEventListener("input", function () {
+        if (resetForm.style.display === "none") {
+          resetForm.style.display = "block";
+        }
+      });
+      // budget slider
+      function getVals() {
+        // Get slider values
+        var parent = this.parentNode;
+        var slides = parent.getElementsByTagName("input");
+        var slide1 = parseFloat(slides[0].value);
+        var slide2 = parseFloat(slides[1].value);
+
+        // Neither slider will clip the other, so make sure we determine which is larger
+        if (slide1 > slide2) {
+          var tmp = slide2;
+          slide2 = slide1;
+          slide1 = tmp;
+        }
+
+        var displayElement = parent.getElementsByClassName("rangeValues")[0];
+        displayElement.innerHTML = slide1 + " - " + slide2;
+      }
+
+      window.onload = function () {
+        // Initialize Sliders
+        var sliderSections = document.getElementsByClassName("range-slider");
+        for (var x = 0; x < sliderSections.length; x++) {
+          var sliders = sliderSections[x].getElementsByTagName("input");
+          for (var y = 0; y < sliders.length; y++) {
+            if (sliders[y].type === "range") {
+              sliders[y].oninput = getVals;
+              // Manually trigger event first time to display values
+              sliders[y].oninput();
+            }
+          }
+        }
+      };
+    </script>
+    <!---filter mobile-->
   </body>
 </html>
