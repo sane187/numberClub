@@ -1600,12 +1600,10 @@ section.range-slider input[type="range"]::-moz-focus-outer {
 /* banner */
 .Banner {
   width: auto;
-  height: 60vh;
+  height: 70vh;
   background: linear-gradient(40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 .banner-left h1,
 .banner-left h2 {
   font-family: "Montserrat";

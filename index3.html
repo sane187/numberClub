@@ -158,7 +158,7 @@
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <!---Banner 1 start-->
             <div class="Banner">
               <div class="container">
@@ -191,13 +191,13 @@
           </div>
           <div class="carousel-item">
             <!--Banner 2 start--->
-            <div class="Banner" style="background: none !important">
-              <img
-                src="./Assets/deliver.jpeg"
-                alt="deliver"
-                style="width: 100%; height: 100%"
-              />
-            </div>
+            <div
+              class="Banner"
+              style="
+                background: url(./Assets/deliver.jpeg) no-repeat;
+                background-size: 80%;
+              "
+            ></div>
 
             <!---Banner 2 end-->
           </div>
@@ -216,14 +216,14 @@
             <!---Banner 4 start-->
             <div class="Banner" style="background: none !important">
               <img
-                src="./Assets/newSim.jpeg"
+                src="./Assets/newSim.png"
                 alt="deliver"
-                style="width: 100%; height: 100%"
+                style="object-fit: cover; width: 100%; height: 100%"
               />
             </div>
             <!--Banner 4 end-->
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item active">
             <!--Banner 5 star--->
             <div class="Banner" style="background: none !important">
               <img
@@ -234,7 +234,7 @@
             </div>
             <!--Banner 5 end-->
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item active">
             <!--Banner 5 star--->
             <div class="Banner" style="background: none !important">
               <img
@@ -1025,21 +1025,11 @@
               <!---Banner 4 start-->
               <div class="Banner" style="background: none !important">
                 <img
-                  src="./Assets/payment1.jpeg"
+                  src="./Assets/newSim.png"
                   style="width: 100%; height: 100%"
                 />
               </div>
               <!--Banner 4 end-->
-            </div>
-            <div class="carousel-item">
-              <!--Banner 5 star--->
-              <div class="Banner" style="background: none !important">
-                <img
-                  src="./Assets/newSim.jpeg"
-                  style="width: 100%; height: 100%"
-                />
-              </div>
-              <!--Banner 5 end-->
             </div>
             <div class="carousel-item">
               <!--Banner 5 star--->
@@ -1051,7 +1041,7 @@
               </div>
               <!--Banner 5 end-->
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item active">
               <!--Banner 5 star--->
               <div class="Banner" style="background: none !important">
                 <img
@@ -1554,7 +1544,6 @@
     </div>
     <script src="./Js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./Js/js/bootstrap.bundle.min.js"></script>
     <script>
       AOS.init({
         duration: 1000,
