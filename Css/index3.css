@@ -1600,7 +1600,7 @@ section.range-slider input[type="range"]::-moz-focus-outer {
 /* banner */
 .Banner {
   width: auto;
-  height: 70vh;
+  height: 65vh;
   background: linear-gradient(40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90%);
 }
 
