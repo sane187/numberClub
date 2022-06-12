@@ -669,6 +669,9 @@ footer .menu a {
   .card-offer-sm-row .col-div-3 {
     font-size: 0.8rem !important;
   }
+  .card-wish-sm-row .bg-cont .col-div-2 h1 {
+    font-size: 1.3rem !important;
+  }
   .bg-cont .col-div-2 h1 {
     font-size: 1.7rem !important;
     margin-top: 0.15rem;
@@ -845,7 +848,8 @@ footer .menu a {
     height: auto;
   }
   .card-offer-sm-row .col-div-3,
-  .card-vipSm-row .col-div-3 {
+  .card-vipSm-row .col-div-3,
+  .card-wish-sm-row .col-div-3 {
     font-size: 16px !important;
   }
 }
@@ -859,7 +863,8 @@ footer .menu a {
     height: auto;
   }
   .card-offer-sm-row .col-div-3,
-  .card-vipSm-row .col-div-3 {
+  .card-vipSm-row .col-div-3,
+  .card-wish-sm-row .col-div-3 {
     font-size: 13px !important;
   }
 }
@@ -961,6 +966,9 @@ footer .menu a {
 .stepparaMobile .fa-solid {
   font-size: 20px;
   color: #bf68e6;
+}
+.card-wish-sm-row .col-div-3 {
+  font-size: 0.7rem;
 }
 @media screen and (min-width: 786px) and (max-width: 992px) {
   .step1boxMobil,
