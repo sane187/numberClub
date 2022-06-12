@@ -31,7 +31,7 @@ card.map((item) => {
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:.6rem; margin-top:2px"><span>SIMILAR NUMBERS</span></a>
+    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:10px; margin-top:2px"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
@@ -71,13 +71,13 @@ cardSm.map((item) => {
  
 <div class="d-flex flex-column align-items-center col-div-2 mt-1">
    
-<h1 class="fw-bold" style="font-size:1rem">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
+<h1 class="fw-bold"">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
-<span style="font-size:.9rem;">Total -<strong class="mx-1">37 | </strong> </span> 
-<span style="font-size:.9rem"> Sum - <strong class="mx-1">8 |</strong>  </span> 
-<span class="mx-1" style="font-size:.9rem">RTP |</span> 
+<span style="font-size:.8rem;">Total -<strong class="mx-1">37 | </strong> </span> 
+<span style="font-size:.8rem"> Sum - <strong class="mx-1">8 |</strong>  </span> 
+<span class="mx-1" style="font-size:.8rem">RTP |</span> 
 <a href="#" class="ms-1"style="font-size:.8rem"><span>SIMILAR NUMBERS</span></a>
 </div>
 
@@ -164,11 +164,11 @@ border-bottom-right-radius: 10px;">
 <div class="d-flex flex-column align-items-center col-div-2 mt-2">
   
 <h2 class="mb-0 fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h2>
-<a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
+<a href="#" styl><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
-Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+Total-<strong class="mx-2">37</strong> | Sum- <strong class="mx-2">8</strong> | <span class="mx-2">R2P</span>
 </div>
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
@@ -290,8 +290,8 @@ card5.map((item) => {
      <div class="d-flex flex-column bg-cont">
      <div class="d-flex flex-column align-items-center col-div-2 mt-2">
        
-    <h1 class="mb-0 fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
-    <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
+    <h1 class="mb-0 fw-bold" style="font-size:1.8rem">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
+    <a href="#" style="color:#000"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
        
      </div>
     
@@ -335,11 +335,11 @@ card6.map((item) => {
 <div class="d-flex flex-column align-items-center col-div-2 mt-1">
    
 <h1 class="mb-0 fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
-<a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
+<a href="#" style="color:#000"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
-Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+Total-<strong class="mx-2">37</strong> | Sum- <strong class="mx-2">8</strong> | <span class="mx-2">R2P</span>
 </div>
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">

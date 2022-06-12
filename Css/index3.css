@@ -388,14 +388,17 @@ footer .menu a {
 
 .col-div-3 {
   background: #e6e6e6;
-  font-size: 12px;
-  height: 40px;
+  font-size: 10px;
+  height: 30px;
   align-items: center;
 }
 .col-div-3 a {
   color: black;
 }
-
+.card-vip-row .col-div-3,
+.card-offer-row .col-div-3 {
+  font-size: 16px;
+}
 .card-icon-cont button {
   padding: 3px 9px;
   background: rgb(21, 30, 82);
@@ -654,8 +657,20 @@ footer .menu a {
   .bg-cont .col-div-2 h6 {
     font-size: 9px !important;
   }
-  .bg-cont .col-div-2 h1 {
+  .card-vipSm-row .bg-cont .col-div-2 h1 {
+    font-size: 1.3rem !important;
+  }
+  .card-offer-sm-row .bg-cont .col-div-2 h1 {
     font-size: 1.5rem !important;
+  }
+  .card-offer-sm-row h4 {
+    font-size: 1rem !important;
+  }
+  .card-offer-sm-row .col-div-3 {
+    font-size: 0.8rem !important;
+  }
+  .bg-cont .col-div-2 h1 {
+    font-size: 1.7rem !important;
     margin-top: 0.15rem;
     margin-bottom: 0.25rem;
   }
@@ -663,14 +678,13 @@ footer .menu a {
     font-size: 10px !important;
     color: black;
   }
-
   .col-div-3 {
     font-size: 8px;
   }
 
   .card-icon-cont button {
     padding: 5px;
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
@@ -830,6 +844,10 @@ footer .menu a {
     width: 30vw;
     height: auto;
   }
+  .card-offer-sm-row .col-div-3,
+  .card-vipSm-row .col-div-3 {
+    font-size: 16px !important;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 786px) {
   .boxMobile {
@@ -839,6 +857,10 @@ footer .menu a {
   .faqSectionMobile {
     width: 40vw;
     height: auto;
+  }
+  .card-offer-sm-row .col-div-3,
+  .card-vipSm-row .col-div-3 {
+    font-size: 13px !important;
   }
 }
 @media screen and (max-width: 576px) {
