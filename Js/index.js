@@ -31,7 +31,7 @@ card.map((item) => {
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:10px; margin-top:2px"><span>SIMILAR NUMBERS</span></a>
+    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:10px;"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
@@ -281,7 +281,7 @@ card5.map((item) => {
     dov.classList.add("col-xl-3", "col-lg-3", "col-md-3", "col-18", "pull-up");
     dov.innerHTML = `<div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
     <div class="badge-bg-cont">
-   <p class="mb-0 blink_me">20% <br />Off</p>
+   <p class="blink_me" style="font-size:12px">20% <br />Off</p>
   </div>
          <div class="d-flex justify-content-between align-items-center col-div px-2">
              <i class="fa-solid fa-crown"> </i>
@@ -442,47 +442,6 @@ cardWishSm.map((item) => {
   });
 });
 
-// let min=document.querySelector(".min")
-// let max=document.querySelector(".max")
-// let range_min=document.querySelector(".range_min")
-// let range_max=document.querySelector(".range_max")
-
-// min.addEventListener("change",function(e){
-// let val=e.target.value;
-// range_min.innerText=val
-
-// })
-// max.addEventListener("change",function(e){
-//   let val=e.target.value;
-// range_max.innerText=val
-//   })
-
-//   const hardBtn=document.querySelector("#hard-btn");
-//   const colNone=document.querySelectorAll(".collapse-none");
-//   const cont=document.querySelector(".collapse-icon-cont");
-//   const mark=document.querySelector(".x-none-mark");
-
-//   const colNoneArr=[...colNone];
-
-//   let bool=false;
-//   hardBtn.addEventListener("click",function(){
-
-//     if(!bool){
-//     colNoneArr.forEach(item=>item.style.display="none");
-//     cont.classList.remove("justify-content-around");
-//     cont.classList.add("ps-2");
-//     mark.style.display="inline-block"
-
-//     bool=true;
-//   }
-//   else{
-//     colNoneArr.forEach(item=>item.style.display="block");
-//     cont.classList.add("justify-content-around");
-//     cont.classList.remove("ps-2");
-//     mark.style.display="none"
-//     bool=false;
-//   }
-//   })
 let btnHeartArr = document.querySelectorAll(".btn-card-heart");
 let bool1 = false;
 
