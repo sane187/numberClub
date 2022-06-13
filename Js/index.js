@@ -281,7 +281,6 @@ card5.map((item) => {
     dov.classList.add("col-xl-3", "col-lg-3", "col-md-3", "col-18", "pull-up");
     dov.innerHTML = `<div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
     <div class="badge-bg-cont">
-   <p class="blink_me" style="font-size:12px">20% <br />Off</p>
   </div>
          <div class="d-flex justify-content-between align-items-center col-div px-2">
              <i class="fa-solid fa-crown"> </i>

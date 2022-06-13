@@ -36,11 +36,11 @@ h5 {
 
 .badge-bg-cont {
   position: absolute;
-  top: 36%;
-  background: url("../Assets/offerBadge.jpg") no-repeat;
+  top: 26%;
+  background: url("../Assets/offerBadge1.png") no-repeat;
   background-size: cover;
-  width: 5rem;
-  height: 6rem;
+  width: 5.3rem;
+  height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,10 +128,10 @@ h5 {
   .badge-bg-cont {
     position: absolute;
     top: 36%;
-    background: url("../Assets/offerBadge.jpg") no-repeat;
+    background: url("../Assets/offerBadge1.png") no-repeat;
     background-size: cover;
-    width: 3.6rem;
-    height: 4.6rem;
+    width: 4rem;
+    height: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
