@@ -39,7 +39,7 @@ card.map((item) => {
    <h4 class="mb-0 fw-bold">₹59,999</h4><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2"><i class="fa-solid fa-clipboard-check d-block"></i></button>
+    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-clipboard-check d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>Buy</button> 
     
@@ -50,7 +50,9 @@ card.map((item) => {
     item.appendChild(dov);
   });
 });
-
+function Detail() {
+  window.location = "./Detail.html";
+}
 cardSm.map((item) => {
   Arr.forEach((val) => {
     let dov = document.createElement("div");
@@ -87,7 +89,7 @@ cardSm.map((item) => {
 <div class="vl mx-1"></div>
 <button style="width:30px;height:30px"><i class="fa-solid fa-cart-shopping" style="font-size:.8rem"></i></button>
      <div class="vl mx-1"></div>
-    <button class="py-2" style="width:30px; height:30px;"><i class="fa-solid fa-clipboard-check d-block" style="font-size:1rem"></i></button>
+    <button class="py-2" onClick="Detail(this)" style="width:30px; height:30px;"><i class="fa-solid fa-clipboard-check d-block" style="font-size:1rem"></i></button>
      <div class="vl mx-1"></div>
     <button style="width:60px; height:30px; font-size:.8rem">BUY</button> 
     
