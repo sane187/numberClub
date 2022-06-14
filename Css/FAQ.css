@@ -6,18 +6,12 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   font-family: "Montserrat" !important;
 }
 
 .wrapper {
-  background: linear-gradient(
-    to bottom,
-    rgba(242, 56, 0, 1) 0%,
-    rgba(247, 129, 2, 1) 100%
-  );
+  background: linear-gradient(40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90%);
 }
 .col1 {
   display: flex;
@@ -46,10 +40,10 @@ body {
 /* FAQ section */
 .Faq h1 {
   margin-top: 20px;
-  color: #000 !important;
+  color: #002171 !important;
 }
 .Faq h1 .fa-solid {
-  color: rgba(242, 56, 0, 1);
+  color: #9e48cd;
 }
 .Faq h1 span {
   margin-left: 10px;
@@ -61,9 +55,10 @@ body {
   color: #fafafa !important;
   font-size: 1.5rem;
   background: linear-gradient(
-    to bottom,
-    rgba(242, 56, 0, 1) 0%,
-    rgba(247, 129, 2, 1) 100%
+    40deg,
+    #bf68e6 20%,
+    #9e48cd 51%,
+    #bf68e6 90%
   ) !important;
 }
 .accordion-button {
@@ -73,7 +68,7 @@ body {
   box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2);
 }
 .accordion-button:focus {
-  border-color: rgba(247, 129, 2, 1) !important;
+  border-color: #9e48cd !important;
   box-shadow: none !important;
   border-bottom: none !important;
   border-left: none !important;
@@ -111,7 +106,7 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: rgba(242, 56, 0, 1);
+  color: #9e48cd;
 }
 
 @media screen and (min-width: 786px) and (max-width: 992px) {
