@@ -11,6 +11,7 @@
     />
     <link rel="apple-touch-icon" href="./Assets/logo.png" />
     <link rel="stylesheet" type="text/css" href="./Css/index3.css" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -27,13 +28,12 @@
   <body>
     <!--Desktop screen-->
     <div class="d-none d-lg-block">
-       <div id="nav-placeholder"></div>
+      <div id="nav-place"></div>
       <script>
-        $(document).ready(function () {
-          $("#nav-placeholder").load("./Template/Navbar.html");
-        });
+        $(document).ready(function(){
+          $("#nav-place").load("./Template/Navbar.html")
+        })
       </script>
-     
        <section class="d-none d-lg-block">
         <button class="chatButton">
           <img src="./Assets//chat.svg" width="20px" />
@@ -248,6 +248,12 @@
                   style="background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% ); border-color: #bf68e6"
                 >
                   <i class="fa-brands fa-instagram"></i>
+                </a>
+                 <a href="https://www.snapchat.com/add/vipnumberclub?share_id=wj4CI44_FvE&locale=en-IN"
+                  class="btn btn-primary mx-2"
+                  style="background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% ); border-color: #bf68e6"
+                >
+                  <i class="fa-brands fa-snapchat"></i>
                 </a>
               </div>
             </div>
@@ -878,6 +884,12 @@
             >
               <i class="fa-brands fa-instagram"></i>
             </a>
+              <a href="https://www.snapchat.com/add/vipnumberclub?share_id=wj4CI44_FvE&locale=en-IN"
+                  class="btn btn-primary mx-2"
+                  style="background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% ); border-color: #bf68e6"
+                >
+                  <i class="fa-brands fa-snapchat"></i>
+                </a>
           </div>
         </div>
           <!--carousel start-->
@@ -1184,6 +1196,7 @@
     <!--Mobile screen end--->
     <!--script start--> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <!--script end-->
       <!--script for desktop-->
     <script>
@@ -1200,6 +1213,11 @@
       }
     </script>
     <!--script for desktop end-->
+      <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
   </body>
 </html>
