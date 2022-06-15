@@ -367,7 +367,8 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
 
-<h6 class="mb-0 fw-bold">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+<h6 class="mb-0 fw-bold">₹59,999</h6>
+<div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
     <button class="py-2"><i class="fa-solid fa-circle-info d-block"></i></button>
