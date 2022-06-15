@@ -304,9 +304,9 @@
                 <button
                   class="bg-white"
                   type="submit"
-                  style="border: 1px solid #9e48cd"
+                  style="border: 1px solid #9e48cd; text-transform: uppercase"
                 >
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                  search
                 </button>
               </div>
               <div class="d-flex flex-column mt-2 pb-1 budget-filter">
@@ -316,14 +316,14 @@
                   <input
                     value="0"
                     min="0"
-                    max="10000000"
+                    max="250000000"
                     step="1000"
                     type="range"
                   />
                   <input
-                    value="10000000"
+                    value="250000000"
                     min="0"
-                    max="10000000"
+                    max="250000000"
                     step="1000"
                     type="range"
                   />
@@ -459,7 +459,7 @@
         resetForm.style.display = "none";
         SelectedPillsArray = [];
         pillsSelect.innerHTML = "";
-        rangeValues.innerHTML = "0-10000000";
+        rangeValues.innerHTML = "0-250000000";
       });
       filterMobile.addEventListener("input", function () {
         if (resetForm.style.display === "none") {
