@@ -75,7 +75,7 @@ cardSm.map((item) => {
  
 <div class="d-flex flex-column align-items-center col-div-2 mt-1">
    
-<h1 class="fw-bold"">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
+<h1 class="fw-bold"">82-<span style="color:#9e48cd;">9095-9095</span></h1>
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
@@ -124,7 +124,7 @@ VipSmCard.map((item) => {
  
 <div class="d-flex flex-column align-items-center col-div-2 mt-1">
    
-<h1 class="mb-0 fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
+<h1 class="mb-0 fw-bold">82-<span style="color:#9e48cd;">9095-9095</span></h1>
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
@@ -134,7 +134,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
 
-<h6 class="mb-0 fw-bold">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+<h6 class="mb-0 fw-bold" style="font-size:13px">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
     <button class="py-2"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
@@ -273,7 +273,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
 
-<h6 class="mb-0 fw-bold">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+<h6 class="mb-0 fw-bold" style="font-size:13px">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
     <button class="py-2"><i class="fa-solid fa-circle-info d-block"></i></button>
@@ -357,7 +357,7 @@ cardWishSm.map((item) => {
  
 <div class="d-flex flex-column align-items-center col-div-2 mt-1">
    
-<h1 class="mb-0 fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h1>
+<h1 class="mb-0 fw-bold">82-<span style="color:#9e48cd">9095-9095</span></h1>
 </div>
 
 <div class="d-flex justify-content-center col-div-3 py-1">
@@ -367,7 +367,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
 
-<h6 class="mb-0 fw-bold">₹59,999</h6>
+<h6 class="mb-0 fw-bold" style="font-size:13px">₹59,999</h6>
 <div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
