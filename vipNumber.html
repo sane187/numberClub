@@ -471,7 +471,8 @@
                     style="
                       border: 1px solid #9e48cd;
                       text-transform: uppercase;
-                      color: #9e48cd;
+                      background-color: #9e48cd !important;
+                      color: #fafafa;
                     "
                   >
                     Search
@@ -484,14 +485,14 @@
                     <input
                       value="0"
                       min="0"
-                      max="250000000"
+                      max="2500000"
                       step="1000"
                       type="range"
                     />
                     <input
-                      value="250000000"
+                      value="2500000"
                       min="0"
-                      max="250000000"
+                      max="2500000"
                       step="1000"
                       type="range"
                     />
@@ -709,7 +710,7 @@
         resetForm.style.display = "none";
         SelectedPillsArray = [];
         pillsSelect.innerHTML = "";
-        rangeValues.innerHTML = "0-250000000";
+        rangeValues.innerHTML = "0-2500000";
       });
       filterMobile.addEventListener("input", function () {
         if (resetForm.style.display === "none") {
