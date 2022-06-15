@@ -968,7 +968,7 @@ footer .menu a {
   color: #bf68e6;
 }
 .card-wish-sm-row .col-div-3 {
-  font-size: 0.7rem;
+  font-size: 8px;
 }
 @media screen and (min-width: 786px) and (max-width: 992px) {
   .step1boxMobil,
