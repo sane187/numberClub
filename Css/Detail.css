@@ -9,75 +9,8 @@ body {
   background: #e6e6e6 !important;
 }
 .number-card {
-  width: 30vw;
+  width: auto;
   height: auto;
-  background-color: #fafafa;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1.5px solid #e6e6e6;
-}
-.number-card .price {
-  color: #fafafa;
-  margin-bottom: 0rem !important;
-  font-size: 2rem;
-}
-.number-card .fa-solid {
-  color: white;
-}
-.number-card .number {
-  text-align: center;
-  margin-top: 7px;
-  margin-bottom: 0rem !important;
-  font-weight: bold;
-}
-.number-card .number span {
-  color: #9e48cd;
-}
-.number-card .Similar-link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-}
-.Similar-link .fa-solid {
-  color: #000;
-}
-.number-card .other-details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f5f5;
-  width: 100%;
-  margin-top: 5px;
-  height: 30px;
-}
-.other-details h2 {
-  margin-bottom: 0rem !important;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-}
-.other-details h2:nth-child(2) {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.other-details h2:nth-child(2)::before {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 2px;
-  background-color: #6d6d6d;
-  transform: rotate(90deg);
-}
-.other-details h2:nth-child(2)::after {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 2px;
-  background-color: #6d6d6d;
-  transform: rotate(90deg);
 }
 .number-card .btn-primary {
   background-color: rgb(21, 30, 82);
@@ -128,6 +61,7 @@ body {
 #carouselExampleControls-Details .carousel-control-next,
 #carouselExampleControls-Details .carousel-control-prev {
   opacity: 100% !important;
+  top: 12px;
 }
 #carouselExampleControls-Details
   .carousel-inner
@@ -141,12 +75,7 @@ body {
     width: 50vw;
     height: auto;
   }
-  .number-card .price {
-    font-size: 1.4rem;
-  }
-  .number-card .number {
-    font-size: 1.8rem;
-  }
+
   .detial-title {
     font-size: 1.4rem;
   }
@@ -176,12 +105,6 @@ body {
     width: 70vw;
     height: auto;
   }
-  .number-card .price {
-    font-size: 1.4rem;
-  }
-  .number-card .number {
-    font-size: 1.8rem;
-  }
   .detial-title {
     font-size: 1.4rem;
   }
@@ -203,7 +126,7 @@ body {
   }
   #carouselExampleControls-Details-Mobile .carousel-control-next,
   #carouselExampleControls-Details-Mobile .carousel-control-prev {
-    top: -42px !important;
+    top: -62px !important;
     opacity: 100% !important;
   }
   #carouselExampleControls-Details-Mobile .carousel-control-prev {
@@ -223,12 +146,6 @@ body {
   .number-card {
     width: auto;
     height: auto;
-  }
-  .number-card .price {
-    font-size: 1.4rem;
-  }
-  .number-card .number {
-    font-size: 1.8rem;
   }
   .detial-title {
     font-size: 1.4rem;
@@ -286,5 +203,14 @@ body {
   }
   #carouselExampleControls-Details-Mobile .number-card .Similar-link {
     font-size: 12px;
+  }
+  .bg-cont .col-div-2 h1 {
+    font-size: 1.2rem !important;
+  }
+  .col-div-3 {
+    font-size: 7px;
+  }
+  .number-card h4 {
+    font-size: 1rem;
   }
 }
