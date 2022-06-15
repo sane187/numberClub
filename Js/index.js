@@ -9,6 +9,7 @@ const Arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 const Arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 //------------------------------------------------------------------//
 
+// Home card Desktop
 card.map((item) => {
   Arr.forEach((val) => {
     let dov = document.createElement("div");
@@ -53,6 +54,7 @@ card.map((item) => {
 function Detail() {
   window.location = "./Detail.html";
 }
+// Home card Mobile
 cardSm.map((item) => {
   Arr.forEach((val) => {
     let dov = document.createElement("div");
@@ -100,6 +102,8 @@ cardSm.map((item) => {
     item.appendChild(dov);
   });
 });
+
+// Store card Mobile
 VipSmCard.map((item) => {
   Arr.forEach((val) => {
     let dov = document.createElement("div");
@@ -144,7 +148,8 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
     item.appendChild(dov);
   });
 });
-//------Card Vip ----------------------------//
+
+// store card Desktop
 let cardArr2 = document.querySelectorAll(".card-vip-row");
 const card2 = [...cardArr2];
 
@@ -152,39 +157,40 @@ card2.map((item) => {
   Arr3.forEach((val) => {
     let dov = document.createElement("div");
     dov.classList.add("col-xl-4", "col-lg-4", "col-md-4", "col-18", "pull-up");
-    dov.innerHTML = `
-<div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;">
-    <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
-        <i class="fa-solid fa-crown"> </i>
-        <h4 class="mb-0">₹3500/-</h4>
-      </div>
-<div class="d-flex flex-column bg-cont" style="border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;">
- 
-
-
-<div class="d-flex flex-column align-items-center col-div-2 mt-2">
+    dov.innerHTML = `<div style="border-radius:10px;background:linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;">
+         <div class="d-flex justify-content-between align-items-center col-div px-2 py-1 ">
+            
+             <div class="d-inline-flex"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+             <button class="btn-card-heart"><i class="fa-solid fa-heart"></i></button>
+           </div>
+     <div class="d-flex flex-column bg-cont">
+      
+     
+    
+     <div class="d-flex justify-content-center col-div-2 mt-2">
+       
+    <h1 class="mb-0 fw-bold" style="font-size:2rem">8284-<span style="color:#9e48cd ;">095-909</span></h1>
+    
+       
+     </div>
+    
+    <div class="d-flex justify-content-center col-div-3 py-1">
+    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:10px;"><span>SIMILAR NUMBERS</span></a>
+    </div>
+    
+    <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
   
-<h2 class="mb-0 fw-bold">82-<span style="color:rgb(21,30,82);">9095-9095</span></h2>
-<a href="#" styl><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
-</div>
-
-<div class="d-flex justify-content-center col-div-3 py-1">
-Total-<strong class="mx-2">37</strong> | Sum- <strong class="mx-2">8</strong> | <span class="mx-2">R2P</span>
-</div>
-
-<div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-<div>
-<button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
-<button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-<div class="ms-3">
-<button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
-<button>Buy</button> </div>
-
-</div>
-</div>
-</div>
-`;
+   <h4 class="mb-0 fw-bold">₹59,999</h4><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+   
+    <div class="vl mx-1"></div>
+    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-clipboard-check d-block"></i></button>
+     <div class="vl mx-1"></div>
+    <button>Buy</button> 
+    
+    
+    </div>
+    </div>
+    `;
     item.appendChild(dov);
   });
 });
