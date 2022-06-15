@@ -36,7 +36,7 @@ h5 {
 
 .badge-bg-cont {
   position: absolute;
-  top: 26%;
+  margin-top: 40px;
   background: url("../Assets/offerBadge1.png") no-repeat;
   background-size: cover;
   width: 5rem;
@@ -90,9 +90,7 @@ h5 {
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.card-offer-row .col-div-3 {
-  margin-left: 20px;
-}
+
 @keyframes examples {
   0% {
     transform: translateY(-16px);
@@ -124,14 +122,16 @@ h5 {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
+  .col-div-2 h1 {
+    font-size: 1.2rem !important;
+  }
   .badge-bg-cont {
     position: absolute;
-    top: 36%;
     background: url("../Assets/offerBadge1.png") no-repeat;
     background-size: cover;
     width: 4rem;
-    height: 6rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,9 +144,6 @@ h5 {
     font-size: 12px;
   }
   .card-offer-row .col-div-3 {
-    margin-left: 50px;
-  }
-  .badge-bg-cont {
-    top: 40%;
+    font-size: 8px;
   }
 }
