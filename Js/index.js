@@ -42,7 +42,7 @@ card.map((item) => {
     <div class="vl mx-1"></div>
     <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
-    <button>Buy</button> 
+    <button>BUY</button> 
     
     
     </div>
@@ -139,7 +139,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
     <div class="vl mx-1"></div>
     <button class="py-2"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
-    <button>Buy</button> 
+    <button>BUY</button> 
     
 </div>
 </div>
@@ -185,7 +185,7 @@ card2.map((item) => {
     <div class="vl mx-1"></div>
     <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
-    <button>Buy</button> 
+    <button>BUY</button> 
     
     
     </div>
@@ -229,7 +229,7 @@ card5.map((item) => {
     <div class="vl mx-1"></div>
     <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
-    <button>Buy</button> 
+    <button>BUY</button> 
     
     
     </div>
@@ -278,7 +278,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
     <div class="vl mx-1"></div>
     <button class="py-2"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
-    <button>Buy</button> 
+    <button>BUY</button> 
     
 </div>
 </div>
@@ -324,7 +324,7 @@ cardWish.map((item) => {
     <div class="vl mx-1"></div>
     <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
-    <button>Buy</button> 
+    <button>BUY</button> 
     
     
     </div>
@@ -372,7 +372,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
     <div class="vl mx-1"></div>
     <button class="py-2"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
-    <button>Buy</button> 
+    <button>BUY</button> 
     
 </div>
 </div>
