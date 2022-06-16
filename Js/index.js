@@ -134,7 +134,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
 
-<h6 class="mb-0 fw-bold" style="font-size:13px">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+<h6 class="mb-0 fw-bold" style="font-size:12px">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
     <button class="py-2"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
@@ -367,7 +367,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
 
-<h6 class="mb-0 fw-bold" style="font-size:13px">₹59,999</h6>
+<h6 class="mb-0 fw-bold" style="font-size:12px">₹59,999</h6>
 <div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
@@ -386,15 +386,17 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 // function to add card to wish list
 let btnHeartArr = document.querySelectorAll(".btn-card-heart");
 let bool1 = false;
-
+console.log(bool1);
 Array.from(btnHeartArr).forEach((link) => {
   link.addEventListener("click", function (event) {
     if (!bool1) {
       event.target.style.color = "red";
       bool1 = true;
+      console.log(bool1);
     } else {
       event.target.style.color = "white";
       bool1 = false;
+      console.log(bool1);
     }
   });
 });
