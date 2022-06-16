@@ -137,7 +137,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 <h6 class="mb-0 fw-bold" style="font-size:12px">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
+    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>BUY</button> 
     
@@ -276,7 +276,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 <h6 class="mb-0 fw-bold" style="font-size:13px">₹59,999</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2"><i class="fa-solid fa-circle-info d-block"></i></button>
+    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>BUY</button> 
     
@@ -371,7 +371,7 @@ Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> |
 <div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2"><i class="fa-solid fa-circle-info d-block"></i></button>
+    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>BUY</button> 
     
