@@ -124,7 +124,7 @@ h5 {
 
 @media screen and (max-width: 1400px) {
   .col-div-2 h1 {
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
   }
   .badge-bg-cont {
     position: absolute;
@@ -144,6 +144,6 @@ h5 {
     font-size: 12px;
   }
   .card-offer-row .col-div-3 {
-    font-size: 9.25px;
+    font-size: 9.75px;
   }
 }
