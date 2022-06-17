@@ -208,6 +208,7 @@ card5.map((item) => {
          <div class="d-flex justify-content-between align-items-center col-div px-2 py-1 ">
             
              <div class="d-inline-flex"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <div class="ribbon"><span>20% off</span></div>
              <button class="btn-card-heart"><i class="fa-solid fa-heart"></i></button>
            </div>
      <div class="d-flex flex-column bg-cont">
@@ -219,7 +220,7 @@ card5.map((item) => {
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:10px;"><span>SIMILAR NUMBERS</span></a>
+    Total-<strong class="mx-1">37</strong> | Sum-<strong class="mx-1">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:9.25px;"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
