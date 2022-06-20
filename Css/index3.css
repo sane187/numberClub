@@ -669,7 +669,7 @@ footer .menu a {
     font-size: 1rem !important;
   }
   .card-offer-sm-row .col-div-3 {
-    font-size: 7.25px !important;
+    font-size: 7.8px !important;
   }
   .card-wish-sm-row .bg-cont .col-div-2 h1 {
     font-size: 1.3rem !important;
@@ -684,7 +684,7 @@ footer .menu a {
     color: black;
   }
   .col-div-3 {
-    font-size: 7.25px;
+    font-size: 7.8px;
   }
 
   .card-icon-cont button {
@@ -970,7 +970,7 @@ footer .menu a {
   color: #bf68e6;
 }
 .card-wish-sm-row .col-div-3 {
-  font-size: 7.25px;
+  font-size: 7.8px;
 }
 @media screen and (min-width: 786px) and (max-width: 992px) {
   .step1boxMobil,
@@ -1718,4 +1718,12 @@ section.range-slider input[type="range"]::-moz-focus-outer {
 .bannerFaq .fa-solid {
   font-size: 25px;
   color: #fafafa;
+}
+.card-vipSm-row .mx-1,
+.card-wish-sm-row .mx-1,
+.card-wish-sm-row .ms-1,
+.card-offer-sm-row .mx-1,
+.card-offer-sm-row .ms-1 {
+  margin-right: 0.15rem !important;
+  margin-left: 0.15rem !important;
 }

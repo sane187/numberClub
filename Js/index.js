@@ -32,7 +32,7 @@ card.map((item) => {
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:10px;"><span>SIMILAR NUMBERS</span></a>
+    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="./vipNumber.html" class="ms-1" style="font-size:10px;"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
@@ -82,7 +82,7 @@ cardSm.map((item) => {
 <span style="font-size:.8rem;">Total -<strong class="mx-1">37 | </strong> </span> 
 <span style="font-size:.8rem"> Sum - <strong class="mx-1">8 |</strong>  </span> 
 <span class="mx-1" style="font-size:.8rem">RTP |</span> 
-<a href="#" class="ms-1"style="font-size:.8rem"><span>SIMILAR NUMBERS</span></a>
+<a href="./vipNumber.html" class="ms-1"style="font-size:.8rem"><span>SIMILAR NUMBERS</span></a>
 </div>
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
@@ -129,7 +129,7 @@ VipSmCard.map((item) => {
 
 <div class="d-flex justify-content-center col-div-3 py-1">
 Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> | <span class="mx-1">RTP</span> |
-<a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
+<a href="./vipNumber.html" class="ms-1"><span>SIMILAR NUMBERS</span></a>
 </div>
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
@@ -175,7 +175,7 @@ card2.map((item) => {
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:10px;"><span>SIMILAR NUMBERS</span></a>
+    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="./vipNumber.html" class="ms-1" style="font-size:10px;"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
@@ -220,7 +220,7 @@ card5.map((item) => {
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total-<strong class="mx-1">37</strong> | Sum-<strong class="mx-1">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:9.25px;"><span>SIMILAR NUMBERS</span></a>
+    Total-<strong class="mx-1">37</strong> | Sum-<strong class="mx-1">8</strong> | <span class="mx-1"> RTP</span> | <a href="./vipNumber.html" class="ms-1" style="font-size:9.25px;"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
@@ -269,7 +269,7 @@ card6.map((item) => {
 
 <div class="d-flex justify-content-center col-div-3 py-1">
 Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> | <span class="mx-1">RTP</span> |
-<a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
+<a href="./vipNumber.html" class="ms-1"><span>SIMILAR NUMBERS</span></a>
 </div>
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
@@ -315,7 +315,7 @@ cardWish.map((item) => {
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1">
-    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="#" class="ms-1" style="font-size:12px;"><span>SIMILAR NUMBERS</span></a>
+    Total-<strong class="mx-2">37</strong> | Sum-<strong class="mx-2">8</strong> | <span class="mx-1"> RTP</span> | <a href="./vipNumber.html" class="ms-1" style="font-size:12px;"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
@@ -363,7 +363,7 @@ cardWishSm.map((item) => {
 
 <div class="d-flex justify-content-center col-div-3 py-1">
 Total- <strong class="mx-1">37</strong> | Sum- <strong class="mx-1">8</strong> | <span class="mx-1">RTP</span> |
-<a href="#" class="ms-1"><span>SIMILAR NUMBERS</span></a>
+<a href="./vipNumber.html" class="ms-1"><span>SIMILAR NUMBERS</span></a>
 </div>
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
