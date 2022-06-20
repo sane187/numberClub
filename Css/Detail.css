@@ -144,7 +144,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .number-card {
-    width: auto;
+    width: 90vw;
     height: auto;
   }
   .detial-title {
