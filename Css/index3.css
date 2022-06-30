@@ -1727,3 +1727,10 @@ section.range-slider input[type="range"]::-moz-focus-outer {
   margin-right: 0.15rem !important;
   margin-left: 0.15rem !important;
 }
+.category-name input:checked {
+  background-color: #bf68e6 !important;
+}
+.category-name input {
+  box-shadow: none !important;
+  border: none !important;
+}

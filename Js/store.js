@@ -7,7 +7,7 @@ let VipCardData;
 let count = 1;
 const FetchVip = async () => {
   const response = await fetch(
-    "https://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
   );
   const data = await response.json();
   VipCardData = data.data;
@@ -32,9 +32,6 @@ const FetchVip = async () => {
              <button class="btn-card-heart"><i class="fa-solid fa-heart"></i></button>
            </div>
      <div class="d-flex flex-column bg-cont">
-      
-     
-    
      <div class="d-flex justify-content-center col-div-2 mt-2">
        
     <h1 class="mb-0 fw-bold" style="font-size:2rem">${first3}-<span style="color:#9e48cd ;">${reamaning}-${last}</span></h1>
@@ -51,7 +48,7 @@ const FetchVip = async () => {
    <h4 class="mb-0 fw-bold">₹${val.price}</h4><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
+    <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>BUY</button> 
     
@@ -68,7 +65,7 @@ FetchVip();
 // Store card Mobile
 const FetchVipMobile = async () => {
   const response = await fetch(
-    "https://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -110,7 +107,7 @@ Total- <strong class="mx-1">${val.sum_total}</strong> | Sum- <strong class="mx-1
 <h6 class="mb-0 fw-bold" style="font-size:12px">₹${val.price}</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
+    <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>BUY</button> 
     
@@ -127,7 +124,7 @@ FetchVipMobile();
 let more = document.querySelector(".more");
 const Increment = async () => {
   count = count + 1;
-  let url = `https://167.71.237.36/api/v1/customer/fetch_all_products/${count}`;
+  let url = `http://167.71.237.36/api/v1/customer/fetch_all_products/${count}`;
   const response = await fetch(url);
   const data = await response.json();
   const newData = data.data;
@@ -152,9 +149,6 @@ const Increment = async () => {
              <button class="btn-card-heart"><i class="fa-solid fa-heart"></i></button>
            </div>
      <div class="d-flex flex-column bg-cont">
-      
-     
-    
      <div class="d-flex justify-content-center col-div-2 mt-2">
        
     <h1 class="mb-0 fw-bold" style="font-size:2rem">${first3}-<span style="color:#9e48cd ;">${reamaning}-${last}</span></h1>
@@ -171,7 +165,7 @@ const Increment = async () => {
    <h4 class="mb-0 fw-bold">₹${val.price}</h4><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
+    <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>BUY</button> 
     
@@ -189,7 +183,7 @@ more.addEventListener("click", Increment);
 let moreSm = document.querySelector(".more-sm");
 const IncrementMobile = async () => {
   count = count + 1;
-  let url = `https://167.71.237.36/api/v1/customer/fetch_all_products/${count}`;
+  let url = `http://167.71.237.36/api/v1/customer/fetch_all_products/${count}`;
   const response = await fetch(url);
   const data = await response.json();
   const newData = data.data;
@@ -231,7 +225,7 @@ Total- <strong class="mx-1">${val.sum_total}</strong> | Sum- <strong class="mx-1
 <h6 class="mb-0 fw-bold" style="font-size:12px">₹${val.price}</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
+    <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>BUY</button> 
     

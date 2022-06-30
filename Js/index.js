@@ -11,7 +11,7 @@ let HomeCardData;
 // Home card Desktop
 const FetchHome = async () => {
   const response = await fetch(
-    "https://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -56,7 +56,7 @@ const FetchHome = async () => {
    <h4 class="mb-0 fw-bold">₹${val.price}</h4><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
+    <button class="py-2"onclick=window.location.href="./Detail.html?product=${val.product_id}"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>BUY</button> 
     
@@ -72,7 +72,7 @@ FetchHome();
 // Home card Desktop 2
 const FetchHome2 = async () => {
   const response = await fetch(
-    "https://167.71.237.36/api/v1/customer/fetch_all_products/2"
+    "http://167.71.237.36/api/v1/customer/fetch_all_products/2"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -117,7 +117,7 @@ const FetchHome2 = async () => {
    <h4 class="mb-0 fw-bold">₹${val.price}</h4><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
-    <button class="py-2" onClick="Detail(this)"><i class="fa-solid fa-circle-info d-block"></i></button>
+    <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}"><i class="fa-solid fa-circle-info d-block"></i></button>
      <div class="vl mx-1"></div>
     <button>BUY</button> 
     
@@ -134,7 +134,7 @@ FetchHome2();
 // Home card Mobile
 const FetchHomeMobile = async () => {
   const response = await fetch(
-    "https://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -179,7 +179,7 @@ const FetchHomeMobile = async () => {
 <div class="vl mx-1"></div>
 <button style="width:30px;height:30px"><i class="fa-solid fa-cart-shopping" style="font-size:.8rem"></i></button>
      <div class="vl mx-1"></div>
-    <button class="py-2" onClick="Detail(this)" style="width:30px; height:30px;"><i class="fa-solid fa-circle-info d-block" style="font-size:1rem"></i></button>
+    <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}" style="width:30px; height:30px;"><i class="fa-solid fa-circle-info d-block" style="font-size:1rem"></i></button>
      <div class="vl mx-1"></div>
     <button style="width:60px; height:30px; font-size:.8rem">BUY</button> 
     
@@ -195,7 +195,7 @@ FetchHomeMobile();
 //Home card Mobile 2
 const FetchHomeMobile2 = async () => {
   const response = await fetch(
-    "https://167.71.237.36/api/v1/customer/fetch_all_products/2"
+    "http://167.71.237.36/api/v1/customer/fetch_all_products/2"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -240,7 +240,7 @@ const FetchHomeMobile2 = async () => {
 <div class="vl mx-1"></div>
 <button style="width:30px;height:30px"><i class="fa-solid fa-cart-shopping" style="font-size:.8rem"></i></button>
      <div class="vl mx-1"></div>
-    <button class="py-2" onClick="Detail(this)" style="width:30px; height:30px;"><i class="fa-solid fa-circle-info d-block" style="font-size:1rem"></i></button>
+    <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}" style="width:30px; height:30px;"><i class="fa-solid fa-circle-info d-block" style="font-size:1rem"></i></button>
      <div class="vl mx-1"></div>
     <button style="width:60px; height:30px; font-size:.8rem">BUY</button> 
     
