@@ -11,7 +11,7 @@ let HomeCardData;
 // Home card Desktop
 const FetchHome = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    "https://167.71.237.36/api/v1/customer/fetch_all_products/1"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -72,7 +72,7 @@ FetchHome();
 // Home card Desktop 2
 const FetchHome2 = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/2"
+    "https://167.71.237.36/api/v1/customer/fetch_all_products/2"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -134,7 +134,7 @@ FetchHome2();
 // Home card Mobile
 const FetchHomeMobile = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    "https://167.71.237.36/api/v1/customer/fetch_all_products/1"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -195,7 +195,7 @@ FetchHomeMobile();
 //Home card Mobile 2
 const FetchHomeMobile2 = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/2"
+    "https://167.71.237.36/api/v1/customer/fetch_all_products/2"
   );
   const data = await response.json();
   HomeCardData = data.data;
