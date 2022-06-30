@@ -1,3 +1,4 @@
+import config from "../conf/index.js";
 let cardArr2 = document.querySelectorAll(".card-vip-row"); // store desktop
 const card2 = [...cardArr2]; // store desktop
 let cardVip = document.querySelectorAll(".card-vipSm-row"); // store mobile
@@ -7,7 +8,7 @@ let VipCardData;
 let count = 1;
 const FetchVip = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    config.backendEndpoint + "/fetch_all_products/1"
   );
   const data = await response.json();
   VipCardData = data.data;
@@ -65,10 +66,10 @@ FetchVip();
 // Store card Mobile
 const FetchVipMobile = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    config.backendEndpoint + "/fetch_all_products/1"
   );
   const data = await response.json();
-  HomeCardData = data.data;
+  let HomeCardData = data.data;
   HomeCardData.length = 12;
   VipSmCard.map((item) => {
     HomeCardData.forEach((val) => {
@@ -124,7 +125,7 @@ FetchVipMobile();
 let more = document.querySelector(".more");
 const Increment = async () => {
   count = count + 1;
-  let url = `http://167.71.237.36/api/v1/customer/fetch_all_products/${count}`;
+  let url = config.backendEndpoint + `/fetch_all_products/${count}`;
   const response = await fetch(url);
   const data = await response.json();
   const newData = data.data;
@@ -183,7 +184,7 @@ more.addEventListener("click", Increment);
 let moreSm = document.querySelector(".more-sm");
 const IncrementMobile = async () => {
   count = count + 1;
-  let url = `http://167.71.237.36/api/v1/customer/fetch_all_products/${count}`;
+  let url = config.backendEndpoint + `/fetch_all_products/${count}`;
   const response = await fetch(url);
   const data = await response.json();
   const newData = data.data;

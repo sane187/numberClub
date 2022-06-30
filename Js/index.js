@@ -1,3 +1,4 @@
+import config from "../conf/index.js";
 let cardArr = document.querySelectorAll(".card-row"); // dream number desktop
 let cardArr2 = document.querySelectorAll(".card-Vip-row"); // latest and updated stock desktop
 let cardSmArr = document.querySelectorAll(".card-sm-row"); // dream number mobile
@@ -11,7 +12,7 @@ let HomeCardData;
 // Home card Desktop
 const FetchHome = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    config.backendEndpoint + "/fetch_all_products/1"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -72,7 +73,7 @@ FetchHome();
 // Home card Desktop 2
 const FetchHome2 = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/2"
+    config.backendEndpoint + "/fetch_all_products/2"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -134,7 +135,7 @@ FetchHome2();
 // Home card Mobile
 const FetchHomeMobile = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/1"
+    config.backendEndpoint + "/fetch_all_products/1"
   );
   const data = await response.json();
   HomeCardData = data.data;
@@ -195,7 +196,7 @@ FetchHomeMobile();
 //Home card Mobile 2
 const FetchHomeMobile2 = async () => {
   const response = await fetch(
-    "http://167.71.237.36/api/v1/customer/fetch_all_products/2"
+    config.backendEndpoint + "/fetch_all_products/2"
   );
   const data = await response.json();
   HomeCardData = data.data;

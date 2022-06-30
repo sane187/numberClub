@@ -562,13 +562,14 @@
       </div>
     </div>
     <script src="./Js/js/bootstrap.min.js"></script>
-    <script src="./Js/store.js"></script>
-    <script>
+    <script src="./Js/store.js" type="module"></script>
+    <script type="module">
+      import config from "./conf/index.js";
       let categoryCont = document.querySelector(".categories-cont");
       let CategoryData;
       const fetcData = async () => {
         const response = await fetch(
-          "http://167.71.237.36/api/v1/customer/fetch_all_categories"
+          config.backendEndpoint + "/fetch_all_categories"
         );
         const data = await response.json();
         CategoryData = data.data;
@@ -761,6 +762,6 @@
       };
     </script>
     <!---filter mobile-->
-    <script src="./Js/filter.js"></script>
+    <script src="./Js/filter.js" type="module"></script>
   </body>
 </html>

@@ -1,8 +1,9 @@
 //scripts to fetch data from backend Desktop
+import config from "../conf/index.js";
 let detailArr = document.querySelector(".detail-row");
 let detailData;
 const id = window.location.search;
-let url = `http://167.71.237.36/api/v1/customer/fetch_single_product${id}`;
+let url = config.backendEndpoint + `/fetch_single_product${id}`;
 const FetchProductData = async () => {
   const response = await fetch(url);
   const data = await response.json();
@@ -126,12 +127,12 @@ FetchProductData();
 let detailArrSm = document.querySelector(".detail-mobile");
 let detailDataSm;
 const idSm = window.location.search;
-let urlSm = `http://167.71.237.36/api/v1/customer/fetch_single_product${idSm}`;
+let urlSm = config.backendEndpoint + `/fetch_single_product${idSm}`;
 const FetchProductDataSm = async () => {
-  const response = await fetch(url);
+  const response = await fetch(urlSm);
   const data = await response.json();
-  detailData = data.data;
-  let num = detailData.number.toString();
+  detailDataSm = data.data;
+  let num = detailDataSm.number.toString();
   const first3 = num.slice(0, 2);
   const reamaning = num.slice(2, 6);
   const last = num.slice(6, 10);
@@ -154,12 +155,12 @@ const FetchProductDataSm = async () => {
      </div>
     
     <div class="d-flex justify-content-center col-div-3 py-1" style="font-size:13px ;">
-    Total-<strong class="mx-2">${detailData.sum_total}</strong> | Sum-<strong class="mx-2">${detailData.first_sum}</strong> | <span class="mx-1">${detailData.number_status}</span> | <a href="./vipNumber.html" class="ms-1" style="font-size:13px;"><span>SIMILAR NUMBERS</span></a>
+    Total-<strong class="mx-2">${detailDataSm.sum_total}</strong> | Sum-<strong class="mx-2">${detailDataSm.first_sum}</strong> | <span class="mx-1">${detailDataSm.number_status}</span> | <a href="./vipNumber.html" class="ms-1" style="font-size:13px;"><span>SIMILAR NUMBERS</span></a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
   
-   <h4 class="mb-0 fw-bold" style="font-size: 1.2rem;">₹${detailData.price}</h4>
+   <h4 class="mb-0 fw-bold" style="font-size: 1.2rem;">₹${detailDataSm.price}</h4>
    <div class="vl mx-1"></div><button style="width:30px; height:30px"><i class="fa-solid fa-cart-shopping" style="font-size:.8rem;"></i></button>
    
     <div class="vl mx-1"></div>
@@ -175,13 +176,13 @@ const FetchProductDataSm = async () => {
           <div class="number-details">
             <h3 style="font-size: 1rem; font-weight: bold">
               Number :<span style="font-weight: lighter; margin-left: 4px"
-                >${detailData.number}</span
+                >${detailDataSm.number}</span
               >
             </h3>
             <h3 style="font-size: 1rem; font-weight: bold">
               Number status :<span
                 style="font-weight: lighter; margin-left: 4px"
-                >${detailData.number_status}</span
+                >${detailDataSm.number_status}</span
               >
             </h3>
             <h3 style="font-size: 1rem; font-weight: bold">
@@ -240,7 +241,7 @@ FetchProductDataSm();
 // script to fetch data from backend end mobile
 
 // script to fetch similar type of number
-let simUrl = `http://167.71.237.36/api/v1/customer/fetch_similar_numbers/1${id}`;
+let simUrl = config.backendEndpoint + `/fetch_similar_numbers/1${id}`;
 var CarouselData;
 const FetchCarouselData = async () => {
   const response = await fetch(simUrl);
