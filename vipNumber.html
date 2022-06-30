@@ -26,6 +26,7 @@
       href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./Js/store.js" type="module"></script>
     <title>VIP Mobile Number | Fancy</title>
   </head>
   <body>
@@ -450,7 +451,10 @@
                   Categorie's
                   <select
                     class="mt-2 collapse-select FilterCategories"
-                  ></select>
+                    onchange="CategoryMobile()"
+                  >
+                    <option hidden>select</option>
+                  </select>
                 </div>
                 <div
                   class="form-inline d-flex mt-2 align-items-center sum-input"
@@ -562,7 +566,6 @@
       </div>
     </div>
     <script src="./Js/js/bootstrap.min.js"></script>
-    <script src="./Js/store.js" type="module"></script>
     <script type="module">
       import config from "./conf/index.js";
       let categoryCont = document.querySelector(".categories-cont");
@@ -573,10 +576,10 @@
         );
         const data = await response.json();
         CategoryData = data.data;
-        CategoryData.forEach((element, index) => {
+        CategoryData.forEach((element) => {
           const carouselItem = document.createElement("div");
           carouselItem.innerHTML = `<div class="form-check">
-            <input class="form-check-input categoryID" type="radio" name="flexRadioDefault1" value=${element.category_id} onclick="check(${element.category_id})">
+            <input class="form-check-input categoryID" type="radio" name="flexRadioDefault1" value=${element.category_id} onclick="Check(${element.category_id})">
             <label class="form-check-label" for="flexRadioDefault1" style="font-size:.9rem">
               ${element.category_name}
             </label> 
