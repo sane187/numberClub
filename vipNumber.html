@@ -235,7 +235,7 @@
                         >
                         <div class="form-inline d-flex align-items-center">
                           <input
-                            class="form-control"
+                            class="form-control sumtotal"
                             min="0"
                             max="99"
                             type="number"
@@ -243,27 +243,34 @@
                             aria-label="Number"
                             style="border: 1px solid #9e48cd"
                             oninput="Sum(this)"
+                            value=""
                           />
                           <button
                             class="btn btn-outline-danger ms-1"
                             type="submit"
+                            onclick="SumToTal()"
                           >
                             <i class="fa-solid fa-magnifying-glass"></i>
                           </button>
                         </div>
                       </div>
                       <div class="col-md-2">
-                        <label for="search" class="form-label">Price </label>
-                        <select class="form-select">
+                        <label for="search" class="form-label price"
+                          >Price
+                        </label>
+                        <select
+                          class="form-select priceDesktop"
+                          onchange="PriceDesktop()"
+                        >
                           <option selected disabled>Select</option>
                           <option value="9">0-1500</option>
                           <option value="8">1501-3000</option>
                           <option value="7">3001-5000</option>
                           <option value="6">5001-10000</option>
-                          <option value="6">10001-30000</option>
-                          <option value="6">30001-50000</option>
-                          <option value="6">50001-100000</option>
-                          <option value="6">100000-1000000</option>
+                          <option value="5">10001-30000</option>
+                          <option value="4">30001-50000</option>
+                          <option value="3">50001-100000</option>
+                          <option value="2">100000-1000000</option>
                         </select>
                       </div>
                       <div class="col-md-3">
@@ -334,16 +341,18 @@
                   >
                     <div class="w-100 px-2">
                       <div class="row g-2 card-vip-row"></div>
-                      <div class="row">
-                        <div class="col-12 d-flex justify-content-center">
-                          <button
-                            style="width: 80%"
-                            class="col-btn mt-4 mx-auto more"
-                          >
-                            <i class="fa-solid fa-caret-down me-2"></i> More
-                            Numbers
-                          </button>
-                        </div>
+                    </div>
+                    <div class="row">
+                      <div
+                        class="col-12 d-flex justify-content-center flex-column"
+                      >
+                        <button
+                          style="width: 80%"
+                          class="col-btn mt-4 mx-auto more"
+                        >
+                          <i class="fa-solid fa-caret-down me-2"></i> More
+                          Numbers
+                        </button>
                       </div>
                     </div>
                   </section>
@@ -460,7 +469,7 @@
                   class="form-inline d-flex mt-2 align-items-center sum-input"
                 >
                   <input
-                    class="w-100"
+                    class="w-100 sumotalMobile"
                     min="0"
                     max="99"
                     type="number"
@@ -468,6 +477,7 @@
                     aria-label="Number"
                     style="border: 1px solid #9e48cd !important"
                     oninput="SumMobile(this)"
+                    value=""
                   />
                   <button
                     class="bg-white ms-1"
@@ -478,29 +488,26 @@
                       background-color: #9e48cd !important;
                       color: #fafafa;
                     "
+                    onclick="SumTotalMobile()"
                   >
                     Search
                   </button>
                 </div>
                 <div class="d-flex flex-column mt-2 pb-1 budget-filter">
                   <p class="mb-0">SET BUDGET</p>
-                  <section class="range-slider">
-                    <span class="rangeValues"></span>
-                    <input
-                      value="0"
-                      min="0"
-                      max="2500000"
-                      step="1000"
-                      type="range"
-                    />
-                    <input
-                      value="2500000"
-                      min="0"
-                      max="2500000"
-                      step="1000"
-                      type="range"
-                    />
-                  </section>
+                  <select
+                    class="collapse-select mt-2 mb-2 w-60 priceMobile"
+                    onchange="PriceMobile()"
+                  >
+                    <option selected disabled>Select</option>
+                    <option value="9">0-1500</option>
+                    <option value="9">1501-3000</option>
+                    <option value="8">3001-5000</option>
+                    <option value="7">10001-30000</option>
+                    <option value="6">30001-50000</option>
+                    <option value="5">50001-100000</option>
+                    <option value="4">100000-1000000</option>
+                  </select>
                 </div>
                 <button
                   class="btn btn-primary clearFilter"
@@ -748,7 +755,6 @@
         var displayElement = parent.getElementsByClassName("rangeValues")[0];
         displayElement.innerHTML = slide1 + " - " + slide2;
       }
-
       window.onload = function () {
         // Initialize Sliders
         var sliderSections = document.getElementsByClassName("range-slider");
