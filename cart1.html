@@ -36,7 +36,7 @@
         <div class="container">
           <div class="d-flex flex-column">
             <h1 class="cart-heading">Shopping Cart</h1>
-            <div class="cart-details-cont">
+            <div class="cart-details-cont detail">
               <table class="table table-bordered">
                 <thead>
                   <tr>
@@ -89,7 +89,7 @@
       </script>
       <!--Navbar end-->
       <section class="container">
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column detailSm">
           <div class="cart-details-cont" style="padding: 14px">
             <table class="table table-bordered">
               <thead>
@@ -147,11 +147,16 @@
     <!--script for cart desktop-->
     <script>
       let cartData = document.querySelectorAll(".cart-data");
+      let cartDetail = document.querySelector(".detail");
       let subtotal = document.querySelector(".subtotal");
       let total = document.querySelector(".total");
       let cartArr = [...cartData];
       let val1 = localStorage.getItem("cart");
       let arr = JSON.parse(val1);
+      if (arr == null) {
+        cartDetail.innerHTML = "";
+        cartDetail.innerHTML = `<h1>Your cart is Empty !!!<h1>`;
+      }
       cartArr.map((item) => {
         arr.forEach((val) => {
           let tr = document.createElement("tr");
@@ -174,11 +179,16 @@
     <!--script for cart Mobile-->
     <script>
       let cartDataSm = document.querySelectorAll(".cart-data-mobile");
+      let cartDetailSm = document.querySelector(".detailSm");
       let subtotalSm = document.querySelector(".subtotalSm");
       let totalSm = document.querySelector(".totalSm");
       let cartArrSm = [...cartDataSm];
       let val1Sm = localStorage.getItem("cart");
       let arrSm = JSON.parse(val1Sm);
+      if (arrSm == null) {
+        cartDetailSm.innerHTML = "";
+        cartDetailSm.innerHTML = `<h1>Your cart is Empty !!!<h1>`;
+      }
       cartArrSm.map((item) => {
         arrSm.forEach((val) => {
           let tr = document.createElement("tr");
