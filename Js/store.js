@@ -188,6 +188,10 @@ window.CategoryMobile = async function () {
   });
   newData = newData.join("");
   cardVip[0].innerHTML = newData;
+  moreSm.removeEventListener("click", IncrementMobile);
+  moreSm.addEventListener("click", () => {
+    console.log(id);
+  });
 };
 
 // sum total search Desktop
