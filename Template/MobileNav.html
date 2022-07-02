@@ -57,47 +57,7 @@
               tabindex="-1"
               aria-labelledby="exampleModalLogin"
               aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content" style="background: #eee">
-                  <div class="modal-header">
-                    <h5 class="modal-title fw-bold" id="exampleModalLabel">
-                      Login or Signup
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalLogin"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body px-1">
-                    <div class="d-flex align-items-center flex-column">
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Email / Number"
-                      />
-                      <small class="text-center mt-2" style="font-size: 0.8rem"
-                        >By continuing, I agree to the Terms & conditions</small
-                      >
-                      <button
-                        class="btn py-1 px-2 border-0 text-white mt-5"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModalLogin"
-                        style="background: #bf68e6; width: 80%"
-                      >
-                        Continue
-                      </button>
-                      <a href="" class="mt-2 text-dark" style="font-size: 12px"
-                        >Login with password</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ></div>
             <div
               class="modal-header justify-content-start align-items-center border-0 px-1"
             >
@@ -134,14 +94,13 @@
                     <button
                       class="p-2 border-0 text-white ms-3"
                       type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalLogin"
                       style="
                         background: #bf68e6;
                         border-radius: 7px;
                         width: 60%;
                         margin-bottom: 10px;
                       "
+                      onclick="Redrict()"
                     >
                       Login / Signup
                     </button>
@@ -554,6 +513,11 @@
       UserInfo.appendChild(UserName);
       UserInfo.appendChild(mail);
       UserInfo.appendChild(Phone);
+    </script>
+    <script>
+      function Redrict() {
+        window.location.href = "./sign.html";
+      }
     </script>
   </body>
 </html>

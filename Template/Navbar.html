@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="DesktopNav">
+<div class="DesktopNav">
   <section style="background: linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );" id="header">
     <div class="container nav-top p-3">
       <div class="d-flex justify-content-between align-items-center w-100" style="color:white">
@@ -26,7 +26,7 @@
             <a class="text-white" href="./cart.html"><span class="fa-solid fa-cart-shopping me-2"></span>Cart</a>
           </div>
            <div class="icon-wrap-cont" style="margin-left: 30px; background-color: white; padding:5px 5px; border-radius: 5px;">
-            <a href="./signup.html" style="font-size:13px; color: #9e48cd; font-weight: bold;"><span class="fa-solid fa-user me-2"></span>Login / Signup</a>
+            <a href="./sign.html" style="font-size:13px; color: #9e48cd; font-weight: bold;" class="logout"><span class="fa-solid fa-user me-2"></span>Login / Signup</a>
           </div>
           <div class="d-flex align-items-center ms-4">
             <div>Follow</div>
@@ -86,7 +86,7 @@
               <a class="nav-link" href="./About.html"><i class="fa-solid fa-id-badge me-1"></i>About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./sign.html"><i class="fa-solid fa-user me-1"></i></a>
+              <a class="nav-link" href="/Register.html"><i class="fa-solid fa-user me-1"></i></a>
             </li>
           </ul>
         </div>
@@ -112,6 +112,20 @@
       }
     })
   </script>
+  <!--script to add logout button-->
+  <script>
+    let logout=document.querySelector(".logout")
+    val=JSON.parse(localStorage.getItem("user"));
+    console.log(val.token)
+    console.log(logout)
+    if(val.hasOwnProperty('token')){
+   logout.innerHTML="Log Out"
+    }
+    logout.addEventListener("click",()=>{
+    localStorage.clear();
+    })
+  
+  </script>
+  <!--script for logout button end-->
 </body>
-
 </html>

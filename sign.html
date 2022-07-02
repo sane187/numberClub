@@ -135,7 +135,7 @@
               </p>
             </div>
             <form class="sign-form-mobile">
-              <div class="mb-3">
+              <div class="mb-3 mobile-form">
                 <label for="Email" class="form-label">Login / Sign Up</label>
                 <input
                   type="email"
@@ -150,8 +150,8 @@
                 class="mt-3 option-div-cont-sm justify-content-center"
                 style="display: none"
               >
-                <div class="option-div otp">Login with OTP</div>
-                <div class="option-div login-btn ms-3">Login with Password</div>
+                <div class="option-div otpM">Login with OTP</div>
+                <div class="option-div loginbtnM ms-3">Login with Password</div>
               </div>
               <h3>
                 Don't have account ? <a href="./Register.html">Sign Up</a>
@@ -165,28 +165,42 @@
               <h2 class="otp-title">Verify Details</h2>
               <h3>OTP sent to your mobile number.</h3>
               <div class="d-flex align-items-center flex-row">
-                <h3 class="registered-Number-mobile" contenteditable="true">
-                  +91-9530000007
-                </h3>
-                <a
-                  href="#"
-                  style="margin-top: 12px; margin-left: 10px"
-                  class="Edit-mobile"
-                  >Edit</a
-                >
+                <h5 class="registered-Number mb-1">+91-9530000007</h5>
               </div>
+              <div class="d-flex flex-row mb-2">
+                <input
+                  type="text"
+                  minlength="1"
+                  id="otp1"
+                  placeholder="Enter OTP here..."
+                  style="border-radius: 4px"
+                />
+              </div>
+              <button
+                class="resend-link p-1 mb-0"
+                style="border: 1.5px solid #f44b01; border-radius: 6px"
+              >
+                Login
+              </button>
+            </div>
 
-              <div class="d-flex flex-row">
-                <input type="text" minlength="1" id="val1" />
+            <div class="loginScreenM p-3 d-none">
+              <p class="mb-1">NUMBER: <span class="ms-3"></span></p>
+              <div class="mb-3 d-flex align-items-center">
+                <label for="password-inp" class="form-label me-2 mb-0"
+                  >PASSWORD</label
+                >
+                <input
+                  type="text"
+                  id="password-inp"
+                  class="form-control"
+                  placeholder="Enter password here..."
+                  style="width: 40%"
+                />
               </div>
-              <a href="#" class="resend-link">Resend OTP</a>
-              <h2 class="message">
-                - Make sure you entered correct mobile number
-              </h2>
-              <h2 class="message">
-                -You can also
-                <span><a href="#">Login with Password</a></span>
-              </h2>
+              <button type="btn" class="btn-secondary btn login-call">
+                Login
+              </button>
             </div>
           </div>
         </div>
@@ -486,10 +500,12 @@
     <script type="module">
       let continueSm = document.querySelector(".continue-sm");
       let MobileForm = document.querySelector(".sign-form-mobile");
-      let OtpScreenMobile = document.querySelector(".otpScreen-Mobile");
-      let closeMobileModal = document.querySelector(".close");
-      let editMobile = document.querySelector(".Edit-mobile");
       let contSm = document.querySelector(".option-div-cont-sm");
+      let loginbtnM = document.querySelector(".loginbtnM");
+      let loginScreenM = document.querySelector(".loginScreenM");
+      let otpM = document.querySelector(".otpM");
+      let otpScreenMobile = document.querySelector(".otpScreen-Mobile");
+      let mobileform = document.querySelector(".mobile-form");
 
       continueSm.addEventListener("click", function () {
         let num = document.querySelector(".sign-input-sm").value.length;
@@ -511,44 +527,20 @@
           contSm.classList.add("d-flex");
         }
       });
-
-      let RegisterNumberMobile = document.querySelector(
-        ".registered-Number-mobile"
-      );
-      let val1 = document.getElementById("val1");
-
-      let otp;
-      let val = true;
-      val1.addEventListener("input", getValue);
-
-      OtpMobileBtn.addEventListener("click", ShowOtpMobileScreen);
-      closeMobileModal.addEventListener("click", closeOtpMobileScreen);
-
-      editMobile.addEventListener("click", updateNum);
-      function ShowOtpMobileScreen() {
-        MobileForm.classList.add("hide");
-        if (OtpScreenMobile.classList.contains("d-none")) {
-          OtpScreenMobile.classList.remove("d-none");
-        }
-      }
-      function closeOtpMobileScreen() {
-        OtpScreenMobile.classList.add("d-none");
-        MobileForm.classList.remove("hide");
-      }
-      function getValue() {
-        otp = parseInt(val1.value + val2.value + val3.value + val4.value);
-        console.log(otp);
-      }
-      function updateNum() {
-        val = !val;
-        if (val === false) {
-          RegisterNumberMobile.setAttribute("contenteditable", "true");
-          editMobile.textContent = "save";
-        } else {
-          editMobile.textContent = "edit";
-          RegisterNumberMobile.removeAttribute("contenteditable");
-        }
-      }
+      // login with password
+      loginbtnM.addEventListener("click", () => {
+        mobileform.classList.add("d-none");
+        loginScreenM.classList.remove("d-none");
+        loginScreenM.classList.add("d-block");
+        otpScreenMobile.classList.add("d-none");
+      });
+      // login with otp
+      otpM.addEventListener("click", () => {
+        mobileform.classList.add("d-none");
+        otpScreenMobile.classList.remove("d-none");
+        otpScreenMobile.classList.add("d-block");
+        loginScreenM.classList.add("d-none");
+      });
     </script>
     <script
       type="text/javascript"

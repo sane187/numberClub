@@ -109,7 +109,8 @@
 }
 
 .otpScreen,
-.otpScreen-Mobile {
+.otpScreen-Mobile,
+.loginScreenM {
   width: auto;
   height: auto;
   background-color: #fafafa;

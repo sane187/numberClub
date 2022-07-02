@@ -869,7 +869,11 @@ const FetchVip = async () => {
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
   
-   <h4 class="mb-0 fw-bold">₹${val.price}</h4><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+   <h4 class="mb-0 fw-bold">₹${val.price}</h4>
+   <div class="vl mx-1"></div>
+   <button class="" onclick="cart(${val.product_id})">
+   <i class="fa-solid fa-cart-shopping"></i>
+   </button>
    
     <div class="vl mx-1"></div>
     <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}"><i class="fa-solid fa-circle-info d-block"></i></button>
@@ -927,7 +931,7 @@ Total- <strong class="mx-1">${val.sum_total}</strong> | Sum- <strong class="mx-1
 
 <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
 
-<h6 class="mb-0 fw-bold" style="font-size:12px">₹${val.price}</h6><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+<h6 class="mb-0 fw-bold" style="font-size:12px">₹${val.price}</h6><div class="vl mx-1"></div><button class="" onclick="cart(${val.product_id})"><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
     <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}"><i class="fa-solid fa-solid fa-circle-info d-block"></i></button>
@@ -984,7 +988,7 @@ const Increment = async () => {
     
     <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
   
-   <h4 class="mb-0 fw-bold">₹${val.price}</h4><div class="vl mx-1"></div><button class=""><i class="fa-solid fa-cart-shopping"></i></button>
+   <h4 class="mb-0 fw-bold">₹${val.price}</h4><div class="vl mx-1"></div><button class="" onclick="cart(${val.product_id})"><i class="fa-solid fa-cart-shopping"></i></button>
    
     <div class="vl mx-1"></div>
     <button class="py-2" onclick=window.location.href="./Detail.html?product=${val.product_id}"><i class="fa-solid fa-circle-info d-block"></i></button>
