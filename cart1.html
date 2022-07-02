@@ -63,7 +63,7 @@
                   </tbody>
                 </table>
               </div>
-              <button class="btn btn-primary mt-2">confirm number</button>
+              <button class="btn btn-primary mt-2 confirm">confirm number</button>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@
                 </tbody>
               </table>
             </div>
-            <button class="btn btn-primary mt-2" style="width: 70vw">
+            <button class="btn btn-primary mt-2 confirm" style="width: 70vw">
               confirm number
             </button>
             <p class="text-start mt-2" style="font-size: 1rem">
@@ -206,6 +206,9 @@
       }, 0);
       subtotalSm.innerHTML = `₹ ${TotalSm}`;
       totalSm.innerHTML = TotalSm;
+      document.querySelector(".confirm").addEventListener("click",function(){
+        window.location.href="./Checkout.html"
+      })
     </script>
     <!--script for cart Mobile end-->
 
