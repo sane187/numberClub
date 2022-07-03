@@ -116,8 +116,6 @@
   <script>
     let logout=document.querySelector(".logout")
     val=JSON.parse(localStorage.getItem("user"));
-    console.log(val.token)
-    console.log(logout)
     if(val.hasOwnProperty('token')){
    logout.innerHTML="Log Out"
     }

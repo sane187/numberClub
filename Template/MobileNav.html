@@ -78,7 +78,7 @@
             </div>
             <div class="modal-body px-0">
               <div class="flex-column account-cont">
-                <section class="px-3 pb-1">
+                <section class="px-3 pb-1 loginM">
                   <div class="d-flex align-items-center">
                     <figure class="mb-0">
                       <img
@@ -106,7 +106,7 @@
                     </button>
                   </div>
                 </section>
-                <section class="px-3 pb-1">
+                <section class="px-3 pb-1 userDataM">
                   <div class="d-flex align-items-center">
                     <figure class="mb-0">
                       <img
@@ -298,7 +298,9 @@
           <div class="overlay-content d-flex">
             <div class="w-100" style="padding-top: 2.2rem">
               <h4>
-                <a href="/"><span class="fa-solid fa-house me-4"></span>HOME</a>
+                <a href="/index3.html"
+                  ><span class="fa-solid fa-house me-4"></span>HOME</a
+                >
                 <a href="./vipNumber.html"
                   ><span class="fa-solid fa-store me-4"></span>Store</a
                 >
@@ -495,15 +497,28 @@
       });
     </script>
     <script>
+      function Redrict() {
+        window.location.href = "./sign.html";
+      }
+    </script>
+  </body>
+  <script>
+    let loginM = document.querySelector(".loginM");
+    let userDataM = document.querySelector(".userDataM");
+    let UserInfo = document.querySelector(".login-data");
+    let UserName = document.createElement("h5");
+    let mail = document.createElement("p");
+    let Phone = document.createElement("p");
+    val = JSON.parse(localStorage.getItem("user"));
+    if (val === null) {
+      userDataM.classList.add("d-none");
+    } else {
+      loginM.classList.add("d-none");
       const userData = {
-        name: "Vip Number Club",
+        name: val.customer_name,
         email: "support@vipnumberclub.com",
-        MobileNo: 7710067100,
+        MobileNo: val.customer_no,
       };
-      let UserInfo = document.querySelector(".login-data");
-      let UserName = document.createElement("h5");
-      let mail = document.createElement("p");
-      let Phone = document.createElement("p");
       UserName.classList.add("mb-0");
       UserName.innerHTML = userData.name;
       mail.classList.add("mb-0");
@@ -513,11 +528,6 @@
       UserInfo.appendChild(UserName);
       UserInfo.appendChild(mail);
       UserInfo.appendChild(Phone);
-    </script>
-    <script>
-      function Redrict() {
-        window.location.href = "./sign.html";
-      }
-    </script>
-  </body>
+    }
+  </script>
 </html>

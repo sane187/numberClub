@@ -125,14 +125,13 @@
 .otpScreen-Mobile input {
   width: 40%;
   padding: 2px 4px;
-  border: 1px solid #f44b01;
+  border: 1px solid #bf68e6;
 }
-.otpScreen,
 .otpScreen-Mobile .resend-link,
 .otpScreen a,
 .otpScreen-Mobile a {
   text-decoration: none;
-  color: #f44b01;
+  color: #fafafa;
   font-family: "Poppins";
 }
 .otpScreen .message,
@@ -142,7 +141,7 @@
 }
 .otpScreen a:hover,
 .otpScreen-Mobile a:hover {
-  color: #f44b01;
+  color: #bf68e6;
 }
 
 .option-div {
@@ -213,7 +212,7 @@
     width: 100%;
   }
   .otpScreen-Mobile input {
-    width: 6vw;
+    width: 60vw;
     height: 4vh;
   }
 }
@@ -243,7 +242,7 @@
     width: 100%;
   }
   .otpScreen-Mobile input {
-    width: 6vw;
+    width: 60vw;
     height: 4vh;
   }
 }
@@ -282,8 +281,8 @@
     margin-top: 10px;
   }
   .otpScreen-Mobile input {
-    width: 6vw;
-    height: 4vh;
+    width: 60vw;
+    height: auto;
     border-radius: 2px;
   }
   .otpScreen-Mobile .message {
@@ -293,5 +292,14 @@
   }
   .otpScreen-Mobile a {
     font-size: 0.8rem;
+  }
+  .resend-link {
+    background: linear-gradient(
+      40deg,
+      #bf68e6 20%,
+      #9e48cd 51%,
+      #bf68e6 90%
+    ) !important;
+    border-color: #bf68e6 !important;
   }
 }
