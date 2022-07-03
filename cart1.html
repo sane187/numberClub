@@ -63,7 +63,9 @@
                   </tbody>
                 </table>
               </div>
-              <button class="btn btn-primary mt-2 confirm">confirm number</button>
+              <button class="btn btn-primary mt-2 confirm">
+                confirm number
+              </button>
             </div>
           </div>
         </div>
@@ -139,6 +141,7 @@
     <!---scripts-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./Js/cart.js" type="module"></script>
+    <script src="./Js/js/bootstrap.bundle.min.js"></script>
     <script>
       AOS.init({
         duration: 1000,
@@ -152,10 +155,25 @@
       let total = document.querySelector(".total");
       let cartArr = [...cartData];
       let val1 = localStorage.getItem("cart");
+      let user = localStorage.getItem("user");
       let arr = JSON.parse(val1);
-      if (arr == null) {
+      console.log(user);
+      if (arr === null || user === null) {
         cartDetail.innerHTML = "";
-        cartDetail.innerHTML = `<h1>Your cart is Empty !!!<h1>`;
+        cartDetail.innerHTML = `
+                <figure>
+                  <img
+                    src="./Assets/empty-cart.png"
+                    alt="empty-cart"
+                    style="width: 100%; height: 100%"
+                  />
+                </figure>
+
+                <p class="mt-0">
+                  Your cart is empty. Look's like you haven't added anything to
+                  your cart yet.
+                </p>
+                <a href="./vipNumber.html">Keep Shopping</a>`;
       }
       cartArr.map((item) => {
         arr.forEach((val) => {
@@ -182,12 +200,32 @@
       let cartDetailSm = document.querySelector(".detailSm");
       let subtotalSm = document.querySelector(".subtotalSm");
       let totalSm = document.querySelector(".totalSm");
+      let userSm = localStorage.getItem("user");
       let cartArrSm = [...cartDataSm];
       let val1Sm = localStorage.getItem("cart");
       let arrSm = JSON.parse(val1Sm);
-      if (arrSm == null) {
+      if (arrSm === null || userSm === null) {
         cartDetailSm.innerHTML = "";
-        cartDetailSm.innerHTML = `<h1>Your cart is Empty !!!<h1>`;
+        cartDetailSm.innerHTML = `<div class="d-flex flex-column">
+              <h1 class="cart-heading">Shopping Cart</h1>
+              <p class="card-desc mb-2">0 Numbers in Cart</p>
+
+              <div class="cart-details-cont">
+                <figure>
+                  <img
+                    src="./Assets/empty-cart.png"
+                    alt="empty-cart"
+                    style="width: 100%; height: 100%"
+                  />
+                </figure>
+
+                <p class="mt-0">
+                  Your cart is empty. Look's like you haven't added anything to
+                  your cart yet.
+                </p>
+                <a href="./vipNumber.html" class="fw-bold">Keep Shopping</a>
+              </div>
+            </div>`;
       }
       cartArrSm.map((item) => {
         arrSm.forEach((val) => {
@@ -206,12 +244,11 @@
       }, 0);
       subtotalSm.innerHTML = `₹ ${TotalSm}`;
       totalSm.innerHTML = TotalSm;
-      document.querySelector(".confirm").addEventListener("click",function(){
-        window.location.href="./Checkout.html"
-      })
+      document.querySelector(".confirm").addEventListener("click", function () {
+        window.location.href = "./Checkout.html";
+      });
     </script>
     <!--script for cart Mobile end-->
-
     <!--scripts end-->
   </body>
 </html>

@@ -237,6 +237,7 @@
               </button>
               <button
                 class="border-0 d-flex flex-column align-items-center bg-white text-dark"
+                onclick="window.location.href=`./cart1.html`"
               >
                 <img
                   src="./Assets/ShoppingBag.png"
@@ -509,9 +510,11 @@
     let UserName = document.createElement("h5");
     let mail = document.createElement("p");
     let Phone = document.createElement("p");
+    let logoutM = document.querySelector(".log-out-btn");
     val = JSON.parse(localStorage.getItem("user"));
     if (val === null) {
       userDataM.classList.add("d-none");
+      logoutM.classList.add("d-none");
     } else {
       loginM.classList.add("d-none");
       const userData = {
@@ -529,5 +532,11 @@
       UserInfo.appendChild(mail);
       UserInfo.appendChild(Phone);
     }
+    logoutM.addEventListener("click", () => {
+      localStorage.removeItem("user");
+      setTimeout(() => {
+        window.location.href = "./index3.html";
+      }, 1000);
+    });
   </script>
 </html>
